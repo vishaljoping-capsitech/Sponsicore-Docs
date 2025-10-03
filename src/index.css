@@ -13,8 +13,13 @@ body {
 }
 
 .theme-color {
-  color: #834666;
+  color: #464155 !important;
 }
+
+.text-color{
+   color: #834666 !important;
+}
+
 .ant-layout {
   background: #f4f5fa !important;
 }

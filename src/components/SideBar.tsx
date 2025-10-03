@@ -1,4 +1,3 @@
-
 import { Menu } from 'antd'
 import '../css/common.css'
 import React from 'react'
