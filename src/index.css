@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif !important;
 }
 
 body {
@@ -12,26 +12,24 @@ body {
   margin: auto !important;
 }
 
-.theme-color{
-  color:#834666;
+.theme-color {
+  color: #834666;
 }
 .ant-layout {
   background: #f4f5fa !important;
-  font-family: 'Outfit', sans-serif !important;
 }
 
-.ant-layout-main-content{
+.ant-layout-main-content {
   height: calc(100vh - 82px) !important;
-  overflow-y: auto !important;
-}
-
-.ant-layout-main-content .ant-menu{
-  height: calc(100vh - 98px) !important;
   overflow-y: auto !important;
 }
 
 .bg-white {
   background-color: white;
+}
+
+.docs-shadow {
+  box-shadow: 0px 1px 1px 0px #0000001a;
 }
 
 .scrollable {
@@ -49,7 +47,7 @@ body {
 }
 
 .scrollable::-webkit-scrollbar-thumb {
-  background: #E3E7F0 !important;
+  background: #e3e7f0 !important;
   border-radius: 4px;
 }
 

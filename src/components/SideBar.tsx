@@ -1,4 +1,5 @@
 import { Menu } from 'antd'
+import '../css/common.css'
 import React from 'react'
 
 const items = [
@@ -81,9 +82,11 @@ const items = [
 ]
 
 
-const SideBar:React.FC = () => {
+const SideBar: React.FC = () => {
   return (
-    <Menu className='ant-layout-main-content scrollable' items={items} style={{border:'none'}}></Menu>
+    <>
+      <Menu className='ant-layout-main-content scrollable' items={items}></Menu>
+    </>
   )
 }
 
