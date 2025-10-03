@@ -1,14 +1,16 @@
-import { Typography } from 'antd';
+import { Row, Typography } from 'antd';
 import React from 'react'
 
 interface ParagraphProps {
-    text: React.ReactNode;
-    className?: string;
+  text: React.ReactNode;
+  className?: string;
 }
 
-const Paragraph:React.FC<ParagraphProps> = ({text , className}) => {
+const Paragraph: React.FC<ParagraphProps> = ({ text, className }) => {
   return (
-    <Typography.Text className={`text-color ${className}`}>{text}</Typography.Text>
+    <Row>
+      <Typography.Text className={`text-color ${className}`}>{text}</Typography.Text>
+    </Row>
   )
 }
 
