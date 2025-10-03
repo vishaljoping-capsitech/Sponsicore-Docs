@@ -41,11 +41,6 @@ body {
   height: 0px;
 }
 
-.scrollable:hover::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-}
-
 .scrollable::-webkit-scrollbar-thumb {
   background: #e3e7f0 !important;
   border-radius: 4px;

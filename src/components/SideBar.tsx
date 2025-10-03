@@ -6,7 +6,11 @@ import React from 'react'
 
 const items = [
   {
-    key: "1",
+    key:"1",
+    label: "Overview",
+  },
+  {
+    key: "2",
     label: "Admin Panel",
     children: [
       { key: "a1", label: "Layout" },
@@ -25,7 +29,7 @@ const items = [
     ],
   },
   {
-    key: "2",
+    key: "3",
     label: "Employee Panel",
     children: [
       { key: "e1", label: "Layout" },
@@ -46,8 +50,8 @@ const SideBar: React.FC = () => {
   return (
     <Menu
       mode="inline"
-      defaultSelectedKeys={["a1"]}
-      defaultOpenKeys={["1"]}
+      defaultSelectedKeys={["1"]}
+      defaultOpenKeys={["2"]}
       className="ant-layout-main-content scrollable"
       items={items}
     ></Menu>

@@ -20,7 +20,7 @@ const MainLayout: React.FC = () => {
     <>
     <MobileSidebar collapsed={collapsed} setCollapsed={setCollapsed} />
     <Row justify={'center'}>
-      <Col xl={18} xs={24}>
+      <Col xs={24}>
         <Layout>
           <TopHeader />
           <Layout>
