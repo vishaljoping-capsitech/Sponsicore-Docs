@@ -1,12 +1,5 @@
 .ant-layout-main-content .ant-menu {
-  height: calc(100vh - 100px) !important;
-  overflow-y: auto !important;
-  border: none !important;
-}
-
-.ant-layout-main-content .ant-menu {
   background: #fff !important;
-  height: auto !important;
   border: none !important;
 }
 
