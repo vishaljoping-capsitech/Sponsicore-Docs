@@ -68,8 +68,8 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ collapsed, setCollapsed, 
             open={!collapsed}
             onClose={() => setCollapsed(true)}
             footer={
-                <Row justify="center" className="py-2">
-                    <LeftOutlined onClick={() => setCollapsed(true)} className="drawer-close-icon" />
+                <Row onClick={() => setCollapsed(true)} justify="center" className="py-2 cursor-pointer">
+                    <LeftOutlined className="drawer-close-icon" />
                 </Row>
             }>
             <Menu
