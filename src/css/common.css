@@ -1,61 +1,98 @@
-.ant-layout-main-content .ant-menu {
-  background: #fff !important;
+.ant-menu {
   border: none !important;
 }
 
-.ant-layout-main-content .ant-menu .ant-menu-item {
+.ant-menu-item {
   padding-left: 16px !important;
-  border-radius: 4px !important;
-  border-left: 2px solid transparent !important;
 }
 
-.ant-layout-main-content .ant-menu .ant-menu-item .ant-menu-item-only-child {
+.ant-menu-title-content {
+  color: #353046 !important;
+}
+
+.dark .ant-menu-title-content {
+  color: #cfccdc !important;
+}
+
+.ant-menu-submenu-title {
   padding-left: 16px !important;
-  border-radius: 4px !important;
-  border-left: 2px solid transparent !important;
 }
 
-.ant-layout-main-content .ant-menu-submenu-title {
-  padding-left: 16px !important;
-  border-radius: 4px !important;
-  color: #464155 !important;
+.ant-menu-sub {
+  background-color: transparent !important;
 }
 
-.ant-layout-main-content .ant-menu-sub .ant-menu-item {
-  padding-left: 30px !important;
+.dark .ant-menu-submenu-title {
+  color: #e4e4e7 !important;
 }
 
-.ant-layout-main-content .ant-menu-submenu-selected .ant-menu-submenu-title {
+.dark .ant-menu-submenu-title:hover {
+  color: #353046 !important;
+}
+
+.ant-menu-sub .ant-menu-item {
+  padding-left: 18px !important;
+  gap: 10px !important;
+}
+
+.ant-input-affix-wrapper-focused {
+  outline: none !important;
+  border-color: #36a368 !important;
+  box-shadow: none;
+}
+
+.dark .ant-input-affix-wrapper-focused {
+  border-color: #e4e4e7 !important;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.ant-menu-submenu-selected .ant-menu-submenu-title {
   font-weight: 600 !important;
 }
 
-.ant-layout-main-content .ant-menu-submenu-title:hover {
-  background-color: #f9f9fc !important;
+.ant-menu-item:hover {
+  background-color: #f3f3ff !important;
 }
 
-.ant-layout-main-content .ant-menu .ant-menu-item:hover {
-  border-radius: 0 !important;
-  background-color: #f9f9fc !important;
+.dark .ant-menu-item:hover {
+  background-color: #413356 !important;
 }
 
-.ant-layout-main-content .ant-menu .ant-menu-item-selected {
-  border-top-left-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
-  border-left: 2px solid #01b075 !important;
-  background-color: #f9f9fc !important;
-  color: #01b075 !important;
+.ant-menu-submenu-title:hover {
+  background-color: #f3f3ff !important;
+}
+
+.dark .ant-menu-submenu-title:hover {
+  background-color: #413356 !important;
+}
+
+.ant-menu-item-selected {
+  background-color: #f3f3ff !important;
+  color: #353046 !important;
+}
+
+.dark .ant-menu-item-selected {
+  background-color: #413356 !important;
+  color: #cfccdc !important;
 }
 
 .side-bar-menu-collapse {
   position: fixed;
   left: -10px;
   z-index: 1000;
-  background: #7427502b;
   padding: 12px 12px 12px 20px;
   border-radius: 20%;
-  top: 50%;
-  display: flex;
+  top: 50%;+
   display: none;
+}
+
+.dark .text-color-darkmode .side-bar-menu-collapse {
+  background: #353046 !important;
+}
+
+.dark .side-bar-menu-collapse {
+  background: #f9f9fc;
 }
 
 @media (max-width: 768px) {
@@ -65,5 +102,60 @@
 
   .docs-sidebar-menu {
     display: none !important;
+  }
+
+  .search-bar {
+    display: none !important;
+  }
+}
+
+.mobile-sidebar .ant-drawer-body {
+  padding: 10px !important;
+}
+
+.ant-anchor .ant-anchor-ink-visible {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  left: -2.8px !important;
+  background-color: #01b075 !important;
+}
+
+.ant-anchor .ant-anchor-link > .ant-anchor-link-title {
+  color: #625982 !important;
+}
+
+.dark .ant-anchor .ant-anchor-link > .ant-anchor-link-title {
+  color: #cfccdc !important;
+}
+
+.ant-anchor .ant-anchor-link-active > .ant-anchor-link-title-active {
+  color: #353046 !important;
+  font-weight: 500 !important;
+}
+
+.dark .ant-anchor .ant-anchor-link-active > .ant-anchor-link-title-active {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+}
+
+.ant-menu-submenu-arrow::before,
+.ant-menu-submenu-arrow::after {
+  color: #36a368 !important;
+}
+
+.ant-layout-main-content .docs-components {
+  padding-top: 4rem !important;
+}
+
+@media screen and (max-width: 990px) {
+  .ant-layout-main-content .docs-components {
+    padding-top: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ant-layout-main-content .docs-components {
+    padding-top: 1rem !important;
   }
 }

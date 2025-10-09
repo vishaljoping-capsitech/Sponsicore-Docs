@@ -1,0 +1,11 @@
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="-12" y="-12" width="58" height="58"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(6px);clip-path:url(#bgblur_0_11744_105652_clip_path);height:100%;width:100%"></div></foreignObject><g data-figma-bg-blur-radius="12">
+<rect x="0.5" y="0.5" width="33" height="33" rx="7.5" fill="#302640"/>
+<rect x="0.5" y="0.5" width="33" height="33" rx="7.5" stroke="#4C3B63"/>
+<path d="M17.0013 21.3346C19.3945 21.3346 21.3346 19.3945 21.3346 17.0013C21.3346 14.6081 19.3945 12.668 17.0013 12.668C14.6081 12.668 12.668 14.6081 12.668 17.0013C12.668 19.3945 14.6081 21.3346 17.0013 21.3346Z" stroke="#B3ADC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.7587 21.7587L21.672 21.672M21.672 12.3254L21.7587 12.2387L21.672 12.3254ZM12.2387 21.7587L12.3254 21.672L12.2387 21.7587ZM16.9987 10.3854V10.332V10.3854ZM16.9987 23.6654V23.612V23.6654ZM10.3854 16.9987H10.332H10.3854ZM23.6654 16.9987H23.612H23.6654ZM12.3254 12.3254L12.2387 12.2387L12.3254 12.3254Z" stroke="#B3ADC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="bgblur_0_11744_105652_clip_path" transform="translate(12 12)"><rect x="0.5" y="0.5" width="33" height="33" rx="7.5"/>
+</clipPath></defs>
+</svg>
