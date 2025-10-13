@@ -4,22 +4,25 @@ import { Drawer, Menu, Row, type MenuProps } from 'antd';
 import { SidebarItems } from './SidebarItems';
 import { ISideBarKeys, type LevelKeysProps } from '../components/SideBar';
 import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
+import { RootState } from '../redux/Store';
 
 interface MobileSidebarProps {
     collapsed: boolean;
+    selectedKey:ISideBarKeys;
     setCollapsed: React.Dispatch<React.SetStateAction<boolean>>;
-    isDarkMode?: boolean;
-    setIsDarkMode?: React.Dispatch<React.SetStateAction<boolean>>;
     setSelectedKey: React.Dispatch<React.SetStateAction<ISideBarKeys>>;
 }
 
-const MobileSidebar: React.FC<MobileSidebarProps> = ({ collapsed, setCollapsed, isDarkMode = false, setSelectedKey }) => {
+const MobileSidebar: React.FC<MobileSidebarProps> = ({ collapsed, selectedKey ,setCollapsed, setSelectedKey }) => {
+
+    const mode = useSelector((state:RootState) => state.theme.mode);
 
     useEffect(() => {
         window.addEventListener("resize", () => { setCollapsed(true) }, true);
     }, [])
 
-    const items = SidebarItems(isDarkMode);
+    const items = SidebarItems({selectedKey, setSelectedKey});
     const [stateOpenKeys, setStateOpenKeys] = useState([ISideBarKeys.Admin.toString()]);
 
     const getLevelKeys = (levelKeysArr: LevelKeysProps[]) => {
@@ -60,7 +63,7 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ collapsed, setCollapsed, 
     return (
         <Drawer
             placement="left"
-            className={`mobile-sidebar ${isDarkMode ? "dark-mode-bg dark" : "bg-white"}`}
+            className={`${mode === "dark" ? "dark" : ""} mobile-sidebar`}
             width={300}
             zIndex={1001}
             maskClosable
@@ -81,7 +84,7 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ collapsed, setCollapsed, 
                     setCollapsed(true);
                 }}
                 onOpenChange={onOpenChange}
-                className={`${isDarkMode ? "dark-mode-bg dark" : "bg-white"} scrollable`}
+                className="scrollable"
                 items={items}
             ></Menu>
         </Drawer>

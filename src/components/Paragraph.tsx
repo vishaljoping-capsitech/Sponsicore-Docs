@@ -1,18 +1,14 @@
-import { Row, Typography } from 'antd';
+import { Typography } from 'antd';
 import React from 'react'
 
 interface ParagraphProps {
   text: React.ReactNode;
   className?: string;
-  isDarkMode: boolean;
-  setIsDarkMode?: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Paragraph: React.FC<ParagraphProps> = ({ text, className, isDarkMode }) => {
+const Paragraph: React.FC<ParagraphProps> = ({ text, className }) => {
   return (
-    <Row>
-      <Typography.Text className={`${isDarkMode ? "text-color-darkmode" : "text-color"} ${className}`}>{text}</Typography.Text>
-    </Row>
+      <Typography.Paragraph className={`${className} mb-1`}>{text}</Typography.Paragraph>
   )
 }
 

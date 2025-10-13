@@ -1,14 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 import MainLayout from './pages/MainLayout';
-import { ConfigProvider, theme } from 'antd';
+import { ConfigProvider } from 'antd';
+import ThemeProvider from './context/ThemeProvider';
+import { useSelector } from 'react-redux';
+import { RootState } from './redux/Store';
 
-const App: React.FC = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+const MyApp: React.FC = () => {
+
+  const config = useSelector((state: RootState) => state.theme.config);
   return (
-    <ConfigProvider theme={{ algorithm: isDarkMode ? theme.darkAlgorithm : theme.defaultAlgorithm, }}>
-      <MainLayout setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
+    <ConfigProvider theme={config}>
+      <ThemeProvider>
+        <MainLayout />
+      </ThemeProvider>
     </ConfigProvider>
   )
 }
 
-export default App;
+export default MyApp;

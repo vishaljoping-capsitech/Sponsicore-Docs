@@ -5,17 +5,17 @@ import TopHeader from "../components/TopHeader";
 import SideBar, { ISideBarKeys } from "../components/SideBar";
 import { AlignLeftOutlined } from "@ant-design/icons";
 import MobileSidebar from "../components/MobileSidebar";
+import { Header } from "antd/es/layout/layout";
+import { useSelector } from "react-redux";
+import { RootState } from "../redux/Store";
 
 const { Content, Sider } = Layout;
 
-interface ThemeProps {
-  isDarkMode: boolean;
-  setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const MainLayout: React.FC<ThemeProps> = ({ isDarkMode, setIsDarkMode }) => {
+const MainLayout: React.FC = () => {
   const [selectedKey, setSelectedKey] = useState<ISideBarKeys>(ISideBarKeys.Overview);
   const [collapsed, setCollapsed] = React.useState(true);
+
+  const mode = useSelector((state:RootState) => state.theme.mode)
 
 
   const onMenuClick = () => {
@@ -29,7 +29,7 @@ const MainLayout: React.FC<ThemeProps> = ({ isDarkMode, setIsDarkMode }) => {
 
       // Admin Panel
       case ISideBarKeys.AdminLayout:
-        return <div>Layout</div>;
+        return <div>Admin Layout</div>;
       case ISideBarKeys.AdminSettings:
         return <div>Settings</div>;
       case ISideBarKeys.AdminDashboard:
@@ -82,43 +82,36 @@ const MainLayout: React.FC<ThemeProps> = ({ isDarkMode, setIsDarkMode }) => {
   return (
     <>
       <MobileSidebar
+        selectedKey={selectedKey}
         setSelectedKey={setSelectedKey}
-        isDarkMode={isDarkMode}
         collapsed={collapsed}
         setCollapsed={setCollapsed}
       />
       <Row justify={"center"}>
         <Col xs={24}>
           <Layout>
-            <TopHeader setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
+            <Header className="px-4" style={{borderBottom: mode === "dark" ? "1px solid #4C3B63" : "1px solid #EBEAF1",}}>
+              <TopHeader />
+            </Header>
             <Layout>
               <Sider
-                className={`${isDarkMode ? "dark" : ""
-                  } ant-layout-main-content scrollable docs-sidebar-menu`}
-                style={{
-                  borderRight: isDarkMode
-                    ? "1px solid #4C3B63"
-                    : "1px solid #EBEAF1",
-                }}
+                className="ant-layout-main-content scrollable docs-sidebar-menu"
+                style={{borderRight: mode === "dark" ? "1px solid #4C3B63" : "1px solid #EBEAF1",}}
               >
                 <SideBar
                   selectedKey={selectedKey}
                   setSelectedKey={setSelectedKey}
-                  isDarkMode={isDarkMode}
-                  setIsDarkMode={setIsDarkMode}
                 />
               </Sider>
               <Content
                 className="ant-layout-main-content scrollable"
-                style={{ backgroundColor: isDarkMode ? "#261e33" : "#fafaff" }}
               >
                 <AlignLeftOutlined
                   onClick={onMenuClick}
-                  className={`text-md cursor-pointer side-bar-menu-collapse ${isDarkMode ? "text-color-darkmode dark" : "theme-color"
-                    } pr-4`}
+                  className="text-md cursor-pointer side-bar-menu-collapse theme-color pr-4"
                   style={{
                     lineHeight: "1px",
-                    backgroundColor: isDarkMode ? "#353046" : "#7427502b",
+                    backgroundColor: "#7427502b",
                   }}
                 />
                 <Row justify={'center'} className="docs-components">
@@ -131,7 +124,7 @@ const MainLayout: React.FC<ThemeProps> = ({ isDarkMode, setIsDarkMode }) => {
                   </Col>
                   <Col lg={4} md={6} xs={0} >
                     <Anchor
-                      className={`${isDarkMode ? "dark" : ""}`}
+                    className={`${mode === "dark" ? "dark" : ""}`}
                       replace offsetTop={150}
                       items={[
                         { key: 'part-1', href: '#part-1', title: 'Part 1' },

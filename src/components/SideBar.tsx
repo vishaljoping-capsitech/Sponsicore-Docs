@@ -2,6 +2,8 @@ import { Menu, type MenuProps } from 'antd'
 import '../css/common.css'
 import React, { useState } from 'react'
 import { SidebarItems } from './SidebarItems';
+import { useSelector } from 'react-redux';
+import { RootState } from '../redux/Store';
 
 
 export enum ISideBarKeys {
@@ -41,16 +43,16 @@ export interface LevelKeysProps {
 }
 
 interface IProps {
-  isDarkMode: boolean;
   selectedKey: ISideBarKeys;
   setSelectedKey: React.Dispatch<React.SetStateAction<ISideBarKeys>>;
-  setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const SideBar: React.FC<IProps> = ({ setSelectedKey, isDarkMode, selectedKey }) => {
+const SideBar: React.FC<IProps> = ({ setSelectedKey , selectedKey }) => {
   const [stateOpenKeys, setStateOpenKeys] = useState<string[]>([ISideBarKeys.Admin.toString(),]);
 
-  const items = SidebarItems(isDarkMode);
+  const mode = useSelector((state: RootState) => state.theme.mode);
+
+  const items = SidebarItems({selectedKey, setSelectedKey});
 
   const getLevelKeys = (levelKeysArr: LevelKeysProps[]) => {
     const key: Record<string, number> = {};
@@ -95,7 +97,7 @@ const SideBar: React.FC<IProps> = ({ setSelectedKey, isDarkMode, selectedKey }) 
       openKeys={stateOpenKeys}
       onClick={({ key }) => setSelectedKey(Number(key))}
       onOpenChange={onOpenChange}
-      className={`${isDarkMode ? "dark-mode-bg dark" : "bg-white"} ant-layout-main-content scrollable`}
+      className={`${mode === "dark" ? "dark" : ""} ant-layout-main-content scrollable`}
       items={items}
     />
   );
