@@ -22,7 +22,7 @@ const TopHeader: React.FC = () => {
             <Col className='search-bar'>
                 <Input className='text-md' prefix={<SearchOutlined className='mr-2' />} placeholder="Search..." style={{ borderRadius: 8 }} />
             </Col>
-            <Col onClick={() => dispatch(toggleTheme())} className='cursor-pointer'>
+            <Col title={mode === "light" ? "Switch to Dark Mode" : "Switch to Light Mode"} onClick={() => dispatch(toggleTheme())} className='cursor-pointer'>
                 <Image src={mode === "light" ? images.darkMode : images.lightMode} preview={false} />
             </Col>
         </Row>
