@@ -13,9 +13,9 @@ import CalenderIcon from '../components/ui/CalenderIcon';
 import ReportIcon from '../components/ui/ReportIcon';
 import ProfileIcon from '../components/ui/ProfileIcon';
 import PoliciesIcon from '../components/ui/PoliciesIcon';
-import { ISideBarKeys } from '../components/SideBar';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux/Store';
+import { ISideBarKeys } from '../types/Types';
 
 interface SidebarItemsProps {
   selectedKey: ISideBarKeys;

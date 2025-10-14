@@ -2,39 +2,38 @@ import * as React from 'react';
 import { LeftOutlined } from '@ant-design/icons';
 import { Drawer, Menu, Row, type MenuProps } from 'antd';
 import { SidebarItems } from './SidebarItems';
-import { ISideBarKeys, type LevelKeysProps } from '../components/SideBar';
+import { type LevelKeysProps } from '../components/SideBar';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux/Store';
+import { ISideBarKeys } from '../types/Types';
 
 interface MobileSidebarProps {
     collapsed: boolean;
-    selectedKey:ISideBarKeys;
+    selectedKey: ISideBarKeys;
     setCollapsed: React.Dispatch<React.SetStateAction<boolean>>;
     setSelectedKey: React.Dispatch<React.SetStateAction<ISideBarKeys>>;
 }
 
-const MobileSidebar: React.FC<MobileSidebarProps> = ({ collapsed, selectedKey ,setCollapsed, setSelectedKey }) => {
+const MobileSidebar: React.FC<MobileSidebarProps> = ({ collapsed, selectedKey, setCollapsed, setSelectedKey }) => {
 
-    const mode = useSelector((state:RootState) => state.theme.mode);
+    const mode = useSelector((state: RootState) => state.theme.mode);
 
     useEffect(() => {
         window.addEventListener("resize", () => { setCollapsed(true) }, true);
     }, [])
 
-    const items = SidebarItems({selectedKey, setSelectedKey});
+    const items = SidebarItems({ selectedKey, setSelectedKey });
     const [stateOpenKeys, setStateOpenKeys] = useState([ISideBarKeys.Admin.toString()]);
 
     const getLevelKeys = (levelKeysArr: LevelKeysProps[]) => {
         const key: Record<string, number> = {};
         const func = (levelKeysArrFinal: LevelKeysProps[], level = 1) => {
             levelKeysArrFinal.forEach((item) => {
-                if (item.key) {
+                if (item.key)
                     key[item.key] = level;
-                }
-                if (item.children) {
+                if (item.children)
                     func(item.children, level + 1);
-                }
             });
         };
         func(levelKeysArr);

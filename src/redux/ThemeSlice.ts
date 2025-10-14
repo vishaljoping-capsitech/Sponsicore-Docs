@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { lightTheme, darkTheme } from "../theme";
+import { Theme } from "../types/Types";
 
 interface ThemeState {
   mode: "light" | "dark";
-  config: any;
+  config: Theme;
 }
 
 const getSystemTheme = (): "light" | "dark" => {
@@ -11,14 +12,14 @@ const getSystemTheme = (): "light" | "dark" => {
   return "light";
 };
 
-const getLocal = (key: string): any => {
+const getLocal = (key: string): ThemeState | null => {
   const data = localStorage.getItem(key);
-  if (data) return JSON.parse(data);
+  if (data) return JSON.parse(data) as ThemeState;
   return null;
 };
 
-const setLocal = (key: string,data: any, replacer?: (key: string, value: any) => any) => {
-  localStorage.setItem(key, data ? JSON.stringify(data, replacer) : "");
+const setLocal = (key: string, data: ThemeState) => {
+  localStorage.setItem(key, JSON.stringify(data));
 };
 
 const systemMode = getSystemTheme();
@@ -28,7 +29,7 @@ const initialState: ThemeState = {
   config: systemMode === "dark" ? darkTheme : lightTheme,
 };
 
-let savedTheme = getLocal("theme") === null ? initialState : getLocal("theme");
+const savedTheme: ThemeState = getLocal("theme") ?? initialState;
 
 const themeSlice = createSlice({
   name: "theme",
@@ -38,21 +39,21 @@ const themeSlice = createSlice({
       if (state.mode === "light") {
         state.mode = "dark";
         state.config = darkTheme;
-        setLocal("theme", { mode: "dark", config: darkTheme});
       } else {
         state.mode = "light";
         state.config = lightTheme;
-        setLocal("theme", { mode: "light", config: lightTheme});
       }
+      setLocal("theme", { mode: state.mode, config: state.config });
     },
     setTheme: (state, action) => {
       const mode = action.payload;
       state.mode = mode;
       state.config = mode === "dark" ? darkTheme : lightTheme;
-      setLocal("theme", toggleTheme);
+      setLocal("theme", { mode, config: state.config });
     },
   },
 });
+
 
 export const { toggleTheme, setTheme } = themeSlice.actions;
 export default themeSlice.reducer;

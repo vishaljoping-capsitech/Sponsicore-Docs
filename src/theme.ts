@@ -1,4 +1,6 @@
-export const lightTheme = {
+import { Theme } from "./types/Types";
+
+export const lightTheme: Theme = {
   components: {
     Layout: {
       headerBg: "#fff",
@@ -34,7 +36,7 @@ export const lightTheme = {
   },
 };
 
-export const darkTheme = {
+export const darkTheme: Theme = {
   components: {
     Layout: {
       headerBg: "#302640",

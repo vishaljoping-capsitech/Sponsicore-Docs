@@ -4,37 +4,10 @@ import React, { useState } from 'react'
 import { SidebarItems } from './SidebarItems';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux/Store';
+import { ISideBarKeys } from '../types/Types';
 
 
-export enum ISideBarKeys {
-  Undefined,
-  Overview,
-  Admin,
-  Employee,
-  AdminLayout,
-  AdminSettings,
-  AdminDashboard,
-  AdminCompany,
-  AdminEmployee,
-  AdminAttendance,
-  AdminTask,
-  AdminTravel,
-  AdminEmail,
-  AdminLeave,
-  AdminRequest,
-  AdminCalendar,
-  AdminReports,
-  EmployeeLayout,
-  EmployeeDashboard,
-  EmployeeProfile,
-  EmployeeAttendance,
-  EmployeeTask,
-  EmployeeTravel,
-  EmployeeLeave,
-  EmployeeRequest,
-  EmployeeCalendar,
-  EmployeePolicies
-}
+
 
 export interface LevelKeysProps {
   key: ISideBarKeys;

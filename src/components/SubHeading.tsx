@@ -9,7 +9,7 @@ interface SubHeadingProps {
 
 const SubHeading:React.FC<SubHeadingProps> = ({text, className }) => {
   return (
-    <Typography.Title level={4} className={`mb-4 mt-2 theme-color ${className}`}>{text}</Typography.Title>
+    <Typography.Title level={4} className={`mb-4 mt-2 ${className}`}>{text}</Typography.Title>
   )
 }
 
