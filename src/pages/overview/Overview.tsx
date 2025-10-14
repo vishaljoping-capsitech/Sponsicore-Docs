@@ -1,5 +1,5 @@
 import React from "react";
-import { AnchorItemProps } from "../../../types/Types";
+import { AnchorItemProps } from "../../types/Types";
 
 const Overview: React.FC & { getAnchorItems?: () => AnchorItemProps[] } = () => {
   return (

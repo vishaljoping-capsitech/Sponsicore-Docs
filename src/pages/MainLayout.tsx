@@ -8,7 +8,7 @@ import MobileSidebar from "../components/MobileSidebar";
 import { Header } from "antd/es/layout/layout";
 import { useSelector } from "react-redux";
 import { RootState } from "../redux/Store";
-import Overview from "./adminPanel/overview/Overview";
+import Overview from "./overview/Overview";
 import { AnchorItemProps, ISideBarKeys } from "../types/Types";
 const { Content, Sider } = Layout;
 
