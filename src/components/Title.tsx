@@ -3,14 +3,14 @@ import React from 'react'
 
 interface TitleProps {
     text: string;
-    isDarkMode : boolean;
     className?: string;
+    id?: string;
 }
 
-const Title:React.FC<TitleProps> = ({text, className}) => {
+const Title:React.FC<TitleProps> = ({text, id, className}) => {
   return (
-    <Typography.Text className={`font-semibold ${className}`}>{text}</Typography.Text>
+    <Typography.Text id={id} className={`font-semibold text-base ${className}`}>{text}</Typography.Text>
   )
 }
 
-export default Title
+export default Title;

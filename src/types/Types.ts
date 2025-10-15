@@ -83,3 +83,8 @@ export interface Theme  {
     colorText: string;
   };
 };
+
+export interface ThemeState {
+  mode: "light" | "dark";
+  config: Theme;
+}

@@ -47,10 +47,7 @@ const MainLayout: React.FC = () => {
   const [collapsed, setCollapsed] = React.useState(true);
   const mode = useSelector((state: RootState) => state.theme.mode)
 
-
-  const onMenuClick = () => {
-    setCollapsed(!collapsed);
-  };
+  const onMenuClick = () => setCollapsed(!collapsed);
 
   const CurrentComponent = componentMap[selectedKey];
 
@@ -58,16 +55,9 @@ const MainLayout: React.FC = () => {
     return CurrentComponent?.getAnchorItems ? CurrentComponent.getAnchorItems() : [];
   }, [CurrentComponent]);
 
-
-
   return (
     <>
-      <MobileSidebar
-        selectedKey={selectedKey}
-        setSelectedKey={setSelectedKey}
-        collapsed={collapsed}
-        setCollapsed={setCollapsed}
-      />
+      <MobileSidebar selectedKey={selectedKey} setSelectedKey={setSelectedKey} collapsed={collapsed} setCollapsed={setCollapsed}/>
       <Row justify={"center"}>
         <Col xs={24}>
           <Layout>
@@ -75,26 +65,13 @@ const MainLayout: React.FC = () => {
               <TopHeader />
             </Header>
             <Layout>
-              <Sider
-                className="ant-layout-main-content scrollable docs-sidebar-menu"
-                style={{ borderRight: mode === "dark" ? "1px solid #4C3B63" : "1px solid #EBEAF1", }}
-              >
-                <SideBar
-                  selectedKey={selectedKey}
-                  setSelectedKey={setSelectedKey}
-                />
+              <Sider className="ant-layout-main-content scrollable docs-sidebar-menu"
+                style={{ borderRight: mode === "dark" ? "1px solid #4C3B63" : "1px solid #EBEAF1", }}>
+                <SideBar selectedKey={selectedKey} setSelectedKey={setSelectedKey}/>
               </Sider>
-              <Content
-                className="ant-layout-main-content scrollable"
-              >
-                <AlignLeftOutlined
-                  onClick={onMenuClick}
-                  className="text-md cursor-pointer side-bar-menu-collapse theme-color pr-4"
-                  style={{
-                    lineHeight: "1px",
-                    backgroundColor: "#7427502b",
-                  }}
-                />
+              <Content className="ant-layout-main-content scrollable" >
+                <AlignLeftOutlined onClick={onMenuClick} className="text-md cursor-pointer side-bar-menu-collapse theme-color pr-4" 
+                  style={{lineHeight: "1px",backgroundColor: "#7427502b",}}/>
                 <Row justify={'center'} className="docs-components">
                   <Col lg={20} md={18} xs={24} className="px-4">
                     <Row justify={'center'}>
@@ -104,12 +81,7 @@ const MainLayout: React.FC = () => {
                     </Row>
                   </Col>
                   <Col lg={4} md={6} xs={0} >
-                    <Anchor
-                      className={`${mode === "dark" ? "dark" : ""}`}
-                      replace offsetTop={150}
-                      items={anchorItems}
-                      getContainer={() => document.querySelector(".ant-layout-content") as HTMLElement}
-                    />
+                    <Anchor className={`${mode === "dark" ? "dark" : ""}`} replace offsetTop={150} items={anchorItems} getContainer={() => document.querySelector(".ant-layout-content") as HTMLElement}/>
                   </Col>
                 </Row>
               </Content>

@@ -1,25 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { lightTheme, darkTheme } from "../theme";
-import { Theme } from "../types/Types";
-
-interface ThemeState {
-  mode: "light" | "dark";
-  config: Theme;
-}
+import { ThemeState } from "../types/Types";
+import { getLocal, setLocal } from "../utils/localStorage";
 
 const getSystemTheme = (): "light" | "dark" => {
   if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) return "dark";
   return "light";
-};
-
-const getLocal = (key: string): ThemeState | null => {
-  const data = localStorage.getItem(key);
-  if (data) return JSON.parse(data) as ThemeState;
-  return null;
-};
-
-const setLocal = (key: string, data: ThemeState) => {
-  localStorage.setItem(key, JSON.stringify(data));
 };
 
 const systemMode = getSystemTheme();

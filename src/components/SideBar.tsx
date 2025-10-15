@@ -6,9 +6,6 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../redux/Store';
 import { ISideBarKeys } from '../types/Types';
 
-
-
-
 export interface LevelKeysProps {
   key: ISideBarKeys;
   label: string;
@@ -31,19 +28,17 @@ const SideBar: React.FC<IProps> = ({ setSelectedKey , selectedKey }) => {
     const key: Record<string, number> = {};
     const func = (levelKeysArrFinal: LevelKeysProps[], level = 1) => {
       levelKeysArrFinal.forEach((item) => {
-        if (item.key) {
+        if (item.key)
           key[item.key] = level;
-        }
-        if (item.children) {
+        if (item.children)
           func(item.children, level + 1);
-        }
       });
     };
     func(levelKeysArr);
     return key;
   };
+  
   const levelKeys = getLevelKeys(items as LevelKeysProps[]);
-
 
   const onOpenChange: MenuProps['onOpenChange'] = (openKeys: string[]) => {
     const currentOpenKey = openKeys.find((key) => stateOpenKeys.indexOf(key) === -1);

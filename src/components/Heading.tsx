@@ -5,12 +5,13 @@ import '../css/common.css';
 interface HeadingProps {
   text: string;
   className?: string;
+  id?: string;
 }
 
-const Heading: React.FC<HeadingProps> = ({ text, className }) => {
+const Heading: React.FC<HeadingProps> = ({ text, className, id }) => {
   return (
     <Row>
-      <Typography.Title level={2} className={`font-bold mb-4 mt-2 ${className}`}>
+      <Typography.Title level={2} id={id} className={`font-bold mb-4 mt-2 ${className}`}>
         {text}
       </Typography.Title>
     </Row>

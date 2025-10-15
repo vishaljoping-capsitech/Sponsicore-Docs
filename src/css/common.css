@@ -138,3 +138,12 @@
 .ant-drawer .ant-drawer-content.dark.mobile-sidebar {
   background: #302640 !important;
 }
+
+.ant-image .ant-image-mask {
+  cursor: zoom-in !important;
+  background: transparent !important;
+}
+
+.ant-image-mask-info {
+  display: none;
+}

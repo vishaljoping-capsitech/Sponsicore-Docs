@@ -1,15 +1,18 @@
-import { Typography } from 'antd';
-import React from 'react'
+import { Typography } from "antd";
+import React from "react";
 
 interface ParagraphProps {
   text: React.ReactNode;
   className?: string;
+  id?: string;
 }
 
-const Paragraph: React.FC<ParagraphProps> = ({ text, className }) => {
+const Paragraph: React.FC<ParagraphProps> = ({ text, className, id }) => {
   return (
-      <Typography.Paragraph className={`${className} mb-1`}>{text}</Typography.Paragraph>
-  )
-}
+    <Typography.Paragraph id={id} className={`${className} mb-1 text-base font-normal`}>
+      {text}
+    </Typography.Paragraph>
+  );
+};
 
-export default Paragraph
+export default Paragraph;
