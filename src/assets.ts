@@ -88,6 +88,19 @@ import adminEmailComposeEmail from "./images/admin/email/compose-email.png";
 import adminCalendar from "./images/admin/calendar/calendar.png";
 import adminCalendarCreateReminder from "./images/admin/calendar/create-remindar-drawer.png";
 import adminCalendarEditReminder from "./images/admin/calendar/edit-reminder-drawer.png";
+//Company
+import adminCompanyProfile from './images/admin/company/company-profile.png'
+import adminCompanyDocumentOverview from './images/admin/company/document-overview.png'
+import adminCompanyMandatoryDocs from './images/admin/company/mandatory-docs.png'
+import adminCompanyFileSizeCondition from './images/admin/company/file-size-condition.png'
+import adminCompanyBranchOverview from '../src/images/admin/company/branch-overview.png'
+import adminCompanyAddBranch from './images/admin/company/add-branch.png'
+import adminCompanyEditBranch from './images/admin/company/edit-branch.png'
+import adminCompanyDeleteBranch from './images/admin/company/delete-branch.png'
+import adminCompanyBranchStatus from './images/admin/company/branch-status.png'
+import adminCompanyOfficers from './images/admin/company/company-officers.png'
+import adminCompanyFeatures from './images/admin/company/company-features.png'
+import adminCompanySubscription from './images/admin/company/company-subscription.png'
 
 export const images = {
   logo,
@@ -180,4 +193,17 @@ export const images = {
   adminCalendar,
   adminCalendarCreateReminder,
   adminCalendarEditReminder,
+  //Company
+  adminCompanyProfile,
+  adminCompanyDocumentOverview,
+  adminCompanyMandatoryDocs,
+  adminCompanyFileSizeCondition,
+  adminCompanyBranchOverview,
+  adminCompanyAddBranch,
+  adminCompanyEditBranch,
+  adminCompanyDeleteBranch,
+  adminCompanyBranchStatus,
+  adminCompanyOfficers,
+  adminCompanyFeatures,
+  adminCompanySubscription
 };

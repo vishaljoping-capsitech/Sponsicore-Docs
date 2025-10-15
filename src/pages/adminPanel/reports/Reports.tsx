@@ -19,8 +19,8 @@ const Reports = () => {
                         <ul>
                             <li><Title text={'Automated Report Delivery:'}></Title> Authorized users can set up report reminders to automatically email selected reports to designated recipients on the first day of each month, ensuring timely updates without manual effort.</li>
                             <li><Title text={'Bulk Payslip Upload:'}></Title> Easily upload multiple employee payslips at once by naming files with employee IDs. The system matches and assigns payslips accurately based on the payment month you select.</li>
-                            <li><Title text={'Customizable and Exportable Reports:'}></Title> Access a variety of reports with powerful filters to tailor data views. You can export reports in CSV or XLSX formats, with filters applied affecting the exported data for precise analysis.</li>
-                            <li style={{listStyleType:"none"}}><ImageCard src={images.adminReportsOverview} /></li>
+                            <li><Title text={'Customizable and Exportable Reports:'}></Title> Access a variety of reports with powerful filters to tailor data views. You can export reports in CSV or XLSX formats, with filters applied affecting the exported data for precise analysis.
+                                <ImageCard src={images.adminReportsOverview} /></li>
                         </ul>} />
                     <SubHeading
                         text={
