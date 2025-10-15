@@ -1,4 +1,3 @@
-import { Col } from "antd";
 import Paragraph from "../../../components/Paragraph";
 import { images } from "../../../assets";
 import Title from "../../../components/Title";
