@@ -28,6 +28,20 @@ import adminEmployeeEditShiftModal from "./images/admin/employee/employee-edit-s
 import adminEmployeeEditCardModal from "./images/admin/employee/employee-edit-card-modal.png";
 import adminEmployeeRemoteAttendance from "./images/admin/employee/employee-remote-attendance.png";
 
+//Travel
+import adminTravelAddTravel from './images/admin/travel/add-travel-drawer.png'
+import adminTravelEditTravel from './images/admin/travel/edit-travel-drawer.png'
+import adminTravelDeleteTravel from './images/admin/travel/delete-travel-drawer.png'
+import adminTravelOverview from './images/admin/travel/travel-overview.png'
+import adminTravelTripHistory from './images/admin/travel/travel-overview.png'
+import adminTravelApprovedStatus from './images/admin/travel/approved-status.png'
+import adminTravelLockedTravel from './images/admin/travel/locked-travel.png'
+import adminTravelMultipleTravellers from './images/admin/travel/multiple-travellers.png'
+import adminTravelCustomFilters from './images/admin/travel/custom-filters.png'
+import adminTravelTripHistoryAdd from './images/admin/travel/trip-history-add-drawer.png'
+import adminTravelTripHistoryEdit from '../src/images/admin/travel/trip-history-edit-drawer.png'
+import adminTravelPanel from './images/admin/travel/travel-panel.png'
+
 
 export const images = {
   logo,
@@ -59,5 +73,18 @@ export const images = {
   adminEmployeeEditShiftModal,
   adminEmployeeEditCardModal,
   adminEmployeeRemoteAttendance,
-  
+
+  // Travel
+  adminTravelAddTravel,
+  adminTravelEditTravel,
+  adminTravelDeleteTravel,
+  adminTravelOverview,
+  adminTravelTripHistory,
+  adminTravelApprovedStatus,
+  adminTravelLockedTravel,
+  adminTravelMultipleTravellers,
+  adminTravelCustomFilters,
+  adminTravelTripHistoryAdd,
+  adminTravelTripHistoryEdit,
+  adminTravelPanel,
 };
