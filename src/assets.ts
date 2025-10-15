@@ -29,19 +29,25 @@ import adminEmployeeEditCardModal from "./images/admin/employee/employee-edit-ca
 import adminEmployeeRemoteAttendance from "./images/admin/employee/employee-remote-attendance.png";
 
 //Travel
-import adminTravelAddTravel from './images/admin/travel/add-travel-drawer.png'
-import adminTravelEditTravel from './images/admin/travel/edit-travel-drawer.png'
-import adminTravelDeleteTravel from './images/admin/travel/delete-travel-drawer.png'
-import adminTravelOverview from './images/admin/travel/travel-overview.png'
-import adminTravelTripHistory from './images/admin/travel/travel-overview.png'
-import adminTravelApprovedStatus from './images/admin/travel/approved-status.png'
-import adminTravelLockedTravel from './images/admin/travel/locked-travel.png'
-import adminTravelMultipleTravellers from './images/admin/travel/multiple-travellers.png'
-import adminTravelCustomFilters from './images/admin/travel/custom-filters.png'
-import adminTravelTripHistoryAdd from './images/admin/travel/trip-history-add-drawer.png'
-import adminTravelTripHistoryEdit from '../src/images/admin/travel/trip-history-edit-drawer.png'
-import adminTravelPanel from './images/admin/travel/travel-panel.png'
+import adminTravelAddTravel from './images/admin/travel/add-travel-drawer.png';
+import adminTravelEditTravel from './images/admin/travel/edit-travel-drawer.png';
+import adminTravelDeleteTravel from './images/admin/travel/delete-travel-drawer.png';
+import adminTravelOverview from './images/admin/travel/travel-overview.png';
+import adminTravelTripHistory from './images/admin/travel/travel-overview.png';
+import adminTravelApprovedStatus from './images/admin/travel/approved-status.png';
+import adminTravelLockedTravel from './images/admin/travel/locked-travel.png';
+import adminTravelMultipleTravellers from './images/admin/travel/multiple-travellers.png';
+import adminTravelCustomFilters from './images/admin/travel/custom-filters.png';
+import adminTravelTripHistoryAdd from './images/admin/travel/trip-history-add-drawer.png';
+import adminTravelTripHistoryEdit from '../src/images/admin/travel/trip-history-edit-drawer.png';
+import adminTravelPanel from './images/admin/travel/travel-panel.png';
 
+//Leave
+import adminLeavePanel from './images/admin/leave/leave-panel.png';
+import adminLeaveRequest from './images/admin/leave/leave-request.png';
+import adminLeaveFilters from './images/admin/leave/leave-filters.png';
+import adminLeaveAutomatedNotification from './images/admin/leave/automated-notification.png';
+import adminLeave from './images/admin/leave/leave.png';
 
 export const images = {
   logo,
@@ -87,4 +93,11 @@ export const images = {
   adminTravelTripHistoryAdd,
   adminTravelTripHistoryEdit,
   adminTravelPanel,
+
+  //Leave
+  adminLeavePanel,
+  adminLeaveRequest,
+  adminLeaveFilters,
+  adminLeaveAutomatedNotification,
+  adminLeave,
 };
