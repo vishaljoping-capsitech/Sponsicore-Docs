@@ -42,9 +42,7 @@ const Employees = () => {
                 {employeesSections.map((item, index) => (
                   <li key={index} id={item.id} className="">
                     {item.title}
-                    <Row className="ml-1 mt-1">
-                      {item.component ? React.createElement(item.component) : null}
-                    </Row>
+                    {item.component ? React.createElement(item.component) : null}
                   </li>
                 ))}
               </ol>

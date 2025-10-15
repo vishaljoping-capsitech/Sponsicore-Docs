@@ -42,6 +42,15 @@ import adminTravelTripHistoryAdd from './images/admin/travel/trip-history-add-dr
 import adminTravelTripHistoryEdit from '../src/images/admin/travel/trip-history-edit-drawer.png'
 import adminTravelPanel from './images/admin/travel/travel-panel.png'
 
+// Layout
+import adminLayoutDashboardSide from "./images/admin/Layout/dashboard-layout-side.png";
+import adminLayoutDashboardTop from "./images/admin/Layout/dashboard-layout-top.png";
+import adminLayoutQuickActionButton from "./images/admin/Layout/quick-action-button.png";
+import adminLayoutNotificationDrawer from "./images/admin/Layout/notification-drawer.png";
+import adminLayoutChangePasswordModal from "./images/admin/Layout/change-password-modal.png";
+import adminLayoutProfilePopover from "./images/admin/Layout/profile-popover.png";
+import adminLayoutLoginActivities from "./images/admin/Layout/login-activities.png";
+
 
 export const images = {
   logo,
@@ -87,4 +96,14 @@ export const images = {
   adminTravelTripHistoryAdd,
   adminTravelTripHistoryEdit,
   adminTravelPanel,
+
+  // Layout 
+  adminLayoutDashboardSide,
+  adminLayoutDashboardTop,
+  adminLayoutQuickActionButton,
+  adminLayoutNotificationDrawer,
+  adminLayoutChangePasswordModal,
+  adminLayoutProfilePopover,
+  adminLayoutLoginActivities
+
 };
