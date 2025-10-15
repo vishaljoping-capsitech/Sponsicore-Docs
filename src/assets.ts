@@ -79,6 +79,16 @@ import adminReportReminder from "./images/admin/reports/report-reminder.png";
 import adminReportsPayslipUploadType from "./images/admin/reports/payslip-upload-type.png";
 import adminReportsPayslipIDMatch from "./images/admin/reports/payslip-ID-match.png";
 
+// Email
+import adminEmailEmailTableWithFiltter from "./images/admin/email/email-table-with-filtter.png";
+import adminEmailEmailTableWithoutFiltter from "./images/admin/email/email-table-without-filtter.png";
+import adminEmailComposeEmail from "./images/admin/email/compose-email.png";
+
+// Calendar
+import adminCalendar from "./images/admin/calendar/calendar.png";
+import adminCalendarCreateReminder from "./images/admin/calendar/create-remindar-drawer.png";
+import adminCalendarEditReminder from "./images/admin/calendar/edit-reminder-drawer.png";
+
 export const images = {
   logo,
   darkMode,
@@ -160,4 +170,14 @@ export const images = {
   adminReportReminder,
   adminReportsPayslipUploadType,
   adminReportsPayslipIDMatch,
+
+  // Email
+  adminEmailEmailTableWithFiltter,
+  adminEmailEmailTableWithoutFiltter,
+  adminEmailComposeEmail,
+
+  // Calendar
+  adminCalendar,
+  adminCalendarCreateReminder,
+  adminCalendarEditReminder,
 };

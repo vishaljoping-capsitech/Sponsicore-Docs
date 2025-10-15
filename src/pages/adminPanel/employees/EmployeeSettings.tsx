@@ -20,8 +20,8 @@ const EmployeeSettings = () => {
                 custom shift. We've added an Add New button to create a new
                 Shift Master. Other details are explained under Settings →
                 Shifts.
+                <ImageCard src={images.adminEmployeeEditShiftModal} />
               </li>
-              <ImageCard src={images.adminEmployeeEditShiftModal} />
               <li id="card">
                 <Title text="Card"/>: Users can add, edit, resync, or remove card details. These
                 card details will be used for the biometric device. In Add/Edit
@@ -37,8 +37,8 @@ const EmployeeSettings = () => {
                     De-active.
                   </li>
                 </ul>
+                <ImageCard src={images.adminEmployeeEditCardModal} />
               </li>
-              <ImageCard src={images.adminEmployeeEditCardModal} />
               <li id="user-settings">
                 <Title text="User Settings"/>: User Settings are used to manage the employee's
                 user account. And more description is as follows:
@@ -54,8 +54,8 @@ const EmployeeSettings = () => {
                     The Update Role button is used to change the employee's
                     role. If the employee is currently in the onboarding
                     process, the Update Role button will not be shown.
+                    <ImageCard src={images.adminEmployeeUpdateRoleModal} />
                   </li>
-                  <ImageCard src={images.adminEmployeeUpdateRoleModal} />
                   <li>
                     Users can update the email address and change the status to
                     Active or Inactive.
