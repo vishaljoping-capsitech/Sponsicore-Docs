@@ -11,10 +11,11 @@ import { RootState } from "../redux/Store";
 import Overview from "./overview/Overview";
 import { AnchorItemProps, ISideBarKeys } from "../types/Types";
 const { Content, Sider } = Layout;
-import Employees from "./adminPanel/employees/Employees";
+import Employee from "./adminPanel/employees/Employee";
 import Travel from "./adminPanel/travel/Travel";
 import AdminLayout from "./adminPanel/layout/Layout";
 import Leave from "./adminPanel/leave/Leave";
+import AdminDashboard from "./adminPanel/dashboard/Dashboard";
 
 const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => AnchorItemProps[] }> = {
   [ISideBarKeys.Undefined]: Overview,
@@ -23,9 +24,9 @@ const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => Anc
   [ISideBarKeys.Employee]: Overview,
   [ISideBarKeys.AdminLayout]: AdminLayout,
   [ISideBarKeys.AdminSettings]: Overview,
-  [ISideBarKeys.AdminDashboard]: Overview,
+  [ISideBarKeys.AdminDashboard]: AdminDashboard,
   [ISideBarKeys.AdminCompany]: Overview,
-  [ISideBarKeys.AdminEmployee]: Employees,
+  [ISideBarKeys.AdminEmployee]: Employee,
   [ISideBarKeys.AdminAttendance]: Overview,
   [ISideBarKeys.AdminTask]: Overview,
   [ISideBarKeys.AdminTravel]: Travel,

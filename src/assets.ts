@@ -58,6 +58,21 @@ import adminLeaveFilters from './images/admin/leave/leave-filters.png';
 import adminLeaveAutomatedNotification from './images/admin/leave/automated-notification.png';
 import adminLeave from './images/admin/leave/leave.png';
 
+// Dashboard
+import adminDashboard from "./images/admin/dashboard/admin-dashboard.png";
+import adminDashboardCompanyDetails from "./images/admin/dashboard/company-details.png";
+import adminDashboardSponsoredEmpList from "./images/admin/dashboard/sponsored-employees-list.png";
+import adminDashboardAlerts from "./images/admin/dashboard/alerts.png";
+import adminDashboardRemindersSection from "./images/admin/dashboard/reminders.png";
+import adminDashboardTasksGraph from "./images/admin/dashboard/tasks-graph.png";
+import adminDashboardTasksEmpList from "./images/admin/dashboard/tasks-emplist.png";
+import adminDashboardLeaveStatus from "./images/admin/dashboard/leave-status.png";
+import adminDashboardRequestStatus from "./images/admin/dashboard/request-status.png";
+import adminDashboardJoinAndLeft from "./images/admin/dashboard/join-and-left.png";
+import adminDashboardAttendanceSider from "./images/admin/dashboard/attendance-sider.png";
+import adminDashboardBirthdays from "./images/admin/dashboard/birthdays.png";
+import adminDashboardHolidays from "./images/admin/dashboard/holidays.png";
+
 export const images = {
   logo,
   darkMode,
@@ -118,4 +133,19 @@ export const images = {
   adminLeaveFilters,
   adminLeaveAutomatedNotification,
   adminLeave,
+
+  //Dashboard
+  adminDashboard,
+  adminDashboardCompanyDetails,
+  adminDashboardSponsoredEmpList,
+  adminDashboardAlerts,
+  adminDashboardRemindersSection,
+  adminDashboardTasksGraph,
+  adminDashboardTasksEmpList,
+  adminDashboardLeaveStatus,
+  adminDashboardRequestStatus,
+  adminDashboardJoinAndLeft,
+  adminDashboardAttendanceSider,
+  adminDashboardBirthdays,
+  adminDashboardHolidays,
 };

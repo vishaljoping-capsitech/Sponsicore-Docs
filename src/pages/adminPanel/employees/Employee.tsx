@@ -40,7 +40,7 @@ const Employees = () => {
             <>
               <ol>
                 {employeesSections.map((item, index) => (
-                  <li key={index} id={item.id} className="">
+                  <li key={index} id={item.id}>
                     {item.title}
                     {item.component ? React.createElement(item.component) : null}
                   </li>
