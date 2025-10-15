@@ -17,6 +17,7 @@ import AdminLayout from "./adminPanel/layout/Layout";
 import Leave from "./adminPanel/leave/Leave";
 import AdminDashboard from "./adminPanel/dashboard/Dashboard";
 import Reports from "./adminPanel/reports/Reports";
+import Company from "./adminPanel/company/Company";
 
 const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => AnchorItemProps[] }> = {
   [ISideBarKeys.Undefined]: Overview,
@@ -26,7 +27,7 @@ const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => Anc
   [ISideBarKeys.AdminLayout]: AdminLayout,
   [ISideBarKeys.AdminSettings]: Overview,
   [ISideBarKeys.AdminDashboard]: AdminDashboard,
-  [ISideBarKeys.AdminCompany]: Overview,
+  [ISideBarKeys.AdminCompany]: Company,
   [ISideBarKeys.AdminEmployee]: Employee,
   [ISideBarKeys.AdminAttendance]: Overview,
   [ISideBarKeys.AdminTask]: Overview,

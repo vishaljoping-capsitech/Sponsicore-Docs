@@ -19,8 +19,8 @@ const Leave = () => {
             <>
               <ul>
                 <li>Quickly <Title text={'browse and filter recent and upcoming leave applications'}></Title> with intuitive leave-type categories and clear visual indicators for pending requests.</li>
-                <li>Admins can <Title text={'seamlessly approve or reject leave requests'}></Title>, triggering instant email notifications—actions are final to ensure smooth, reliable leave management.</li>
-                <li style={{listStyleType:"none"}}><ImageCard src={images.adminLeave} /></li>
+                <li>Admins can <Title text={'seamlessly approve or reject leave requests'}></Title>, triggering instant email notifications—actions are final to ensure smooth, reliable leave management.
+                  <ImageCard src={images.adminLeave} /></li>
               </ul>
             </>
           } />

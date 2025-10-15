@@ -20,8 +20,8 @@ const Travel = () => {
           <Paragraph text={
             <ul>
               <li>Easily <Title text={'create, edit, and manage travel requests'}></Title> with complete travel details, seamless expense tracking, instant trip overviews, and full access to employee travel history — all designed to keep your travel plans sharp and hassle-free.</li>
-              <li>Admins can <Title text={'approve, update, or delete requests'}></Title> with confidence—featuring auto-approval for admin trips, smart duplicate request prevention per traveler/date, and locked finalized trips to guarantee data integrity and flawless workflow.</li>
-              <li style={{listStyleType:"none"}}><ImageCard src={images.adminTravelPanel} /></li>
+              <li>Admins can <Title text={'approve, update, or delete requests'}></Title> with confidence—featuring auto-approval for admin trips, smart duplicate request prevention per traveler/date, and locked finalized trips to guarantee data integrity and flawless workflow.
+                <ImageCard src={images.adminTravelPanel} /></li>
             </ul>
           } />
           <SubHeading

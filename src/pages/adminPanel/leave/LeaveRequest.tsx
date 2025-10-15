@@ -4,8 +4,7 @@ import ImageCard from "../../../components/ImageCard"
 const LeaveRequest = () => {
     return (
         <>
-            <Paragraph text="Authorized users can easily review leave requests by clicking the status button to approve or reject them. Once an action is taken, it is final—no rollback is permitted—to maintain clear accountability and prevent changes to processed requests. After the decision, users can only view the leave details to ensure transparency and accurate record keeping."
-            />
+            <Paragraph text="Authorized users can easily review leave requests by clicking the status button to approve or reject them. Once an action is taken, it is final—no rollback is permitted—to maintain clear accountability and prevent changes to processed requests. After the decision, users can only view the leave details to ensure transparency and accurate record keeping."/>
             <ImageCard src={images.adminLeaveRequest} />
         </>
     )
