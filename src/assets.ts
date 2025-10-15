@@ -49,6 +49,12 @@ import adminLeaveFilters from './images/admin/leave/leave-filters.png';
 import adminLeaveAutomatedNotification from './images/admin/leave/automated-notification.png';
 import adminLeave from './images/admin/leave/leave.png';
 
+//Reports
+import adminReportsOverview from './images/admin/reports/reports-overview.png';
+import adminReportReminder from './images/admin/reports/report-reminder.png';
+import adminReportsPayslipUploadType from './images/admin/reports/payslip-upload-type.png';
+import adminReportsPayslipIDMatch from './images/admin/reports/payslip-ID-match.png';
+
 export const images = {
   logo,
   darkMode,
@@ -100,4 +106,10 @@ export const images = {
   adminLeaveFilters,
   adminLeaveAutomatedNotification,
   adminLeave,
+
+  //Reports
+  adminReportsOverview,
+  adminReportReminder,
+  adminReportsPayslipUploadType,
+  adminReportsPayslipIDMatch,
 };

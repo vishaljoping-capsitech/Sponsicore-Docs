@@ -14,6 +14,7 @@ const { Content, Sider } = Layout;
 import AdminEmployees from "./adminPanel/employees/Employees";
 import Travel from "./adminPanel/travel/Travel";
 import Leave from "./adminPanel/leave/Leave";
+import Reports from "./adminPanel/reports/Reports";
 
 const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => AnchorItemProps[] }> = {
   [ISideBarKeys.Undefined]: Overview,
@@ -32,7 +33,7 @@ const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => Anc
   [ISideBarKeys.AdminLeave]: Leave,
   [ISideBarKeys.AdminRequest]: Overview,
   [ISideBarKeys.AdminCalendar]: Overview,
-  [ISideBarKeys.AdminReports]: Overview,
+  [ISideBarKeys.AdminReports]: Reports,
   [ISideBarKeys.EmployeeLayout]: Overview,
   [ISideBarKeys.EmployeeDashboard]: Overview,
   [ISideBarKeys.EmployeeProfile]: Overview,
