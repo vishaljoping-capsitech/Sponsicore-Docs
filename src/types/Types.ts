@@ -1,15 +1,15 @@
 export interface Section {
-    component?: React.ComponentType;
-    id: string;
-    title: string;
-    children?: Section[];
+  component?: React.ComponentType;
+  id: string;
+  title: string;
+  children?: Section[];
 }
 
 export interface AnchorItemProps {
   key: string;
-  href: string,
-  title: string,
-  children?: AnchorItemProps[]
+  href: string;
+  title: string;
+  children?: AnchorItemProps[];
 }
 
 export enum ISideBarKeys {
@@ -39,11 +39,10 @@ export enum ISideBarKeys {
   EmployeeLeave,
   EmployeeRequest,
   EmployeeCalendar,
-  EmployeePolicies
+  EmployeePolicies,
 }
 
-
-export interface Theme  {
+export interface Theme {
   components: {
     Layout: {
       headerBg: string;
@@ -82,7 +81,7 @@ export interface Theme  {
     colorBgContainer: string;
     colorText: string;
   };
-};
+}
 
 export interface ThemeState {
   mode: "light" | "dark";

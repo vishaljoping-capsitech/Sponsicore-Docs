@@ -8,9 +8,9 @@ interface ImageCardProps {
   className?: string;
 }
  
-const ImageCard: React.FC<ImageCardProps> = ({src,alt = "image", width ,className = "",}) => {
+const ImageCard: React.FC<ImageCardProps> = ({src, alt = "image", width , className = ""}) => {
   return (
-    <Row justify="center" align="middle" className="my-8">
+    <Row justify="center" align="middle" className="my-4">
       <Col span={24} className={className}>
         <Image width={width} src={src} alt={alt} />
       </Col>

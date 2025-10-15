@@ -3,9 +3,61 @@ import logoDark from "./images/logo-dark.svg";
 import darkMode from "./images/dark-mode.svg";
 import lightMode from "./images/light-mode.svg";
 
+/* --------------------------------- Admin Panel ------------------------------------------ */
+
+// Employee
+import adminEmployeeAddEmployee from "./images/admin/employee/create-employee.png";
+import adminEmployeeImportbulkEmployee from "./images/admin/employee/import-bulk-employee-model.png";
+import adminEmployeeAddEmployeeDrawer from "./images/admin/employee/add-employee-drawer.png";
+import adminEmployeeProfile from "./images/admin/employee/employee-profile.png";
+import adminEmployeeActivityStatus from "./images/admin/employee/employee-activity-status.png";
+import adminEmployeeOnboardingStatus from "./images/admin/employee/employee-onboarding-status.png";
+import adminEmployeeMandatoryDocument from "./images/admin/employee/employee-mandatory-documents.png";
+import adminEmployeeRegularDocument from "./images/admin/employee/employee-regular-documents.png";
+import adminEmployeeAddDocumentModel from "./images/admin/employee/employee-document-add.png";
+import adminEmployeeAddPayslipModel from "./images/admin/employee/employee-payslip-document-add.png";
+import adminEmployeeTask from "./images/admin/employee/employee-task.png";
+import adminEmployeeTravel from "./images/admin/employee/employee-travel.png";
+import adminEmployeeAttendance from "./images/admin/employee/employee-attendance.png";
+import adminEmployeeNotes from "./images/admin/employee/employee-notes.png";
+import adminEmployeeRequest from "./images/admin/employee/employee-request.png";
+import adminEmployeeSponsorshipDetails from "./images/admin/employee/employee-sponsorship-details.png";
+import adminEmployeeSettings from "./images/admin/employee/employee-settings.png";
+import adminEmployeeUpdateRoleModal from "./images/admin/employee/employee-update-role-modal.png";
+import adminEmployeeEditShiftModal from "./images/admin/employee/employee-edit-shift-drawer.png";
+import adminEmployeeEditCardModal from "./images/admin/employee/employee-edit-card-modal.png";
+import adminEmployeeRemoteAttendance from "./images/admin/employee/employee-remote-attendance.png";
+
+
 export const images = {
   logo,
   darkMode,
   lightMode,
-  logoDark
+  logoDark,
+
+  /* -- Admin Panel -- */
+
+  // Employee
+  adminEmployeeAddEmployee,
+  adminEmployeeImportbulkEmployee,
+  adminEmployeeAddEmployeeDrawer,
+  adminEmployeeProfile,
+  adminEmployeeActivityStatus,
+  adminEmployeeOnboardingStatus,
+  adminEmployeeMandatoryDocument,
+  adminEmployeeRegularDocument,
+  adminEmployeeAddDocumentModel,
+  adminEmployeeAddPayslipModel,
+  adminEmployeeTask,
+  adminEmployeeTravel,
+  adminEmployeeAttendance,
+  adminEmployeeNotes,
+  adminEmployeeRequest,
+  adminEmployeeSponsorshipDetails,
+  adminEmployeeSettings,
+  adminEmployeeUpdateRoleModal,
+  adminEmployeeEditShiftModal,
+  adminEmployeeEditCardModal,
+  adminEmployeeRemoteAttendance,
+  
 };

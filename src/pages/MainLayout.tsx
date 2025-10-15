@@ -11,6 +11,7 @@ import { RootState } from "../redux/Store";
 import Overview from "./overview/Overview";
 import { AnchorItemProps, ISideBarKeys } from "../types/Types";
 const { Content, Sider } = Layout;
+import AdminEmployees from "./adminPanel/employees/Employees";
 
 const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => AnchorItemProps[] }> = {
   [ISideBarKeys.Undefined]: Overview,
@@ -21,7 +22,7 @@ const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => Anc
   [ISideBarKeys.AdminSettings]: Overview,
   [ISideBarKeys.AdminDashboard]: Overview,
   [ISideBarKeys.AdminCompany]: Overview,
-  [ISideBarKeys.AdminEmployee]: Overview,
+  [ISideBarKeys.AdminEmployee]: AdminEmployees,
   [ISideBarKeys.AdminAttendance]: Overview,
   [ISideBarKeys.AdminTask]: Overview,
   [ISideBarKeys.AdminTravel]: Overview,
