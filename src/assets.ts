@@ -103,6 +103,13 @@ import adminCompanyOfficers from './images/admin/company/company-officers.png'
 import adminCompanyFeatures from './images/admin/company/company-features.png'
 import adminCompanySubscription from './images/admin/company/company-subscription.png'
 
+//Tasks
+import adminTasks from "./images/admin/tasks/tasks.png";
+import adminTasksFilter from "./images/admin/tasks/task-filtter.png";
+import adminTasksNotifyModal from "./images/admin/tasks/task-notify-modal.png";
+import adminTasksEmp from "./images/admin/tasks/emp-task-details.png";
+import adminTasksDetails from "./images/admin/tasks/task-details.png";
+
 export const images = {
   logo,
   darkMode,
@@ -208,4 +215,11 @@ export const images = {
   adminCompanyOfficers,
   adminCompanyFeatures,
   adminCompanySubscription,
+
+  //Tasks
+  adminTasks,
+  adminTasksFilter,
+  adminTasksNotifyModal,
+  adminTasksEmp,
+  adminTasksDetails
 };
