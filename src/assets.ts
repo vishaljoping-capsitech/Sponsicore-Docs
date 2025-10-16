@@ -175,6 +175,32 @@ import empCalendarCreateReminder from "./images/emp/calendar/create-reminder.png
 import empCalendarReminderDetails from "./images/emp/calendar/reminder-details.png";
 import empCalendarReminderNoitifications from "./images/emp/calendar/reminder-notification.png";
 
+//Leave
+import empLeaveAddLeave from './images/emp/leave/add-leave.png'
+import empLeaveEditLeave from './images/emp/leave/edit-leave.png'
+import empLeaveDeleteLeave from './images/emp/leave/delete-leave.png'
+import empLeaveCancelLeave from './images/emp/leave/cancel-leave.png'
+import empLeavePanel from './images/emp/leave/leave-panel.png'
+import empLeaveTypeFilters from './images/emp/leave/leave-type-filters.png'
+import empLeaveStatusFilters from './images/emp/leave/leave-status-filters.png'
+import empLeaveOverview from './images/emp/leave/leave-overview.png'
+import empLeaveNotification from './images/emp/leave/leave-notification.png'
+
+//Policies
+import empPolicies from './images/emp/policies/policies.png'
+
+//Attendance
+import empAttendancePanel from './images/emp/attendance/attendance-panel.png'
+import empAttendanceDetails from './images/emp/attendance/attendance-details.png'
+import empAttendanceTransaction from './images/emp/attendance/attendance-transaction.png'
+import empAttendanceMoreDetails from './images/emp/attendance/attendance-more-details.png'
+
+//Request
+import empRequestPanel from './images/emp/request/request-panel.png'
+import empRequestOverview from './images/emp/request/request-overview.png'
+import empRequestUpdatePendingRequest from './images/emp/request/update-pending-request.png'
+import empRequestApprovedNotification from './images/emp/request/approved-request-notification.png'
+import empRequestFilter from './images/emp/request/request-filter.png'
 
 export const images = {
   logo,
@@ -351,5 +377,31 @@ export const images = {
   empCalendarCreateReminder,
   empCalendarReminderDetails,
   empCalendarReminderNoitifications,
+  
+  //Leave
+  empLeaveAddLeave,
+  empLeaveEditLeave,
+  empLeaveDeleteLeave,
+  empLeaveCancelLeave,
+  empLeavePanel,
+  empLeaveTypeFilters,
+  empLeaveStatusFilters,
+  empLeaveOverview,
+  empLeaveNotification,
 
+  //Policies
+  empPolicies,
+
+  //Attendance
+  empAttendancePanel,
+  empAttendanceDetails,
+  empAttendanceTransaction,
+  empAttendanceMoreDetails,
+
+  //Request
+  empRequestPanel,
+  empRequestOverview,
+  empRequestUpdatePendingRequest,
+  empRequestApprovedNotification,
+  empRequestFilter,
 };
