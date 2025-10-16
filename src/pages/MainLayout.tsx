@@ -26,6 +26,8 @@ import AdminAttendance from "./adminPanel/attendance/AdminAttendance";
 import EmployeeDashboard from "./empPanel/Dashboard/Dashboard";
 import AdminRequest from "./adminPanel/request/AdminRequest";
 import EmployeeTravel from "./empPanel/travel/EmployeeTravel";
+import EmployeeTasks from "./empPanel/tasks/Tasks";
+import EmployeeCalendar from "./empPanel/calendar/Calendar"
 
 const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => AnchorItemProps[] }> = {
   [ISideBarKeys.Undefined]: Overview,
@@ -49,11 +51,11 @@ const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => Anc
   [ISideBarKeys.EmployeeDashboard]: EmployeeDashboard,
   [ISideBarKeys.EmployeeProfile]: Overview,
   [ISideBarKeys.EmployeeAttendance]: Overview,
-  [ISideBarKeys.EmployeeTask]: Overview,
+  [ISideBarKeys.EmployeeTask]: EmployeeTasks,
   [ISideBarKeys.EmployeeTravel]: EmployeeTravel,
   [ISideBarKeys.EmployeeLeave]: Overview,
   [ISideBarKeys.EmployeeRequest]: Overview,
-  [ISideBarKeys.EmployeeCalendar]: Overview,
+  [ISideBarKeys.EmployeeCalendar]: EmployeeCalendar,
   [ISideBarKeys.EmployeePolicies]: Overview,
 }
 

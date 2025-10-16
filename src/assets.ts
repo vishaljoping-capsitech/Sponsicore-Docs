@@ -163,6 +163,19 @@ import empTravelMultipleTravellersSameDate from "./images/emp/travel/multiple-tr
 import empTravelLockedTravel from "./images/emp/travel/travel-panel.png";
 import empTravelNotification from "./images/emp/travel/travel-notification.png";
 
+// Tasks
+import empTasks from "./images/emp/tasks/all-tasks.png";
+import empTasksAdd from "./images/emp/tasks/add-task.png";
+import empTasksEdit from "./images/emp/tasks/edit-task.png";
+import empTasksDetails from "./images/emp/tasks/task-details.png";
+
+// Calendar
+import empCalendar from "./images/emp/calendar/calendar.png";
+import empCalendarCreateReminder from "./images/emp/calendar/create-reminder.png";
+import empCalendarReminderDetails from "./images/emp/calendar/reminder-details.png";
+import empCalendarReminderNoitifications from "./images/emp/calendar/reminder-notification.png";
+
+
 export const images = {
   logo,
   darkMode,
@@ -326,4 +339,17 @@ export const images = {
   empTravelMultipleTravellersSameDate,
   empTravelLockedTravel,
   empTravelNotification,
+
+  // Tasks
+  empTasks,
+  empTasksAdd,
+  empTasksEdit,
+  empTasksDetails,
+
+  // Calendar
+  empCalendar,
+  empCalendarCreateReminder,
+  empCalendarReminderDetails,
+  empCalendarReminderNoitifications,
+
 };
