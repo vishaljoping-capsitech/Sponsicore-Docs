@@ -135,6 +135,7 @@ import empLayoutTopbar from "./images/emp/layout/layout-dashboard-topbar.png";
 import empLayoutNotification from "./images/emp/layout/layout-notification.png";
 import empLayoutProfile from "./images/emp/layout/layout-profile.png";
 
+//Travel
 import empTravelPanel from './images/emp/travel/travel-panel.png'
 import empTravelAddTravel from './images/emp/travel/add-travel.png'
 import empTravelEditTravel from './images/emp/travel/edit-travel.png'
@@ -145,6 +146,20 @@ import empTravelRequestUpdate from './images/emp/travel/travel-request-update.pn
 import empTravelMultipleTravellersSameDate from './images/emp/travel/multiple-travellers.png'
 import empTravelLockedTravel from './images/emp/travel/travel-panel.png'
 import empTravelNotification from './images/emp/travel/travel-notification.png'
+
+//Leave
+import empLeaveAddLeave from './images/emp/leave/add-leave.png'
+import empLeaveEditLeave from './images/emp/leave/edit-leave.png'
+import empLeaveDeleteLeave from './images/emp/leave/delete-leave.png'
+import empLeaveCancelLeave from './images/emp/leave/cancel-leave.png'
+import empLeavePanel from './images/emp/leave/leave-panel.png'
+import empLeaveTypeFilters from './images/emp/leave/leave-type-filters.png'
+import empLeaveStatusFilters from './images/emp/leave/leave-status-filters.png'
+import empLeaveOverview from './images/emp/leave/leave-overview.png'
+import empLeaveNotification from './images/emp/leave/leave-notification.png'
+
+//Policies
+import empPolicies from './images/emp/policies/policies.png'
 
 export const images = {
   logo,
@@ -296,4 +311,18 @@ export const images = {
   empTravelLockedTravel,
   empTravelNotification,
   
+  //Leave
+  empLeaveAddLeave,
+  empLeaveEditLeave,
+  empLeaveDeleteLeave,
+  empLeaveCancelLeave,
+  empLeavePanel,
+  empLeaveTypeFilters,
+  empLeaveStatusFilters,
+  empLeaveOverview,
+  empLeaveNotification,
+
+  //Policies
+  empPolicies
+
 };
