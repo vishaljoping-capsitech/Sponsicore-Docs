@@ -110,6 +110,17 @@ import adminTasksNotifyModal from "./images/admin/tasks/task-notify-modal.png";
 import adminTasksEmp from "./images/admin/tasks/emp-task-details.png";
 import adminTasksDetails from "./images/admin/tasks/task-details.png";
 
+//Attendance
+import adminAttendanceOverview from "./images/admin/attendance/attendance-overview.png";
+import adminAttendanceEmployeeID from "./images/admin/attendance/attendance-employeeID.png";
+import adminAttendanceFilter from "./images/admin/attendance/attendance-filter.png";
+import adminAttendanceStatus from "./images/admin/attendance/attendance-status.png";
+import adminAttendanceEditStatus from "./images/admin/attendance/attendance-edit-status.png";
+import adminAttendanceTransactions from "./images/admin/attendance/attendance-transaction.png";
+import adminAttendanceGoToProfile from "./images/admin/attendance/attendance-goToProfile.png";
+import adminAttendanceStatusMultipleDays from "./images/admin/attendance/attendance-status-multiple-days.png";
+
+
 export const images = {
   logo,
   darkMode,
@@ -201,7 +212,7 @@ export const images = {
   adminCalendar,
   adminCalendarCreateReminder,
   adminCalendarEditReminder,
-  
+
   // Company
   adminCompanyProfile,
   adminCompanyDocumentOverview,
@@ -221,5 +232,15 @@ export const images = {
   adminTasksFilter,
   adminTasksNotifyModal,
   adminTasksEmp,
-  adminTasksDetails
+  adminTasksDetails,
+
+  //Attendance
+  adminAttendanceOverview,
+  adminAttendanceEmployeeID,
+  adminAttendanceFilter,
+  adminAttendanceStatus,
+  adminAttendanceEditStatus,
+  adminAttendanceTransactions,
+  adminAttendanceGoToProfile,
+  adminAttendanceStatusMultipleDays,
 };

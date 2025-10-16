@@ -21,6 +21,7 @@ import Email from "./adminPanel/email/Email";
 import AdminCalendar from "./adminPanel/calendar/Calendar";
 import Company from "./adminPanel/company/Company";
 import AdminTasks from "./adminPanel/Tasks/Tasks";
+import AdminAttendance from "./adminPanel/attendance/AdminAttendance";
 
 const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => AnchorItemProps[] }> = {
   [ISideBarKeys.Undefined]: Overview,
@@ -32,7 +33,7 @@ const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => Anc
   [ISideBarKeys.AdminDashboard]: AdminDashboard,
   [ISideBarKeys.AdminCompany]: Company,
   [ISideBarKeys.AdminEmployee]: Employee,
-  [ISideBarKeys.AdminAttendance]: Overview,
+  [ISideBarKeys.AdminAttendance]: AdminAttendance,
   [ISideBarKeys.AdminTasks]: AdminTasks,
   [ISideBarKeys.AdminTravel]: Travel,
   [ISideBarKeys.AdminEmail]: Email,
