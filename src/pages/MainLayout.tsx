@@ -71,6 +71,7 @@ const MainLayout: React.FC = () => {
       <Row justify={"center"}>
         <Col xs={24}>
           <Layout>
+          
             <Header className="px-4" style={{ borderBottom: mode === "dark" ? "1px solid #4C3B63" : "1px solid #EBEAF1", }}>
               <TopHeader />
             </Header>
