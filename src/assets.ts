@@ -88,7 +88,8 @@ import adminEmailComposeEmail from "./images/admin/email/compose-email.png";
 import adminCalendar from "./images/admin/calendar/calendar.png";
 import adminCalendarCreateReminder from "./images/admin/calendar/create-remindar-drawer.png";
 import adminCalendarEditReminder from "./images/admin/calendar/edit-reminder-drawer.png";
-//Company
+
+// Company
 import adminCompanyProfile from './images/admin/company/company-profile.png'
 import adminCompanyDocumentOverview from './images/admin/company/document-overview.png'
 import adminCompanyMandatoryDocs from './images/admin/company/mandatory-docs.png'
@@ -101,6 +102,13 @@ import adminCompanyBranchStatus from './images/admin/company/branch-status.png'
 import adminCompanyOfficers from './images/admin/company/company-officers.png'
 import adminCompanyFeatures from './images/admin/company/company-features.png'
 import adminCompanySubscription from './images/admin/company/company-subscription.png'
+
+// Tasks
+import adminTasks from "./images/admin/tasks/tasks.png";
+import adminTasksEmp from "./images/admin/tasks/emp-task-details.png";
+import adminTasksFilter from "./images/admin/tasks/task-filtter.png";
+import adminTasksDetails from "./images/admin/tasks/emp-task-details.png";
+import adminTasksNotifyModal from "./images/admin/tasks/task-notify-modal.png";
 
 export const images = {
   logo,
@@ -156,14 +164,14 @@ export const images = {
   adminLayoutProfilePopover,
   adminLayoutLoginActivities,
 
-  //Leave
+  // Leave
   adminLeavePanel,
   adminLeaveRequest,
   adminLeaveFilters,
   adminLeaveAutomatedNotification,
   adminLeave,
 
-  //Dashboard
+  // Dashboard
   adminDashboard,
   adminDashboardCompanyDetails,
   adminDashboardSponsoredEmpList,
@@ -178,7 +186,7 @@ export const images = {
   adminDashboardBirthdays,
   adminDashboardHolidays,
 
-  //Reports
+  // Reports
   adminReportsOverview,
   adminReportReminder,
   adminReportsPayslipUploadType,
@@ -193,7 +201,8 @@ export const images = {
   adminCalendar,
   adminCalendarCreateReminder,
   adminCalendarEditReminder,
-  //Company
+  
+  // Company
   adminCompanyProfile,
   adminCompanyDocumentOverview,
   adminCompanyMandatoryDocs,
@@ -205,5 +214,13 @@ export const images = {
   adminCompanyBranchStatus,
   adminCompanyOfficers,
   adminCompanyFeatures,
-  adminCompanySubscription
+  adminCompanySubscription,
+
+  // Tasks 
+  adminTasks,
+  adminTasksEmp,
+  adminTasksFilter,
+  adminTasksDetails,
+  adminTasksNotifyModal,
+  
 };

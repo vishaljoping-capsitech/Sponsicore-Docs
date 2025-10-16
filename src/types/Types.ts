@@ -23,7 +23,7 @@ export enum ISideBarKeys {
   AdminCompany,
   AdminEmployee,
   AdminAttendance,
-  AdminTask,
+  AdminTasks,
   AdminTravel,
   AdminEmail,
   AdminLeave,

@@ -49,7 +49,7 @@ export const SidebarItems = ({ selectedKey }: SidebarItemsProps) => {
         { key: ISideBarKeys.AdminCompany, label: 'Company', icon: <CompanyIcon {...getIconColor(ISideBarKeys.AdminCompany)} /> },
         { key: ISideBarKeys.AdminEmployee, label: 'Employee', icon: <EmployeeIcon {...getIconColor(ISideBarKeys.AdminEmployee)} /> },
         { key: ISideBarKeys.AdminAttendance, label: 'Attendance', icon: <AttendanceIcon {...getIconColor(ISideBarKeys.AdminAttendance)} /> },
-        { key: ISideBarKeys.AdminTask, label: 'Task', icon: <TaskIcon {...getIconColor(ISideBarKeys.AdminTask)} /> },
+        { key: ISideBarKeys.AdminTasks, label: 'Tasks', icon: <TaskIcon {...getIconColor(ISideBarKeys.AdminTasks)} /> },
         { key: ISideBarKeys.AdminTravel, label: 'Travel', icon: <TravelIcon {...getIconColor(ISideBarKeys.AdminTravel)} /> },
         { key: ISideBarKeys.AdminEmail, label: 'Email', icon: <EmailIcon {...getIconColor(ISideBarKeys.AdminEmail)} /> },
         { key: ISideBarKeys.AdminLeave, label: 'Leave', icon: <LeaveIcon {...getIconColor(ISideBarKeys.AdminLeave)} /> },
