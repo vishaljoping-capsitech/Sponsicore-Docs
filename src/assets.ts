@@ -120,6 +120,13 @@ import adminAttendanceTransactions from "./images/admin/attendance/attendance-tr
 import adminAttendanceGoToProfile from "./images/admin/attendance/attendance-goToProfile.png";
 import adminAttendanceStatusMultipleDays from "./images/admin/attendance/attendance-status-multiple-days.png";
 
+//Request
+import adminRequestOverview from "./images/admin/request/request-overview.png";
+import adminRequestFilter from "./images/admin/request/request-filter.png";
+import adminRequestAction from "./images/admin/request/request-action.png";
+import adminRequestStatus from "./images/admin/request/request-status.png";
+
+
 
 /* --------------------------------- Employee Panel ------------------------------------------ */
 
@@ -143,6 +150,18 @@ import empDashboardLeavesAndRequest from "./images/emp/dashboard/leaves-and-requ
 import empDashboardMonthlyHours from "./images/emp/dashboard/monthly-hours.png";
 import empDashboardWeekelyHours from "./images/emp/dashboard/weekely-hours.png";
 import empDashboardEvents from "./images/emp/dashboard/events.png";
+
+// Travel
+import empTravelPanel from "./images/emp/travel/travel-panel.png";
+import empTravelAddTravel from "./images/emp/travel/add-travel.png";
+import empTravelEditTravel from "./images/emp/travel/edit-travel.png";
+import empTravelRemoveTravel from "./images/emp/travel/remove-travel.png";
+import empTravelTripOverview from "./images/emp/travel/trip-overview.png";
+import empTravelEditPendingData from "./images/emp/travel/edit-pending-data.png";
+import empTravelRequestUpdate from "./images/emp/travel/travel-request-update.png";
+import empTravelMultipleTravellersSameDate from "./images/emp/travel/multiple-travellers.png";
+import empTravelLockedTravel from "./images/emp/travel/travel-panel.png";
+import empTravelNotification from "./images/emp/travel/travel-notification.png";
 
 export const images = {
   logo,
@@ -267,6 +286,12 @@ export const images = {
   adminAttendanceGoToProfile,
   adminAttendanceStatusMultipleDays,
 
+  //Request
+  adminRequestOverview,
+  adminRequestFilter,
+  adminRequestAction,
+  adminRequestStatus,
+
   /* -- Employee Panel -- */
 
   // Layout
@@ -288,5 +313,17 @@ export const images = {
   empDashboardLeavesAndRequest,
   empDashboardMonthlyHours,
   empDashboardWeekelyHours,
-  empDashboardEvents
+  empDashboardEvents,
+
+  // Travel
+  empTravelPanel,
+  empTravelAddTravel,
+  empTravelEditTravel,
+  empTravelRemoveTravel,
+  empTravelTripOverview,
+  empTravelEditPendingData,
+  empTravelRequestUpdate,
+  empTravelMultipleTravellersSameDate,
+  empTravelLockedTravel,
+  empTravelNotification,
 };
