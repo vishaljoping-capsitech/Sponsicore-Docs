@@ -27,11 +27,7 @@ import EmployeeDashboard from "./empPanel/Dashboard/Dashboard";
 import AdminRequest from "./adminPanel/request/AdminRequest";
 import EmployeeTravel from "./empPanel/travel/EmployeeTravel";
 import EmployeeTasks from "./empPanel/tasks/Tasks";
-import EmployeeCalendar from "./empPanel/calendar/Calendar"
-import EmployeeLeave from "./empPanel/leave/EmployeeLeave";
-import EmployeePolicies from "./empPanel/policies/EmployeePolicies";
-import EmployeeAttendance from "./empPanel/attendance/EmployeeAttendance";
-import EmployeeRequest from "./empPanel/request/EmployeeRequest";
+import EmployeeCalendar from "./empPanel/calendar/Calendar";
 
 const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => AnchorItemProps[] }> = {
   [ISideBarKeys.Undefined]: Overview,
