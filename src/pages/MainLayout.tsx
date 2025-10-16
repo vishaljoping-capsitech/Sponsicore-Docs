@@ -23,6 +23,7 @@ import Company from "./adminPanel/company/Company";
 import AdminTasks from "./adminPanel/Tasks/Tasks";
 import EmployeeLayout from "./empPanel/layout/Layout";
 import AdminAttendance from "./adminPanel/attendance/AdminAttendance";
+import EmployeeDashboard from "./empPanel/Dashboard/Dashboard";
 
 const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => AnchorItemProps[] }> = {
   [ISideBarKeys.Undefined]: Overview,
@@ -43,7 +44,7 @@ const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => Anc
   [ISideBarKeys.AdminCalendar]: AdminCalendar,
   [ISideBarKeys.AdminReports]: Reports,
   [ISideBarKeys.EmployeeLayout]: EmployeeLayout,
-  [ISideBarKeys.EmployeeDashboard]: Overview,
+  [ISideBarKeys.EmployeeDashboard]: EmployeeDashboard,
   [ISideBarKeys.EmployeeProfile]: Overview,
   [ISideBarKeys.EmployeeAttendance]: Overview,
   [ISideBarKeys.EmployeeTask]: Overview,

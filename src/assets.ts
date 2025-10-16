@@ -110,7 +110,7 @@ import adminTasksNotifyModal from "./images/admin/tasks/task-notify-modal.png";
 import adminTasksEmp from "./images/admin/tasks/emp-task-details.png";
 import adminTasksDetails from "./images/admin/tasks/task-details.png";
 
-//Attendance
+// Attendance
 import adminAttendanceOverview from "./images/admin/attendance/attendance-overview.png";
 import adminAttendanceEmployeeID from "./images/admin/attendance/attendance-employeeID.png";
 import adminAttendanceFilter from "./images/admin/attendance/attendance-filter.png";
@@ -123,12 +123,26 @@ import adminAttendanceStatusMultipleDays from "./images/admin/attendance/attenda
 
 /* --------------------------------- Employee Panel ------------------------------------------ */
 
-// Employee
+// Layout
 import empLayoutDashboard from "./images/emp/layout/layout-dashboard.png";
 import empLayoutSidebar from "./images/emp/layout/layout-dashboard-sidebar.png";
 import empLayoutTopbar from "./images/emp/layout/layout-dashboard-topbar.png";
 import empLayoutNotification from "./images/emp/layout/layout-notification.png";
 import empLayoutProfile from "./images/emp/layout/layout-profile.png";
+
+// Dashboard
+import empDashboard from "./images/emp/dashboard/employee-dashboard.png";
+import empDashboardAttendance from "./images/emp/dashboard/employee-dashboard-attendance.png";
+import empDashboardShiftTimings from "./images/emp/dashboard/employee-dashboard-shift-timings.png";
+import empDashboardCheckInTime from "./images/emp/dashboard/employee-dashboard-check-in-time-accuracy.png";
+import empDashboardTasks from "./images/emp/dashboard/employee-dashboard-task.png";
+import empDashboardTodaysWorking from "./images/emp/dashboard/employee-dashboard-todays-working.png";
+import empDashboardLeavesAndRequests from "./images/emp/dashboard/leaves-and-requests.png";
+import empDashboardHourStatistics from "./images/emp/dashboard/employee-hour-statistics.png";
+import empDashboardLeavesAndRequest from "./images/emp/dashboard/leaves-and-requests.png";
+import empDashboardMonthlyHours from "./images/emp/dashboard/monthly-hours.png";
+import empDashboardWeekelyHours from "./images/emp/dashboard/weekely-hours.png";
+import empDashboardEvents from "./images/emp/dashboard/events.png";
 
 export const images = {
   logo,
@@ -236,14 +250,14 @@ export const images = {
   adminCompanyFeatures,
   adminCompanySubscription,
 
-  //Tasks
+  // Tasks
   adminTasks,
   adminTasksFilter,
   adminTasksNotifyModal,
   adminTasksEmp,
   adminTasksDetails,
 
-  //Attendance
+  // Attendance
   adminAttendanceOverview,
   adminAttendanceEmployeeID,
   adminAttendanceFilter,
@@ -262,4 +276,17 @@ export const images = {
   empLayoutNotification,
   empLayoutProfile,
 
+  // Dashboard
+  empDashboard,
+  empDashboardAttendance,
+  empDashboardShiftTimings,
+  empDashboardTasks,
+  empDashboardTodaysWorking,
+  empDashboardCheckInTime,
+  empDashboardLeavesAndRequests,
+  empDashboardHourStatistics,
+  empDashboardLeavesAndRequest,
+  empDashboardMonthlyHours,
+  empDashboardWeekelyHours,
+  empDashboardEvents
 };
