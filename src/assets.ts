@@ -135,6 +135,17 @@ import empLayoutTopbar from "./images/emp/layout/layout-dashboard-topbar.png";
 import empLayoutNotification from "./images/emp/layout/layout-notification.png";
 import empLayoutProfile from "./images/emp/layout/layout-profile.png";
 
+import empTravelPanel from './images/emp/travel/travel-panel.png'
+import empTravelAddTravel from './images/emp/travel/add-travel.png'
+import empTravelEditTravel from './images/emp/travel/edit-travel.png'
+import empTravelRemoveTravel from './images/emp/travel/remove-travel.png'
+import empTravelTripOverview from './images/emp/travel/trip-overview.png'
+import empTravelEditPendingData from './images/emp/travel/edit-pending-data.png'
+import empTravelRequestUpdate from './images/emp/travel/travel-request-update.png';
+import empTravelMultipleTravellersSameDate from './images/emp/travel/multiple-travellers.png'
+import empTravelLockedTravel from './images/emp/travel/travel-panel.png'
+import empTravelNotification from './images/emp/travel/travel-notification.png'
+
 export const images = {
   logo,
   darkMode,
@@ -273,4 +284,16 @@ export const images = {
   empLayoutNotification,
   empLayoutProfile,
 
+  // Travel
+  empTravelPanel,
+  empTravelAddTravel,
+  empTravelEditTravel,
+  empTravelRemoveTravel,
+  empTravelTripOverview,
+  empTravelEditPendingData,
+  empTravelRequestUpdate,
+  empTravelMultipleTravellersSameDate,
+  empTravelLockedTravel,
+  empTravelNotification,
+  
 };
