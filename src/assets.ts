@@ -177,6 +177,19 @@ import empLeaveNotification from './images/emp/leave/leave-notification.png'
 //Policies
 import empPolicies from './images/emp/policies/policies.png'
 
+//Attendance
+import empAttendancePanel from './images/emp/attendance/attendance-panel.png'
+import empAttendanceDetails from './images/emp/attendance/attendance-details.png'
+import empAttendanceTransaction from './images/emp/attendance/attendance-transaction.png'
+import empAttendanceMoreDetails from './images/emp/attendance/attendance-more-details.png'
+
+//Request
+import empRequestPanel from './images/emp/request/request-panel.png'
+import empRequestOverview from './images/emp/request/request-overview.png'
+import empRequestUpdatePendingRequest from './images/emp/request/update-pending-request.png'
+import empRequestApprovedNotification from './images/emp/request/approved-request-notification.png'
+import empRequestFilter from './images/emp/request/request-filter.png'
+
 export const images = {
   logo,
   darkMode,
@@ -353,5 +366,18 @@ export const images = {
   empLeaveNotification,
 
   //Policies
-  empPolicies
+  empPolicies,
+
+  //Attendance
+  empAttendancePanel,
+  empAttendanceDetails,
+  empAttendanceTransaction,
+  empAttendanceMoreDetails,
+
+  //Request
+  empRequestPanel,
+  empRequestOverview,
+  empRequestUpdatePendingRequest,
+  empRequestApprovedNotification,
+  empRequestFilter,
 };
