@@ -28,7 +28,7 @@ import adminEmployeeEditShiftModal from "./images/admin/employee/employee-edit-s
 import adminEmployeeEditCardModal from "./images/admin/employee/employee-edit-card-modal.png";
 import adminEmployeeRemoteAttendance from "./images/admin/employee/employee-remote-attendance.png";
 
-//Travel
+// Travel
 import adminTravelAddTravel from "./images/admin/travel/add-travel-drawer.png";
 import adminTravelEditTravel from "./images/admin/travel/edit-travel-drawer.png";
 import adminTravelDeleteTravel from "./images/admin/travel/delete-travel-drawer.png";
@@ -51,7 +51,7 @@ import adminLayoutChangePasswordModal from "./images/admin/Layout/change-passwor
 import adminLayoutProfilePopover from "./images/admin/Layout/profile-popover.png";
 import adminLayoutLoginActivities from "./images/admin/Layout/login-activities.png";
 
-//Leave
+// Leave
 import adminLeavePanel from "./images/admin/leave/leave-panel.png";
 import adminLeaveRequest from "./images/admin/leave/leave-request.png";
 import adminLeaveFilters from "./images/admin/leave/leave-filters.png";
@@ -73,7 +73,7 @@ import adminDashboardAttendanceSider from "./images/admin/dashboard/attendance-s
 import adminDashboardBirthdays from "./images/admin/dashboard/birthdays.png";
 import adminDashboardHolidays from "./images/admin/dashboard/holidays.png";
 
-//Reports
+// Reports
 import adminReportsOverview from "./images/admin/reports/reports-overview.png";
 import adminReportReminder from "./images/admin/reports/report-reminder.png";
 import adminReportsPayslipUploadType from "./images/admin/reports/payslip-upload-type.png";
@@ -90,25 +90,36 @@ import adminCalendarCreateReminder from "./images/admin/calendar/create-remindar
 import adminCalendarEditReminder from "./images/admin/calendar/edit-reminder-drawer.png";
 
 // Company
-import adminCompanyProfile from './images/admin/company/company-profile.png'
-import adminCompanyDocumentOverview from './images/admin/company/document-overview.png'
-import adminCompanyMandatoryDocs from './images/admin/company/mandatory-docs.png'
-import adminCompanyFileSizeCondition from './images/admin/company/file-size-condition.png'
-import adminCompanyBranchOverview from '../src/images/admin/company/branch-overview.png'
-import adminCompanyAddBranch from './images/admin/company/add-branch.png'
-import adminCompanyEditBranch from './images/admin/company/edit-branch.png'
-import adminCompanyDeleteBranch from './images/admin/company/delete-branch.png'
-import adminCompanyBranchStatus from './images/admin/company/branch-status.png'
-import adminCompanyOfficers from './images/admin/company/company-officers.png'
-import adminCompanyFeatures from './images/admin/company/company-features.png'
-import adminCompanySubscription from './images/admin/company/company-subscription.png'
+import adminCompanyProfile from "./images/admin/company/company-profile.png";
+import adminCompanyDocumentOverview from "./images/admin/company/document-overview.png";
+import adminCompanyMandatoryDocs from "./images/admin/company/mandatory-docs.png";
+import adminCompanyFileSizeCondition from "./images/admin/company/file-size-condition.png";
+import adminCompanyBranchOverview from "../src/images/admin/company/branch-overview.png";
+import adminCompanyAddBranch from "./images/admin/company/add-branch.png";
+import adminCompanyEditBranch from "./images/admin/company/edit-branch.png";
+import adminCompanyDeleteBranch from "./images/admin/company/delete-branch.png";
+import adminCompanyBranchStatus from "./images/admin/company/branch-status.png";
+import adminCompanyOfficers from "./images/admin/company/company-officers.png";
+import adminCompanyFeatures from "./images/admin/company/company-features.png";
+import adminCompanySubscription from "./images/admin/company/company-subscription.png";
 
-//Tasks
+// Tasks
 import adminTasks from "./images/admin/tasks/tasks.png";
 import adminTasksFilter from "./images/admin/tasks/task-filtter.png";
 import adminTasksNotifyModal from "./images/admin/tasks/task-notify-modal.png";
 import adminTasksEmp from "./images/admin/tasks/emp-task-details.png";
 import adminTasksDetails from "./images/admin/tasks/task-details.png";
+
+
+
+/* --------------------------------- Admin Panel ------------------------------------------ */
+
+// Employee
+import empLayoutDashboard from "./images/emp/layout/layout-dashboard.png";
+import empLayoutSidebar from "./images/emp/layout/layout-dashboard-sidebar.png";
+import empLayoutTopbar from "./images/emp/layout/layout-dashboard-topbar.png";
+import empLayoutNotification from "./images/emp/layout/layout-notification.png";
+import empLayoutProfile from "./images/emp/layout/layout-profile.png";
 
 export const images = {
   logo,
@@ -201,7 +212,7 @@ export const images = {
   adminCalendar,
   adminCalendarCreateReminder,
   adminCalendarEditReminder,
-  
+
   // Company
   adminCompanyProfile,
   adminCompanyDocumentOverview,
@@ -221,5 +232,15 @@ export const images = {
   adminTasksFilter,
   adminTasksNotifyModal,
   adminTasksEmp,
-  adminTasksDetails
+  adminTasksDetails,
+
+  /* -- Employee Panel -- */
+
+  // Layout
+  empLayoutDashboard,
+  empLayoutSidebar,
+  empLayoutTopbar,
+  empLayoutNotification,
+  empLayoutProfile,
+
 };
