@@ -21,6 +21,7 @@ import Email from "./adminPanel/email/Email";
 import AdminCalendar from "./adminPanel/calendar/Calendar";
 import Company from "./adminPanel/company/Company";
 import AdminTasks from "./adminPanel/Tasks/Tasks";
+import EmployeeLayout from "./empPanel/layout/Layout";
 import AdminAttendance from "./adminPanel/attendance/AdminAttendance";
 import AdminRequest from "./adminPanel/request/AdminRequest";
 
@@ -42,7 +43,7 @@ const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => Anc
   [ISideBarKeys.AdminRequest]: AdminRequest,
   [ISideBarKeys.AdminCalendar]: AdminCalendar,
   [ISideBarKeys.AdminReports]: Reports,
-  [ISideBarKeys.EmployeeLayout]: Overview,
+  [ISideBarKeys.EmployeeLayout]: EmployeeLayout,
   [ISideBarKeys.EmployeeDashboard]: Overview,
   [ISideBarKeys.EmployeeProfile]: Overview,
   [ISideBarKeys.EmployeeAttendance]: Overview,
