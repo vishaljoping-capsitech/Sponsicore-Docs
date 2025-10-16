@@ -110,9 +110,18 @@ import adminTasksNotifyModal from "./images/admin/tasks/task-notify-modal.png";
 import adminTasksEmp from "./images/admin/tasks/emp-task-details.png";
 import adminTasksDetails from "./images/admin/tasks/task-details.png";
 
+//Attendance
+import adminAttendanceOverview from "./images/admin/attendance/attendance-overview.png";
+import adminAttendanceEmployeeID from "./images/admin/attendance/attendance-employeeID.png";
+import adminAttendanceFilter from "./images/admin/attendance/attendance-filter.png";
+import adminAttendanceStatus from "./images/admin/attendance/attendance-status.png";
+import adminAttendanceEditStatus from "./images/admin/attendance/attendance-edit-status.png";
+import adminAttendanceTransactions from "./images/admin/attendance/attendance-transaction.png";
+import adminAttendanceGoToProfile from "./images/admin/attendance/attendance-goToProfile.png";
+import adminAttendanceStatusMultipleDays from "./images/admin/attendance/attendance-status-multiple-days.png";
 
 
-/* --------------------------------- Admin Panel ------------------------------------------ */
+/* --------------------------------- Employee Panel ------------------------------------------ */
 
 // Employee
 import empLayoutDashboard from "./images/emp/layout/layout-dashboard.png";
@@ -233,6 +242,16 @@ export const images = {
   adminTasksNotifyModal,
   adminTasksEmp,
   adminTasksDetails,
+
+  //Attendance
+  adminAttendanceOverview,
+  adminAttendanceEmployeeID,
+  adminAttendanceFilter,
+  adminAttendanceStatus,
+  adminAttendanceEditStatus,
+  adminAttendanceTransactions,
+  adminAttendanceGoToProfile,
+  adminAttendanceStatusMultipleDays,
 
   /* -- Employee Panel -- */
 
