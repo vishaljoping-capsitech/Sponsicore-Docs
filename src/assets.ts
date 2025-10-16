@@ -120,6 +120,11 @@ import adminAttendanceTransactions from "./images/admin/attendance/attendance-tr
 import adminAttendanceGoToProfile from "./images/admin/attendance/attendance-goToProfile.png";
 import adminAttendanceStatusMultipleDays from "./images/admin/attendance/attendance-status-multiple-days.png";
 
+//Request
+import adminRequestOverview from "./images/admin/request/request-overview.png";
+import adminRequestFilter from "./images/admin/request/request-filter.png";
+import adminRequestAction from "./images/admin/request/request-action.png";
+import adminRequestStatus from "./images/admin/request/request-status.png";
 
 export const images = {
   logo,
@@ -243,4 +248,10 @@ export const images = {
   adminAttendanceTransactions,
   adminAttendanceGoToProfile,
   adminAttendanceStatusMultipleDays,
+
+  //Request
+  adminRequestOverview,
+  adminRequestFilter,
+  adminRequestAction,
+  adminRequestStatus,
 };
