@@ -176,31 +176,40 @@ import empCalendarReminderDetails from "./images/emp/calendar/reminder-details.p
 import empCalendarReminderNoitifications from "./images/emp/calendar/reminder-notification.png";
 
 //Leave
-import empLeaveAddLeave from './images/emp/leave/add-leave.png'
-import empLeaveEditLeave from './images/emp/leave/edit-leave.png'
-import empLeaveDeleteLeave from './images/emp/leave/delete-leave.png'
-import empLeaveCancelLeave from './images/emp/leave/cancel-leave.png'
-import empLeavePanel from './images/emp/leave/leave-panel.png'
-import empLeaveTypeFilters from './images/emp/leave/leave-type-filters.png'
-import empLeaveStatusFilters from './images/emp/leave/leave-status-filters.png'
-import empLeaveOverview from './images/emp/leave/leave-overview.png'
-import empLeaveNotification from './images/emp/leave/leave-notification.png'
+import empLeaveAddLeave from "./images/emp/leave/add-leave.png";
+import empLeaveEditLeave from "./images/emp/leave/edit-leave.png";
+import empLeaveDeleteLeave from "./images/emp/leave/delete-leave.png";
+import empLeaveCancelLeave from "./images/emp/leave/cancel-leave.png";
+import empLeavePanel from "./images/emp/leave/leave-panel.png";
+import empLeaveTypeFilters from "./images/emp/leave/leave-type-filters.png";
+import empLeaveStatusFilters from "./images/emp/leave/leave-status-filters.png";
+import empLeaveOverview from "./images/emp/leave/leave-overview.png";
+import empLeaveNotification from "./images/emp/leave/leave-notification.png";
 
 //Policies
-import empPolicies from './images/emp/policies/policies.png'
+import empPolicies from "./images/emp/policies/policies.png";
 
 //Attendance
-import empAttendancePanel from './images/emp/attendance/attendance-panel.png'
-import empAttendanceDetails from './images/emp/attendance/attendance-details.png'
-import empAttendanceTransaction from './images/emp/attendance/attendance-transaction.png'
-import empAttendanceMoreDetails from './images/emp/attendance/attendance-more-details.png'
+import empAttendancePanel from "./images/emp/attendance/attendance-panel.png";
+import empAttendanceDetails from "./images/emp/attendance/attendance-details.png";
+import empAttendanceTransaction from "./images/emp/attendance/attendance-transaction.png";
+import empAttendanceMoreDetails from "./images/emp/attendance/attendance-more-details.png";
 
 //Request
-import empRequestPanel from './images/emp/request/request-panel.png'
-import empRequestOverview from './images/emp/request/request-overview.png'
-import empRequestUpdatePendingRequest from './images/emp/request/update-pending-request.png'
-import empRequestApprovedNotification from './images/emp/request/approved-request-notification.png'
-import empRequestFilter from './images/emp/request/request-filter.png'
+import empRequestPanel from "./images/emp/request/request-panel.png";
+import empRequestOverview from "./images/emp/request/request-overview.png";
+import empRequestUpdatePendingRequest from "./images/emp/request/update-pending-request.png";
+import empRequestApprovedNotification from "./images/emp/request/approved-request-notification.png";
+import empRequestFilter from "./images/emp/request/request-filter.png";
+
+// Profile
+import empProfile from "./images/emp/profile/profile.png";
+import empProfileMandatoryDocumentAdd from "./images/emp/profile/add-mandatory-document.png";
+import empProfileAddPaySlip from "./images/emp/profile/add-payslip.png";
+import empProfileMandatoryDocuments from "./images/emp/profile/mandatory-documents.png";
+import empProfileRegularDocuments from "./images/emp/profile/regular-documents.png";
+import empProfileSponsorshipDetails from "./images/emp/profile/sponsorship-details.png";
+
 
 export const images = {
   logo,
@@ -208,6 +217,7 @@ export const images = {
   lightMode,
   logoDark,
 
+  
   /* -- Admin Panel -- */
 
   // Employee
@@ -331,6 +341,8 @@ export const images = {
   adminRequestAction,
   adminRequestStatus,
 
+
+
   /* -- Employee Panel -- */
 
   // Layout
@@ -404,4 +416,12 @@ export const images = {
   empRequestUpdatePendingRequest,
   empRequestApprovedNotification,
   empRequestFilter,
+
+  // Profile
+  empProfile,
+  empProfileMandatoryDocumentAdd,
+  empProfileAddPaySlip,
+  empProfileMandatoryDocuments,
+  empProfileRegularDocuments,
+  empProfileSponsorshipDetails,
 };
