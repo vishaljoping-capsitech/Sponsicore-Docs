@@ -126,7 +126,98 @@ import adminRequestFilter from "./images/admin/request/request-filter.png";
 import adminRequestAction from "./images/admin/request/request-action.png";
 import adminRequestStatus from "./images/admin/request/request-status.png";
 
+// Settings
 
+// Settings -> Document Types
+import adminSettingsCompanyDocOverview from "./images/admin/settings/document-types/company-doc-overview.png";
+import adminSettingsCompanyDocAdd from "./images/admin/settings/document-types/company-doc-add.png";
+import adminSettingsCompanyDocEdit from "./images/admin/settings/document-types/company-doc-edit.png";
+import adminSettingsCompanyDocDelete from "./images/admin/settings/document-types/company-doc-delete.png";
+import adminSettingsEmployeeDocOverview from "./images/admin/settings/document-types/employee-doc-overview.png";
+import adminSettingsEmployeeDocAdd from "./images/admin/settings/document-types/employee-doc-add.png";
+import adminSettingsEmployeeDocEdit from "./images/admin/settings/document-types/employee-doc-edit.png";
+import adminSettingsEmployeeDocDelete from "./images/admin/settings/document-types/employee-doc-delete.png";
+
+// Settings -> Job Types
+import adminSettingsJobTypeOverview from "./images/admin/settings/job-types/job-type-overview.png";
+import adminSettingsJobTypeAdd from "./images/admin/settings/job-types/add-job-type.png";
+import adminSettingsJobTypeEdit from "./images/admin/settings/job-types/edit-job-type.png";
+import adminSettingsJobTypeDelete from "./images/admin/settings/job-types/delete-job-type.png";
+import adminSettingsJobTypeState from "./images/admin/settings/job-types/job-type-state.png";
+
+// Settings -> Branch Policies
+import adminSettingsBranchPoliciesOverview from "./images/admin/settings/branch-policy/branch-policies-overview.png";
+import adminSettingsAddBranchPolicies from "./images/admin/settings/branch-policy/add-branch-policies.png";
+import adminSettingsEditBranchPolicies from "./images/admin/settings/branch-policy/edit-branch-policies.png";
+import adminSettingsDeleteBranchPolicies from "./images/admin/settings/branch-policy/delete-branch-policies.png";
+import adminSettingsBranchPoliciesState from "./images/admin/settings/branch-policy/branch-policies-state.png";
+
+// Settings -> Reminder Types
+import adminSettingsReminderTypeOverview from "./images/admin/settings/reminder-types/reminder-type-overview.png";
+import adminSettingsAddReminderType from "./images/admin/settings/reminder-types/add-reminder-type.png";
+import adminSettingsEditReminderType from "./images/admin/settings/reminder-types/edit-reminder-type.png";
+import adminSettingsDeleteReminderType from "./images/admin/settings/reminder-types/delete-reminder-type.png";
+import adminSettingsReminderTypeState from "./images/admin/settings/reminder-types/reminder-type-state.png";
+
+// Settings -> Application Overview
+import adminSettingsApplicationUserOverview from "./images/admin/settings/application-user/application-user-overview.png";
+import adminSettingsApplicationUserStatus from "./images/admin/settings/application-user/application-user-status.png";
+import adminSettingsAddApplicationUser from "./images/admin/settings/application-user/application-user-add.png";
+import adminSettingsEditApplicationUser from "./images/admin/settings/application-user/application-user-edit.png";
+import adminSettingsDeleteApplicationUser from "./images/admin/settings/application-user/application-user-logout.png";
+
+// Settings -> Role and Permissions 
+import adminSettingsRoleOverview from "./images/admin/settings/roles-and-permissions/role-overview.png";
+import adminSettingsRoleStatus from "./images/admin/settings/roles-and-permissions/role-status.png";
+import adminSettingsAddRole from "./images/admin/settings/roles-and-permissions/add-role.png";
+import adminSettingsEditRole from "./images/admin/settings/roles-and-permissions/edit-role.png";
+import adminSettingsDeleteRole from "./images/admin/settings/roles-and-permissions/delete-role.png";
+
+// Settings -> Public Holiday
+import adminSettingsAddPublicHoliday from "./images/admin/settings/public-holiday/add-holiday.png";
+import adminSettingsRemovePublicHoliday from "./images/admin/settings/public-holiday/remove-holiday.png";
+
+// Settings -> Leave Types
+import adminSettingsGeneralLeaveType from "./images/admin/settings/leave-types/general-leave-type.png";
+import adminSettingsOtherLeaveType from "./images/admin/settings/leave-types/other-leave-type.png";
+import adminSettingsAddLeaveType from "./images/admin/settings/leave-types/add-leave-type.png";
+import adminSettingsEditLeaveType from "./images/admin/settings/leave-types/edit-leave-type.png";
+import adminSettingsDeleteLeaveType from "./images/admin/settings/leave-types/delete-leave-type.png";
+import adminSettingsLeaveTypeStatus from "./images/admin/settings/leave-types/leave-type-status.png";
+
+// Settings -> Visitor Card
+import adminSettingsVisitorCardOverview from "./images/admin/settings/visitor-cards/visitor-card-Overview.png";
+import adminSettingsVisitorCardStatus from "./images/admin/settings/visitor-cards/visitor-card-status.png";
+import adminSettingsAddVisitorCard from "./images/admin/settings/visitor-cards/add-visitor-card.png";
+import adminSettingsEditVisitorCard from "./images/admin/settings/visitor-cards/edit-visitor-card.png";
+import adminSettingsDeleteVisitorCard from "./images/admin/settings/visitor-cards/delete-visitor-card.png";
+
+// Settings -> Biometric Device
+import adminSettingsBiometricDeviceOverview from "./images/admin/settings/biometric-devices/biometric-device-overview.png";
+import adminSettingsAddBiometricDevice from "./images/admin/settings/biometric-devices/add-biometric-device.png";
+import adminSettingsEditBiometricDevice from "./images/admin/settings/biometric-devices/edit-biometric-device.png";
+import adminSettingsBiometricDeviceActions from "./images/admin/settings/biometric-devices/biometric-device-actions.png";
+import adminSettingsBiometricDeviceEmployees from "./images/admin/settings/biometric-devices/biometric-device-employees.png";
+import adminSettingsBiometricDeviceManageEmployees from "./images/admin/settings/biometric-devices/biometric-device-manage-employees.png";
+
+// Settings -> Email Configuration
+import adminSettingsEmailConfig from "./images/admin/settings/email-configuration/email-configuration.png";
+import adminSettingsEmailConfigRecipients from "./images/admin/settings/email-configuration/Recipients.png";
+import adminSettingsEmailConfigAlertDays from "./images/admin/settings/email-configuration/alert-days.png";
+import adminSettingsEmailConfigJobTypes from "./images/admin/settings/email-configuration/job-types.png";
+
+// Settings -> Notification Configuration
+import adminSettingsNotificationConfig from "./images/admin/settings/notification-configuration/notifiguration-configuration.png";
+import adminSettingsNotificationConfigRecipients from "./images/admin/settings/notification-configuration/Recipients.png";
+import adminSettingsNotificationConfigAlertDays from "./images/admin/settings/notification-configuration/alert-days.png";
+import adminSettingsNotificationConfigJobTypes from "./images/admin/settings/notification-configuration/job-types.png";
+
+// Settings -> Shifts
+import adminSettingsShifts from "./images/admin/settings/shifts/shifts.png";
+import adminSettingsEditShift from "./images/admin/settings/shifts/edit-shift.png";
+import adminSettingsAddShift from "./images/admin/settings/shifts/add-shifts.png";
+import adminSettingsAssignShift from "./images/admin/settings/shifts/assign-shift.png";
+import adminSettingsDeleteShift from "./images/admin/settings/shifts/delete-shift.png";
 
 /* --------------------------------- Employee Panel ------------------------------------------ */
 
@@ -210,14 +301,12 @@ import empProfileMandatoryDocuments from "./images/emp/profile/mandatory-documen
 import empProfileRegularDocuments from "./images/emp/profile/regular-documents.png";
 import empProfileSponsorshipDetails from "./images/emp/profile/sponsorship-details.png";
 
-
 export const images = {
   logo,
   darkMode,
   lightMode,
   logoDark,
 
-  
   /* -- Admin Panel -- */
 
   // Employee
@@ -341,7 +430,115 @@ export const images = {
   adminRequestAction,
   adminRequestStatus,
 
+  // Settings
 
+  documentTypes: {
+    company: {
+      overview: adminSettingsCompanyDocOverview,
+      add: adminSettingsCompanyDocAdd,
+      edit: adminSettingsCompanyDocEdit,
+      delete: adminSettingsCompanyDocDelete,
+    },
+    employee: {
+      overview: adminSettingsEmployeeDocOverview,
+      add: adminSettingsEmployeeDocAdd,
+      edit: adminSettingsEmployeeDocEdit,
+      delete: adminSettingsEmployeeDocDelete,
+    },
+  },
+
+  jobTypes: {
+    overview: adminSettingsJobTypeOverview,
+    add: adminSettingsJobTypeAdd,
+    edit: adminSettingsJobTypeEdit,
+    delete: adminSettingsJobTypeDelete,
+    state: adminSettingsJobTypeState,
+  },
+
+  branchPolicies: {
+    overview: adminSettingsBranchPoliciesOverview,
+    add: adminSettingsAddBranchPolicies,
+    edit: adminSettingsEditBranchPolicies,
+    delete: adminSettingsDeleteBranchPolicies,
+    state: adminSettingsBranchPoliciesState,
+  },
+
+  reminderTypes: {
+    overview: adminSettingsReminderTypeOverview,
+    add: adminSettingsAddReminderType,
+    edit: adminSettingsEditReminderType,
+    delete: adminSettingsDeleteReminderType,
+    state: adminSettingsReminderTypeState,
+  },
+
+  applicationUsers: {
+    overview: adminSettingsApplicationUserOverview,
+    status: adminSettingsApplicationUserStatus,
+    add: adminSettingsAddApplicationUser,
+    edit: adminSettingsEditApplicationUser,
+    delete: adminSettingsDeleteApplicationUser,
+  },
+
+  rolesAndPermissions: {
+    overview: adminSettingsRoleOverview,
+    status: adminSettingsRoleStatus,
+    add: adminSettingsAddRole,
+    edit: adminSettingsEditRole,
+    delete: adminSettingsDeleteRole,
+  },
+
+  publicHoliday: {
+    add: adminSettingsAddPublicHoliday,
+    remove: adminSettingsRemovePublicHoliday,
+  },
+
+  leaveTypes: {
+    general: adminSettingsGeneralLeaveType,
+    other: adminSettingsOtherLeaveType,
+    add: adminSettingsAddLeaveType,
+    edit: adminSettingsEditLeaveType,
+    delete: adminSettingsDeleteLeaveType,
+    status: adminSettingsLeaveTypeStatus,
+  },
+
+  visitorCard: {
+    overview: adminSettingsVisitorCardOverview,
+    status: adminSettingsVisitorCardStatus,
+    add: adminSettingsAddVisitorCard,
+    edit: adminSettingsEditVisitorCard,
+    delete: adminSettingsDeleteVisitorCard,
+  },
+
+  biometricDevices: {
+    overview: adminSettingsBiometricDeviceOverview,
+    add: adminSettingsAddBiometricDevice,
+    edit: adminSettingsEditBiometricDevice,
+    actions: adminSettingsBiometricDeviceActions,
+    employees: adminSettingsBiometricDeviceEmployees,
+    manageEmployees: adminSettingsBiometricDeviceManageEmployees,
+  },
+
+  emailConfiguration: {
+    config: adminSettingsEmailConfig,
+    recipients: adminSettingsEmailConfigRecipients,
+    alertDays: adminSettingsEmailConfigAlertDays,
+    jobTypes: adminSettingsEmailConfigJobTypes,
+  },
+
+  notificationConfiguration: {
+    config: adminSettingsNotificationConfig,
+    recipients: adminSettingsNotificationConfigRecipients,
+    alertDays: adminSettingsNotificationConfigAlertDays,
+    jobTypes: adminSettingsNotificationConfigJobTypes,
+  },
+
+  shifts: {
+    overview: adminSettingsShifts,
+    edit: adminSettingsEditShift,
+    add: adminSettingsAddShift,
+    assign: adminSettingsAssignShift,
+    delete: adminSettingsDeleteShift,
+  },
 
   /* -- Employee Panel -- */
 
@@ -389,7 +586,7 @@ export const images = {
   empCalendarCreateReminder,
   empCalendarReminderDetails,
   empCalendarReminderNoitifications,
-  
+
   //Leave
   empLeaveAddLeave,
   empLeaveEditLeave,

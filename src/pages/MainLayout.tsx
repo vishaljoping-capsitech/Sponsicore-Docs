@@ -29,6 +29,11 @@ import EmployeeTravel from "./empPanel/travel/EmployeeTravel";
 import EmployeeTasks from "./empPanel/tasks/Tasks";
 import EmployeeCalendar from "./empPanel/calendar/Calendar";
 import EmployeeProfile from "./empPanel/profile/Profile";
+import EmployeeLeave from "./empPanel/leave/EmployeeLeave";
+import EmployeeAttendance from "./empPanel/attendance/EmployeeAttendance";
+import Settings from "./adminPanel/settings/Settings";
+import EmployeeRequest from "./empPanel/request/EmployeeRequest";
+import EmployeePolicies from "./empPanel/policies/EmployeePolicies";
 
 const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => AnchorItemProps[] }> = {
   [ISideBarKeys.Undefined]: Overview,
@@ -36,7 +41,7 @@ const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => Anc
   [ISideBarKeys.Admin]: Overview,
   [ISideBarKeys.Employee]: Overview,
   [ISideBarKeys.AdminLayout]: AdminLayout,
-  [ISideBarKeys.AdminSettings]: Overview,
+  [ISideBarKeys.AdminSettings]: Settings,
   [ISideBarKeys.AdminDashboard]: AdminDashboard,
   [ISideBarKeys.AdminCompany]: Company,
   [ISideBarKeys.AdminEmployee]: Employee,
@@ -51,13 +56,13 @@ const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => Anc
   [ISideBarKeys.EmployeeLayout]: EmployeeLayout,
   [ISideBarKeys.EmployeeDashboard]: EmployeeDashboard,
   [ISideBarKeys.EmployeeProfile]: EmployeeProfile,
-  [ISideBarKeys.EmployeeAttendance]: Overview,
+  [ISideBarKeys.EmployeeAttendance]: EmployeeAttendance,
   [ISideBarKeys.EmployeeTask]: EmployeeTasks,
   [ISideBarKeys.EmployeeTravel]: EmployeeTravel,
-  [ISideBarKeys.EmployeeLeave]: Overview,
-  [ISideBarKeys.EmployeeRequest]: Overview,
+  [ISideBarKeys.EmployeeLeave]: EmployeeLeave,
+  [ISideBarKeys.EmployeeRequest]: EmployeeRequest,
   [ISideBarKeys.EmployeeCalendar]: EmployeeCalendar,
-  [ISideBarKeys.EmployeePolicies]: Overview,
+  [ISideBarKeys.EmployeePolicies]: EmployeePolicies,
 }
 
 const MainLayout: React.FC = () => {
