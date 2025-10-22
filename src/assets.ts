@@ -186,7 +186,7 @@ import adminSettingsDeleteLeaveType from "./images/admin/settings/leave-types/de
 import adminSettingsLeaveTypeStatus from "./images/admin/settings/leave-types/leave-type-status.png";
 
 // Settings -> Visitor Card
-import adminSettingsVisitorCardOverview from "./images/admin/settings/visitor-cards/visitor-card-overview.png";
+import adminSettingsVisitorCardOverview from "./images/admin/settings/visitor-cards/visitor-card.png";
 import adminSettingsVisitorCardStatus from "./images/admin/settings/visitor-cards/visitor-card-status.png";
 import adminSettingsAddVisitorCard from "./images/admin/settings/visitor-cards/add-visitor-card.png";
 import adminSettingsEditVisitorCard from "./images/admin/settings/visitor-cards/edit-visitor-card.png";
