@@ -202,13 +202,13 @@ import adminSettingsBiometricDeviceManageEmployees from "./images/admin/settings
 
 // Settings -> Email Configuration
 import adminSettingsEmailConfig from "./images/admin/settings/email-configuration/email-configuration.png";
-import adminSettingsEmailConfigRecipients from "./images/admin/settings/email-configuration/Recipients.png";
+import adminSettingsEmailConfigRecipients from "./images/admin/settings/email-configuration/recipients.png";
 import adminSettingsEmailConfigAlertDays from "./images/admin/settings/email-configuration/alert-days.png";
 import adminSettingsEmailConfigJobTypes from "./images/admin/settings/email-configuration/job-types.png";
 
 // Settings -> Notification Configuration
 import adminSettingsNotificationConfig from "./images/admin/settings/notification-configuration/notifiguration-configuration.png";
-import adminSettingsNotificationConfigRecipients from "./images/admin/settings/notification-configuration/Recipients.png";
+import adminSettingsNotificationConfigRecipients from "./images/admin/settings/notification-configuration/recipients.png";
 import adminSettingsNotificationConfigAlertDays from "./images/admin/settings/notification-configuration/alert-days.png";
 import adminSettingsNotificationConfigJobTypes from "./images/admin/settings/notification-configuration/job-types.png";
 
@@ -218,6 +218,8 @@ import adminSettingsEditShift from "./images/admin/settings/shifts/edit-shift.pn
 import adminSettingsAddShift from "./images/admin/settings/shifts/add-shifts.png";
 import adminSettingsAssignShift from "./images/admin/settings/shifts/assign-shift.png";
 import adminSettingsDeleteShift from "./images/admin/settings/shifts/delete-shift.png";
+
+
 
 /* --------------------------------- Employee Panel ------------------------------------------ */
 
