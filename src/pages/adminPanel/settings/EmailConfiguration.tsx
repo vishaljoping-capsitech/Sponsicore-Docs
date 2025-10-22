@@ -11,7 +11,7 @@ const EmailConfiguration = () => {
             This section allows the Admin to configure and manage automated email settings within the system.
             <ImageCard src={images.emailConfiguration.config} />
             <ul>
-              <li id="manage-configuration">
+              <li id="email-manage-configuration">
                 Add, Edit, and Manage Configurations:
                 <ul>
                   <li>Admins can create new email configurations or modify existing ones.</li>
@@ -27,7 +27,7 @@ const EmailConfiguration = () => {
                 </ul>
               </li>
 
-              <li id="recipient-settings">
+              <li id="email-recipient-settings">
                 Recipient Settings:
                 <ul>
                   <li>Define recipients for each type of automated email.</li>
@@ -36,7 +36,7 @@ const EmailConfiguration = () => {
                 <ImageCard src={images.emailConfiguration.recipients} />
               </li>
 
-              <li id="job-types">
+              <li id="email-job-types">
                 Job-Type-Specific Email Configuration:
                 <ul>
                   <li>Set up configurations tailored to specific job types.</li>
@@ -46,7 +46,7 @@ const EmailConfiguration = () => {
                 <ImageCard src={images.emailConfiguration.jobTypes} />
               </li>
 
-              <li id="alert-days">
+              <li id="email-alert-days">
                 Advance Alert Days:
                 <ul>
                   <li>Configure automated reminder emails before a specific expiry date (e.g., contract, document, or certification expiry).</li>

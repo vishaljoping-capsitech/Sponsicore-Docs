@@ -120,7 +120,7 @@ import adminAttendanceTransactions from "./images/admin/attendance/attendance-tr
 import adminAttendanceGoToProfile from "./images/admin/attendance/attendance-goToProfile.png";
 import adminAttendanceStatusMultipleDays from "./images/admin/attendance/attendance-status-multiple-days.png";
 
-//Request
+// Request
 import adminRequestOverview from "./images/admin/request/request-overview.png";
 import adminRequestFilter from "./images/admin/request/request-filter.png";
 import adminRequestAction from "./images/admin/request/request-action.png";
@@ -160,7 +160,7 @@ import adminSettingsDeleteReminderType from "./images/admin/settings/reminder-ty
 import adminSettingsReminderTypeState from "./images/admin/settings/reminder-types/reminder-type-state.png";
 
 // Settings -> Application Overview
-import adminSettingsApplicationUserOverview from "./images/admin/settings/application-user/application-user-overview.png";
+import adminSettingsApplicationUserOverview from "./images/admin/settings/application-user/application-user.png";
 import adminSettingsApplicationUserStatus from "./images/admin/settings/application-user/application-user-status.png";
 import adminSettingsAddApplicationUser from "./images/admin/settings/application-user/application-user-add.png";
 import adminSettingsEditApplicationUser from "./images/admin/settings/application-user/application-user-edit.png";
@@ -186,7 +186,7 @@ import adminSettingsDeleteLeaveType from "./images/admin/settings/leave-types/de
 import adminSettingsLeaveTypeStatus from "./images/admin/settings/leave-types/leave-type-status.png";
 
 // Settings -> Visitor Card
-import adminSettingsVisitorCardOverview from "./images/admin/settings/visitor-cards/visitor-card-Overview.png";
+import adminSettingsVisitorCardOverview from "./images/admin/settings/visitor-cards/visitor-card-overview.png";
 import adminSettingsVisitorCardStatus from "./images/admin/settings/visitor-cards/visitor-card-status.png";
 import adminSettingsAddVisitorCard from "./images/admin/settings/visitor-cards/add-visitor-card.png";
 import adminSettingsEditVisitorCard from "./images/admin/settings/visitor-cards/edit-visitor-card.png";
@@ -202,12 +202,12 @@ import adminSettingsBiometricDeviceManageEmployees from "./images/admin/settings
 
 // Settings -> Email Configuration
 import adminSettingsEmailConfig from "./images/admin/settings/email-configuration/email-configuration.png";
-import adminSettingsEmailConfigRecipients from "./images/admin/settings/email-configuration/recipients.png";
+import adminSettingsEmailConfigRecipients from "./images/admin/settings/email-configuration/email-recipients.png";
 import adminSettingsEmailConfigAlertDays from "./images/admin/settings/email-configuration/alert-days.png";
 import adminSettingsEmailConfigJobTypes from "./images/admin/settings/email-configuration/job-types.png";
 
 // Settings -> Notification Configuration
-import adminSettingsNotificationConfig from "./images/admin/settings/notification-configuration/notifiguration-configuration.png";
+import adminSettingsNotificationConfig from "./images/admin/settings/notification-configuration/notification-configuration.png";
 import adminSettingsNotificationConfigRecipients from "./images/admin/settings/notification-configuration/recipients.png";
 import adminSettingsNotificationConfigAlertDays from "./images/admin/settings/notification-configuration/alert-days.png";
 import adminSettingsNotificationConfigJobTypes from "./images/admin/settings/notification-configuration/job-types.png";
@@ -279,16 +279,16 @@ import empLeaveStatusFilters from "./images/emp/leave/leave-status-filters.png";
 import empLeaveOverview from "./images/emp/leave/leave-overview.png";
 import empLeaveNotification from "./images/emp/leave/leave-notification.png";
 
-//Policies
+// Policies
 import empPolicies from "./images/emp/policies/policies.png";
 
-//Attendance
+// Attendance
 import empAttendancePanel from "./images/emp/attendance/attendance-panel.png";
 import empAttendanceDetails from "./images/emp/attendance/attendance-details.png";
 import empAttendanceTransaction from "./images/emp/attendance/attendance-transaction.png";
 import empAttendanceMoreDetails from "./images/emp/attendance/attendance-more-details.png";
 
-//Request
+// Request
 import empRequestPanel from "./images/emp/request/request-panel.png";
 import empRequestOverview from "./images/emp/request/request-overview.png";
 import empRequestUpdatePendingRequest from "./images/emp/request/update-pending-request.png";

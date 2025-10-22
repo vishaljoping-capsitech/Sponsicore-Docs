@@ -11,7 +11,7 @@ const NotificationConfiguration = () => {
             This section allows the Admin to configure and manage automated notification settings within the system.
             <ImageCard src={images.notificationConfiguration.config} />
             <ul>
-              <li id="manage-configuration">
+              <li id="notification-manage-configuration">
                 Add, Edit, and Manage Configurations:
                 <ul>
                   <li>Admins can create new notification configurations or modify existing ones.</li>
@@ -29,7 +29,7 @@ const NotificationConfiguration = () => {
                 </ul>
               </li>
 
-              <li id="recipient-settings">
+              <li id="notification-recipient-settings">
                 Recipient Settings:
                 <ul>
                   <li>Define recipients for each type of automated notification.</li>
@@ -41,7 +41,7 @@ const NotificationConfiguration = () => {
                 <ImageCard src={images.notificationConfiguration.recipients} />
               </li>
 
-              <li id="job-types">
+              <li id="notification-job-types">
                 Job-Type-Specific Notification Configuration:
                 <ul>
                   <li>Set up configurations tailored to specific job types.</li>
@@ -57,7 +57,7 @@ const NotificationConfiguration = () => {
                 <ImageCard src={images.notificationConfiguration.jobTypes} />
               </li>
 
-              <li id="alert-days">
+              <li id="notification-alert-days">
                 Advance Alert Days:
                 <ul>
                   <li>
