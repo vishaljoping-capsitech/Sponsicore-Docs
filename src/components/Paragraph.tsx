@@ -9,7 +9,7 @@ interface ParagraphProps {
 
 const Paragraph: React.FC<ParagraphProps> = ({ text, className, id }) => {
   return (
-    <Typography.Paragraph id={id} className={`${className} text-base font-normal`}>
+    <Typography.Paragraph id={id} className={`${className} text-base font-normal m-0 p-0`}>
       {text}
     </Typography.Paragraph>
   );
