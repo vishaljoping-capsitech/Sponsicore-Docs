@@ -36,61 +36,61 @@ export const sections: Section[] = [
   {
     component: JobType,
     id: "job-type",
-    title: "Job Types",
+    title: "Job Types"
   },
   {
     component: BranchPolicies,
     id: "branch-policies",
-    title: "Branch Policies",
+    title: "Branch Policies"
   },
   {
     component: EmailConfiguration,
     id: "email-configuration",
-    title: "Email Configuration",
+    title: "Email Configuration"
   },
   {
     component: NotificationConfiguration,
     id: "notification-configuration",
-    title: "Notification Configuration",
+    title: "Notification Configuration"
   },
   {
     component: ReminderType,
     id: "reminder-type",
-    title: "Reminder Types",
+    title: "Reminder Types"
   },
   {
     component: ApplicationUser,
     id: "application-user",
-    title: "Application Users",
+    title: "Application Users"
   },
   {
     component: RolesPermissions,
     id: "roles-permissions",
-    title: "Roles & Permissions",
+    title: "Roles & Permissions"
   },
   {
     component: PublicHolidays,
     id: "public-holidays",
-    title: "Public Holidays",
+    title: "Public Holidays"
   },
   {
     component: BiometricDevice,
     id: "biometric-device",
-    title: "Biometric Device",
+    title: "Biometric Device"
   },
   {
     component: Shifts,
     id: "shifts",
-    title: "Shifts",
+    title: "Shifts"
   },
   {
     component: LeaveType,
     id: "leave-type",
-    title: "Leave Types",
+    title: "Leave Types"
   },
   {
     component: VisitorCard,
     id: "visitor-card",
-    title: "Visitor Card",
+    title: "Visitor Card"
   },
 ];

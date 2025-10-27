@@ -10,10 +10,10 @@ const NotificationConfiguration = () => {
           <>
             This section allows the Admin to configure and manage automated notification settings within the system.
             <ImageCard src={images.notificationConfiguration.config} />
-            <ul>
+            <ul className="docs-list">
               <li id="notification-manage-configuration">
                 Add, Edit, and Manage Configurations:
-                <ul>
+                <ul className="docs-list">
                   <li>Admins can create new notification configurations or modify existing ones.</li>
                   <li>Each configuration can be activated or deactivated as needed.</li>
                 </ul>
@@ -21,7 +21,7 @@ const NotificationConfiguration = () => {
 
               <li>
                 Automated Notification Triggers:
-                <ul>
+                <ul className="docs-list">
                   <li>
                     Configure automated notifications for various system actions — for example, when an employee applies for leave, submits a request, or performs specific activities.
                   </li>
@@ -31,7 +31,7 @@ const NotificationConfiguration = () => {
 
               <li id="notification-recipient-settings">
                 Recipient Settings:
-                <ul>
+                <ul className="docs-list">
                   <li>Define recipients for each type of automated notification.</li>
                   <li>
                     Recipients can include branch managers, reporting managers, HR, operations, and management users,
@@ -43,7 +43,7 @@ const NotificationConfiguration = () => {
 
               <li id="notification-job-types">
                 Job-Type-Specific Notification Configuration:
-                <ul>
+                <ul className="docs-list">
                   <li>Set up configurations tailored to specific job types.</li>
                   <li>
                     For example, when a Development employee applies for leave, the notification can be sent to the HR
@@ -59,7 +59,7 @@ const NotificationConfiguration = () => {
 
               <li id="notification-alert-days">
                 Advance Alert Days:
-                <ul>
+                <ul className="docs-list">
                   <li>
                     Configure automated reminder notifications before a specific expiry date (e.g., contract, document,
                     or certification expiry).

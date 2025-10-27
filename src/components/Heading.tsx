@@ -11,7 +11,7 @@ interface HeadingProps {
 const Heading: React.FC<HeadingProps> = ({ text, className, id }) => {
   return (
     <Row>
-      <Typography.Title level={2} id={id} className={`font-bold mb-4 mt-2 ${className}`}>
+      <Typography.Title level={1} id={id} className={`font-bold ${className}`}>
         {text}
       </Typography.Title>
     </Row>

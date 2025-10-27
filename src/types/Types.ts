@@ -2,6 +2,7 @@ export interface Section {
   component?: React.ComponentType;
   id: string;
   title: string;
+  icon?: React.ElementType | undefined;
   children?: Section[];
 }
 

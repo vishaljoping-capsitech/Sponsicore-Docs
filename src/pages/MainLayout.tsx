@@ -67,7 +67,7 @@ const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => Anc
 }
 
 const MainLayout: React.FC = () => {
-  const mode = useSelector((state: RootState) => state.theme.mode)
+  const mode = useSelector((state: RootState) => state.theme.mode);
   const [selectedKey, setSelectedKey] = useState<ISideBarKeys>(ISideBarKeys.Overview);
   const [collapsed, setCollapsed] = useState(true);
 

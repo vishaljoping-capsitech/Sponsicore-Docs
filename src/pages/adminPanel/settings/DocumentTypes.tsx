@@ -13,11 +13,11 @@ const DocumentTypes = () => {
             consistency and compliance. While these default types can't be
             deleted, you can modify them to fit your organization's specific
             needs.
-            <ol className="font-bold text-xl">
-              <li id="company-doc-type" className="mt-4">
+            <ol className="font-bold text-xl m-0 p-0">
+              <li id="company-doc-type m-0 p-0">
                 <CompanyDocType />
               </li>
-              <li id="employee-doc-type" className="mt-10">
+              <li id="employee-doc-type m-0 p-0">
                 <EmployeeDocType />
               </li>
             </ol>

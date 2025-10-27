@@ -1,48 +1,42 @@
-import { Typography } from "antd";
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Paragraph from "../../../components/Paragraph";
 import Title from "../../../components/Title";
+import SubHeading from "../../../components/SubHeading";
 
 const CompanyDocType = () => {
   return (
     <>
-      <Typography.Title level={4}>Company Document Types:</Typography.Title>
+      <SubHeading level={4} text="Company Document Types:" />
 
       <ImageCard src={images.documentTypes.company.overview} />
 
       <Paragraph
         text={
           <>
-            <ul>
+            <ul className="docs-list flex-row gap-y-[10px] ">
+
               <li id="company-doc-add">
-                <Title text="Add:" /> Admins can add new document types required
-                by the company or for employee records. During the creation
-                process, they can define whether the document type is{" "}
-                <strong>Mandatory</strong> or <strong>Optional</strong>, and
-                specify if the document should have an{" "}
-                <strong>Expiry Date</strong> or remain valid indefinitely. These
-                settings ensure that each document type aligns with compliance
-                and organizational needs.
+                <Title text="Add:" /> Admin can add new documents by specifying the name. Admin also
+                have to decide the document will be mandatory or not also the
+                document has an expiry or not.
                 <ImageCard src={images.documentTypes.company.add} />
               </li>
+
               <li id="company-doc-edit">
-                <Title text="Edit:" /> Admins can edit existing document types
-                to update names, descriptions, or categories. They can also
-                modify whether a document type is <strong>Mandatory</strong> or{" "}
-                <strong>Optional</strong>, and adjust the{" "}
-                <strong>Expiry</strong> requirement as business rules evolve.
-                These edits help maintain accurate and up-to-date documentation
-                standards across the organization.
+                <Title text="Edit:" /> 
+                <ul className="docs-list">
+                  <li>For pre-defined documents, admin can update Mandatory and Expiry settings.</li>
+                  <li>For self-defined documents, users can also edit the document name.</li>
+                </ul>
                 <ImageCard src={images.documentTypes.employee.edit} />
               </li>
+
               <li id="company-doc-delete">
-                <Title text="Delete:" /> Admins can delete custom-created
-                document types that are no longer relevant.System-defined core
-                document types cannot be deleted to ensure data consistency and
-                compliance.
+                <Title text="Delete:" /> Admin can delete both predefined and user-defined documents.
                 <ImageCard src={images.documentTypes.employee.delete} />
               </li>
+
               <li id="company-doc-state">
                 <Title text="Active / Inactive: " />
                 Admins can activate or deactivate document types without
@@ -50,6 +44,7 @@ const CompanyDocType = () => {
                 document types while preserving their history and structure.
                 <ImageCard src={images.documentTypes.company.overview} />
               </li>
+              
             </ul>
           </>
         }

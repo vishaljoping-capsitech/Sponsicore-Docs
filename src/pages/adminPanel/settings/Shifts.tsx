@@ -11,8 +11,8 @@ const Shifts = () => {
           <>
             This section enables the Admin to create, manage, and assign work
             schedules for employees efficiently.
-            <ImageCard src={images.shifts.overview} />
-            <ul>
+            {/* <ImageCard src={images.shifts.overview} /> */}
+            <ul className="docs-list">
               <li id="add-edit-activate-assign-remove">
                 <Title text="Add, Edit, Activate/Deactivate, Assign, or Remove Shifts:" />
                 Admins can create new shifts, modify existing ones, activate or
