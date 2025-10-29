@@ -12,8 +12,6 @@ interface ImageCardProps {
 const ImageCard: React.FC<ImageCardProps> = ({
   src,
   alt = "image",
-  width = "100%",
-  height = 400,
   className = "",
 }) => {
   const [loaded, setLoaded] = useState(false);
@@ -23,17 +21,12 @@ const ImageCard: React.FC<ImageCardProps> = ({
       <Col span={24} className={className}>
         <Row
           className="image-card-wrapper"
-          style={{
-            width: typeof width === "number" ? `${width}px` : width,
-            height: typeof height === "number" ? `${height}px` : height,
-          }}
         >
           {!loaded && <Skeleton.Image active className="image-loader" />}
 
           <Image
             src={src}
             alt={alt}
-            preview={false}
             className={`image-card ${loaded ? "visible" : ""}`}
             onLoad={() => setLoaded(true)}
           />
