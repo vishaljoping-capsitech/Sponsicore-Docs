@@ -2,14 +2,16 @@ import Paragraph from "../../../components/Paragraph";
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Title from "../../../components/Title";
+import SubHeading from "../../../components/SubHeading";
 
 const EmployeeSettings = () => {
   return (
     <>
+      <SubHeading text="Employee Settings" />
       <Paragraph
         text={
           <>
-            <ol>
+            <ol className="docs-list">
               In Employee Settings, authorized users can manage the employee's
               shift, card details, user settings, remote attendance feature, and
               the remove employee option
@@ -26,7 +28,7 @@ const EmployeeSettings = () => {
                 <Title text="Card"/>: Users can add, edit, resync, or remove card details. These
                 card details will be used for the biometric device. In Add/Edit
                 Card Details, the description is as follows:
-                <ul>
+                <ul className="docs-list">
                   <li>The card number is the unique identifier of the card.</li>
                   <li>
                     Is the Att.Sync checkbox used to mark attendance or not.
@@ -42,7 +44,7 @@ const EmployeeSettings = () => {
               <li id="user-settings">
                 <Title text="User Settings"/>: User Settings are used to manage the employee's
                 user account. And more description is as follows:
-                <ul>
+                <ul className="docs-list">
                   <li>
                     Initially, if the user is not registered, a Register User
                     button will be shown. In this process, the user role can be
@@ -79,7 +81,7 @@ const EmployeeSettings = () => {
                 <Title text="Remote Attendance"/>: we manage two statuses: Manual In/Out and
                 Hybrid Attendance.
                 <ImageCard src={images.adminEmployeeRemoteAttendance} />
-                <ul>
+                <ul className="docs-list">
                   <li>
                     In Manual Punch In/Out, if a company is not using a
                     biometric device, they can use this feature. A Check In/Out

@@ -1,11 +1,13 @@
 import { images } from "../../../assets"
 import ImageCard from "../../../components/ImageCard"
 import Paragraph from "../../../components/Paragraph"
+import SubHeading from "../../../components/SubHeading"
 import Title from "../../../components/Title"
 
 const Events = () => {
   return (
     <>
+      <SubHeading text="Events" />
       <Paragraph
         text={
           <>

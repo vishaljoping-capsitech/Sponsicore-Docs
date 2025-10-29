@@ -17,7 +17,7 @@ function Calendar() {
           <Paragraph
             text={
               <>
-                <ol>
+                <ol className="docs-list">
                   The Employee Email Calendar in Sponsicore provides a
                   comprehensive view of important dates, reminders, and events
                   related to employees. It helps users stay organized and
@@ -26,7 +26,7 @@ function Calendar() {
                   <li id="events">
                     The calendar displays all important employee-related events
                     in an interactive and easy-to-navigate format.
-                    <ul>
+                    <ul className="docs-list">
                       <li id="reminders">
                         <Title text="Reminders" />: Custom events or
                         notifications created by users.
@@ -73,7 +73,7 @@ function Calendar() {
                   <li id="create-reminder">
                     Users can easily create new reminders directly from the
                     calendar interface.
-                    <ul>
+                    <ul className="docs-list">
                       To add a reminder, user have to provide the following
                       details:
                       <li>

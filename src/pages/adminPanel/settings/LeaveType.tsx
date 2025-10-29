@@ -1,11 +1,13 @@
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Paragraph from "../../../components/Paragraph";
+import SubHeading from "../../../components/SubHeading";
 import Title from "../../../components/Title";
 
 const LeaveType = () => {
   return (
     <>
+      <SubHeading text="Leave Types" className="margin-top-point-5rem" />
       <Paragraph
         text={
           <>

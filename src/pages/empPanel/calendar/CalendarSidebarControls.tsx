@@ -1,9 +1,11 @@
 import Paragraph from "../../../components/Paragraph";
+import SubHeading from "../../../components/SubHeading";
 
 
 const CalendarSidebarControls = () => {
   return (
     <>
+      <SubHeading text="Sidebar Controls" />
       <Paragraph
         text={
           <>

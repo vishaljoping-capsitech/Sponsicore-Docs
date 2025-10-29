@@ -1,14 +1,16 @@
 import Paragraph from "../../../components/Paragraph";
 import ImageCard from "../../../components/ImageCard";
 import { images } from "../../../assets";
+import SubHeading from "../../../components/SubHeading";
 
 const TodaysWorking = () => {
   return (
     <>
+      <SubHeading text="Todays Working" />
       <Paragraph 
         text={
           <>
-            <ul>
+            <ul className="docs-list">
               <li>Displays today's working time in real-time. The timer starts automatically after you clock in and pauses once you clock out.</li>
               <li>A progress bar visualizes your work progress for the day.</li>
               <li>The current date and day are shown alongside the required work hours to complete for the day.</li>

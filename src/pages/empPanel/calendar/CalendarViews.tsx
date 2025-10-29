@@ -1,14 +1,16 @@
 import Paragraph from "../../../components/Paragraph";
+import SubHeading from "../../../components/SubHeading";
 import Title from "../../../components/Title";
 
 const CalendarViews = () => {
   return (
     <>
+      <SubHeading text="Views" className="w-full"/>
       <Paragraph
         text={
           <>
             The calendar offers three different views for flexibility and better navigation:
-            <ul>
+            <ul className="docs-list">
               <li>
                 <Title text="Day View:" /> Displays all reminders and events scheduled for the selected day.
               </li>

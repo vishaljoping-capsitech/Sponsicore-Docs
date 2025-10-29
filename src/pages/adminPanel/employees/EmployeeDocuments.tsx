@@ -2,20 +2,22 @@ import Paragraph from "../../../components/Paragraph";
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Title from "../../../components/Title";
+import SubHeading from "../../../components/SubHeading";
 
 const EmployeeDocuments = () => {
   return (
     <>
-      <Paragraph text="Manage employee's mandatory/regular documents (Max file side :4MB)" />
+      <SubHeading text="Employee Documents" className="margin-top-point-5rem"/>
 
       <Paragraph
         text={
           <>
-            <ol>
+            Manage employee's mandatory/regular documents (Max file side :4MB)
+            <ol className="docs-list">
               <li id="mandatory-docs">
                 <Title text="Mandatory Docs"/>: These types are managed through the Employee
                 Document Types section in Settings.
-                <ul>
+                <ul className="docs-list">
                   <li>
                     Authorized users can view, download, view history, send
                     notification and email, or delete documents.
@@ -32,7 +34,7 @@ const EmployeeDocuments = () => {
                   <li>
                     We've also added manual way to notify employees about
                     document issues:
-                    <ul>
+                    <ul className="docs-list">
                       <li>
                         <Title text="Missing Docs"/>: Notify if a required document is not
                         uploaded.
@@ -61,7 +63,7 @@ const EmployeeDocuments = () => {
               <li id="regular-docs">
                 <Title text="Regular Docs"/>: These are used to store employee’s other documents
                 and payslips.
-                <ul>
+                <ul className="docs-list">
                   <li>
                     Authorized users can view, download, or delete documents.
                   </li>
@@ -71,7 +73,7 @@ const EmployeeDocuments = () => {
               <li id="add-document">
                 <Title text="Add Document"/>: Authorized users can add documents through the Add
                 Document modal. In this modal:
-                <ul>
+                <ul className="docs-list">
                   <li>
                     A list of all document types and drag-and-drop area will be
                     displayed.

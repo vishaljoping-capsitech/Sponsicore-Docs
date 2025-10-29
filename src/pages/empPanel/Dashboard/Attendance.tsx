@@ -1,15 +1,19 @@
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Paragraph from "../../../components/Paragraph";
+import SubHeading from "../../../components/SubHeading";
 
 const Attendance = () => {
   return (
     <>
+      <SubHeading text="Attendance" className="w-full" />
+
       <Paragraph
         text={
           <>
-            Displays a summary of your attendance for the current month, including counts for:
-            <ul>
+            <ul className="docs-list">
+              Displays a summary of your attendance for the current month,
+              including counts for:
               <li>Present</li>
               <li>Absent</li>
               <li>Work from Home (WFH)</li>
@@ -20,6 +24,7 @@ const Attendance = () => {
           </>
         }
       />
+
       <ImageCard src={images.empDashboardAttendance} />
     </>
   );

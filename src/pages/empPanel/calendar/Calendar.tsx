@@ -1,7 +1,6 @@
 import { Col, Row } from "antd";
 import Heading from "../../../components/Heading";
 import { generateAnchorItems } from "../../../utils/GenerateAnchorItems";
-import SubHeading from "../../../components/SubHeading";
 import React from "react";
 import { calendarSections } from "./calendarSections";
 
@@ -12,25 +11,16 @@ const Calendar = () => {
         <Col xl={24}>
           <Heading text={"Calendar"} />
 
-          <SubHeading
-            text={
-              <>
-                <ol>
-                  {calendarSections.map((item, index) => (
-                    <li key={index} id={item.id}>
-                      {item.title}
-                      {item.component ? React.createElement(item.component) : null}
-                    </li>
-                  ))}
-                </ol>
-              </>
-            }
-          />
+          {calendarSections.map((item) => (
+            <Row id={item.id}>
+              {item.component ? React.createElement(item.component) : null}
+            </Row>
+          ))}
         </Col>
       </Row>
     </>
   );
-}
+};
 
 Calendar.getAnchorItems = () => generateAnchorItems(calendarSections);
 

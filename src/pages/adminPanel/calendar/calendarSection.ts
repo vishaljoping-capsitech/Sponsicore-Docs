@@ -17,8 +17,8 @@ export const calenderSections = [
         title: "Holidays",
       },
       {
-        id: "reminders",
-        title: "Reminders",
+        id: "birthdays",
+        title: "Birthdays"
       }
     ]
   },

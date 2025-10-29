@@ -1,6 +1,5 @@
 import { Col, Row } from "antd";
 import Heading from "../../../components/Heading";
-import SubHeading from "../../../components/SubHeading";
 import "../../../css/common.css";
 import DashboardIntro from "./DashboardIntro";
 import DashboardOutro from "./DashboardOutro";
@@ -17,20 +16,11 @@ const Dashboard = () => {
 
           <DashboardIntro />
 
-          <SubHeading
-            text={
-              <>
-                <ol>
-                  {dashboardSections.map((item, index) => (
-                    <li key={index} id={item.id}>
-                      {item.title}
-                      {item.component ? React.createElement(item.component) : null}
-                    </li>
-                  ))}
-                </ol>
-              </>
-            }
-          />
+          {dashboardSections.map((item) => (
+            <Row id={item.id}>
+              {item.component ? React.createElement(item.component) : null}
+            </Row>
+          ))}
           
           <DashboardOutro />
         </Col>

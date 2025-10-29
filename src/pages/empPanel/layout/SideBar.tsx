@@ -1,10 +1,12 @@
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Paragraph from "../../../components/Paragraph";
+import SubHeading from "../../../components/SubHeading";
 
 const SideBar = () => {
   return (
     <>
+      <SubHeading text="Side Bar" />
       <Paragraph
         text={
           <>

@@ -1,48 +1,53 @@
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Paragraph from "../../../components/Paragraph";
+import SubHeading from "../../../components/SubHeading";
 import Title from "../../../components/Title";
 
 const JobType = () => {
   return (
     <>
+      <SubHeading text="Job Types" />
       <Paragraph
         text={
           <>
-            A job type is characterized by three main elements: its name (e.g.,
-            Software Developer), an occupational code (a standardized
-            classification number used for categorization and compliance), and a
-            set of related job titles that represent specific roles within that
-            category (such as Front-End Developer or App Developer). These
-            components help ensure consistency in job classification, streamline
-            recruitment processes, and align roles with organizational
-            structures.
+            In this section, the Admin can manage all job types within the
+            system.
             <ImageCard src={images.jobTypes.overview} />
             <ul className="docs-list">
-              <li id="job-type-add">
-                <Title text="Add:" /> Users can add new job types by specifying
-                the job name, occupational code, and associated job titles to
-                support organizational structure and role clarity.
+              <li>
+                <Title text="Adding a New Job Type:" /> The Admin can add a new
+                job type by providing the following details:
+                <ul className="docs-list">
+                  <li>Job Type Name</li>
+                  <li>SOC Code</li>
+                  <li>
+                    One or more Job Titles (multiple titles can be added under
+                    the same job type)
+                  </li>
+                </ul>
                 <ImageCard src={images.jobTypes.add} />
               </li>
-              <li id="job-type-edit">
-                <Title text="Edit:" /> Users can modify existing job types to
-                update the name, occupational code, or related job titles,
-                ensuring the job type remains accurate and aligned with current
-                needs.
+              <li>
+                <Title text="Predefined Job Type:" /> There is one predefined
+                job type — Administration, which includes the job title:
+                Manager.
                 <ImageCard src={images.jobTypes.edit} />
               </li>
-              <li id="job-type-delete">
-                <Title text="Delete:" /> Users can remove job types that are no
-                longer in use, helping to keep the system clean and relevant.
-                Note that system-protected or in-use job types may be restricted
-                from deletion.
+              <li>
+                <Title text="Editing and Deleting Job Types:" />
+                <ul>
+                  <li> The Admin can edit any job type to update its details or job titles. </li>
+                  <li> The Admin can also delete any job type if it is no longer needed. </li>
+                </ul>
                 <ImageCard src={images.jobTypes.delete} />
               </li>
-              <li id="job-type-state">
-                <Title text="Active / Inactive:" /> Users can activate or
-                deactivate job types as needed, allowing temporary suspension of
-                unused roles while preserving historical data and settings.
+              <li>
+                <Title text="Active / Inactive:" /> 
+                <ul>
+                  <li>Each job type can be marked as Active or Inactive.</li>
+                  <li>When a job type is Inactive, it will not appear in the job type selection list while creating a new user.</li>
+                </ul>
                 <ImageCard src={images.jobTypes.state} />
               </li>
             </ul>

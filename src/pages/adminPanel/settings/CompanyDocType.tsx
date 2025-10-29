@@ -7,7 +7,7 @@ import SubHeading from "../../../components/SubHeading";
 const CompanyDocType = () => {
   return (
     <>
-      <SubHeading level={4} text="Company Document Types:" />
+      <SubHeading level={4} text="Company Document Types:" className="margin-top-point-5rem"/>
 
       <ImageCard src={images.documentTypes.company.overview} />
 

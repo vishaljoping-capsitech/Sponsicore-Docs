@@ -1,17 +1,19 @@
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Paragraph from "../../../components/Paragraph";
+import SubHeading from "../../../components/SubHeading";
 import Title from "../../../components/Title";
 
 const Shifts = () => {
   return (
     <>
+      <SubHeading text="Shifts" />
       <Paragraph
         text={
           <>
             This section enables the Admin to create, manage, and assign work
             schedules for employees efficiently.
-            {/* <ImageCard src={images.shifts.overview} /> */}
+            <ImageCard src={images.shifts.overview} />
             <ul className="docs-list">
               <li id="add-edit-activate-assign-remove">
                 <Title text="Add, Edit, Activate/Deactivate, Assign, or Remove Shifts:" />

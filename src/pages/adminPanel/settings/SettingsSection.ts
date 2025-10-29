@@ -24,12 +24,12 @@ export const sections: Section[] = [
       {
         component: CompanyDocType,
         id: "company-doc-type",
-        title: "Company Document Types",
+        title: "Company Document",
       },
       {
         component: EmployeeDocType,
         id: "employee-doc-type",
-        title: "Employee Document Types",
+        title: "Employee Document",
       },
     ],
   },

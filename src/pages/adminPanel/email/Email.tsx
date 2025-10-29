@@ -18,7 +18,7 @@ const Email = () => {
           <Paragraph
             text={
               <>
-                <ol>
+                <ol className="docs-list">
                   The Email Section in Sponsicore allows users to manage all
                   organization-related communications in one place. Users can
                   view, compose, and manage both drafted and sent emails with
@@ -65,7 +65,7 @@ const Email = () => {
                     email using the Compose button located at the top-left
                     corner of the table. This opens the email composer
                     interface, designed for clarity and flexibility.
-                    <ul>
+                    <ul className="docs-list">
                       <Title text="Compose Email Fields" />:
                       <li>
                         <Title text="To" />: Select one or more recipients from

@@ -11,7 +11,7 @@ const Attendance: React.FC = () => {
           <ImageCard src={images.adminDashboardAttendanceSider} />
           Stay informed with a real-time view of your team's attendance
           activity:
-          <ul>
+          <ul className="docs-list">
             <li>
               Today's attendance stats are displayed by default, giving you an
               instant overview of who's{" "}

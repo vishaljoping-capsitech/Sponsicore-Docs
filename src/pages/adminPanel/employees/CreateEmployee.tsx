@@ -2,14 +2,16 @@ import Paragraph from "../../../components/Paragraph";
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Title from "../../../components/Title";
+import SubHeading from "../../../components/SubHeading";
 
 const CreateEmployee = () => {
   return (
     <>
+      <SubHeading text="Create Employee" className="margin-top-point-5rem"/>
       <Paragraph
         text={
           <>
-            <ul>
+            <ul className="docs-list">
               You can add new employees using the “Add New” button available on
               the top-left of the employee table.
               <li>Add Sponsored Employee</li>
@@ -17,7 +19,7 @@ const CreateEmployee = () => {
               <li>Add Employees in Bulk</li>
             </ul>
             <ImageCard src={images.adminEmployeeAddEmployee} />
-            <ol>
+            <ol className="docs-list">
               <li>
                 When adding a Regular or Sponsored employee, the form is divided
                 into three sections for easier data entry and better
@@ -25,7 +27,7 @@ const CreateEmployee = () => {
               </li>
               <li>
                 Creating a sponsored or regular employee involves three steps:
-                <ul>
+                <ul className="docs-list">
                   <li>
                     <Title text="Basic Details"/>: Provide the essential information about the
                     employee (like Employee Category, Employment Type, Employee

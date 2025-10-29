@@ -261,6 +261,7 @@ import empTasks from "./images/emp/tasks/all-tasks.png";
 import empTasksAdd from "./images/emp/tasks/add-task.png";
 import empTasksEdit from "./images/emp/tasks/edit-task.png";
 import empTasksDetails from "./images/emp/tasks/task-details.png";
+import empTasksMonthlyFilttering from "./images/emp/tasks/monthly-filttering.png";
 
 // Calendar
 import empCalendar from "./images/emp/calendar/calendar.png";
@@ -582,6 +583,7 @@ export const images = {
   empTasksAdd,
   empTasksEdit,
   empTasksDetails,
+  empTasksMonthlyFilttering,
 
   // Calendar
   empCalendar,

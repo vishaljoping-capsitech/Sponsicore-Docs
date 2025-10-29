@@ -8,7 +8,7 @@ import CompanyDetails from "./CompanyDetails";
 import Events from "./Events";
 
 export const dashboardSections = [
-  { component: CompanyDetails, id: "company-details", title: "Create Details" },
+  { component: CompanyDetails, id: "company-details", title: "Company Details" },
   { component: SponsoredEmployees, id: "sponsored-employees", title: "Sponsored Employees" },
   { component: Alerts, id: "dashboard-alerts", title: "Dashboard Alerts" },
   {

@@ -1,10 +1,12 @@
 import Paragraph from "../../../components/Paragraph";
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
+import SubHeading from "../../../components/SubHeading";
 
 const EmployeeRequest = () => {
   return (
     <>
+      <SubHeading text="Employee Request" />
       <Paragraph
         text={
           <>

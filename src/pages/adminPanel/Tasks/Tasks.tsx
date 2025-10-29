@@ -15,7 +15,7 @@ const AdminTasks = () => {
         <Paragraph
           text={
             <>
-              <ul>
+              <ul className="docs-list">
                 <li id="emps-tasks"> When you open this section, you’ll see a list of all active employees along with their tasks for the current day. If an employee hasn’t added a task yet, the system will show “Task Not Added” for that employee. In such cases, the Admin can easily send a notification or email reminder to prompt the employee to update their tasks.
                   <ImageCard src={images.adminTasks} />
                 </li>

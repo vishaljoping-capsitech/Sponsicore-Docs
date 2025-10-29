@@ -1,11 +1,14 @@
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Paragraph from "../../../components/Paragraph";
+import SubHeading from "../../../components/SubHeading";
 import Title from "../../../components/Title";
 
 const BiometricDevice = () => {
   return (
     <>
+      <SubHeading text="Biometric Device" className="margin-top-point-5rem" />
+      
       <Paragraph
         text={
           <>

@@ -1,18 +1,20 @@
 import { images } from "../../../assets"
 import ImageCard from "../../../components/ImageCard"
 import Paragraph from "../../../components/Paragraph"
+import SubHeading from "../../../components/SubHeading"
 
 const DocumentInfo = () => {
   return (
     <>
+      <SubHeading text="Document Info" />
       <Paragraph
         text={
           <>
             This section allows employees to manage their mandatory and regular documents. (Maximum upload file size: 4MB)
-            <ul>
+            <ul className="docs-list">
               <li id="mandatory-documents">
                 Mandatory Documents:
-                <ul>
+                <ul className="docs-list">
                   <li>These document types are managed through Pre-Defined Employee Document Types. Employees can add, view, download, and check document history.</li>
                   <li>
                     When an employee uploads a document, the admin can verify or reject it.
@@ -28,7 +30,7 @@ const DocumentInfo = () => {
 
               <li id="regular-documents">
                 Regular Documents:
-                <ul>
+                <ul className="docs-list">
                   <li>This section stores other employee-related documents, including payslips.</li>
                   <li>Employees can view, remove, and download these documents.</li>
                 </ul>
@@ -37,11 +39,11 @@ const DocumentInfo = () => {
 
               <li id="add-document">
                 Add Document: 
-                <ul>
+                <ul className="docs-list">
                   Employees can upload new documents using the Add Document Modal, which supports both Mandatory and Regular document uploads.
                   <li>
                     For Mandatory Documents:
-                    <ul>
+                    <ul className="docs-list">
                       <li>Displays a list of all document types along with a drag-and-drop upload area.</li>
                       <li>The dropdown menu shows icons for documents that are already uploaded or expired.</li>
                       <li>If a document type requires an expiry date, an Expiry Date field will appear.</li>
@@ -51,10 +53,10 @@ const DocumentInfo = () => {
                   </li>
                   <li>
                     For Regular Documents:
-                    <ul>
+                    <ul className="docs-list">
                       <li>
                         Employees must provide a document name and upload files via the drag-and-drop area.
-                        <ul>
+                        <ul className="docs-list">
                           <li>For Payslips, employees select the payslip period before uploading.</li>
                           <ImageCard src={images.empProfileAddPaySlip} />
                         </ul>

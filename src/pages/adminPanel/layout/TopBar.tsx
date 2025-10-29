@@ -1,24 +1,25 @@
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Paragraph from "../../../components/Paragraph";
+import SubHeading from "../../../components/SubHeading";
 import Title from "../../../components/Title";
 
 const TopBar = () => {
   return (
     <>
+      <SubHeading text="Top Bar" />
       <Paragraph
         text={
           <>
-            <ImageCard src={images.adminLayoutDashboardTop} />
-            <ul>
+            <ul className="docs-list">
               <li>
                 Displays the image of the currently logged-in user for easy
                 identification..
               </li>
-
+              <ImageCard src={images.adminLayoutDashboardTop} />
               <li>
                 <Title text="Global Search Bar:" />
-                <ul>
+                <ul className="docs-list">
                   <li>
                     Allows users to search for employees, tasks, and reminders
                     across the system.
@@ -31,10 +32,10 @@ const TopBar = () => {
               </li>
 
               <li>
-                <Title id="quick-action-button" text="Quick Action Button:" /> Accessible from any
-                module, this button allows users to perform frequent actions
-                quickly, including
-                <ul>
+                <Title id="quick-action-button" text="Quick Action Button:" />{" "}
+                Accessible from any module, this button allows users to perform
+                frequent actions quickly, including
+                <ul className="docs-list">
                   <li>Creating a new employee</li>
                   <li>Adding a reminder</li>
                   <li>Composing an email</li>
@@ -63,7 +64,7 @@ const TopBar = () => {
                 in Sponsicore allows users to manage their account settings and
                 access personal preferences quickly. By clicking on the profile
                 picture, the following options are available:
-                <ul>
+                <ul className="docs-list">
                   <Title id="login-activities" text="Login Activities:" />
                   <li>
                     Displays all devices where the account is currently logged
@@ -79,12 +80,12 @@ const TopBar = () => {
                   </li>
                   <ImageCard src={images.adminLayoutProfilePopover} />
                 </ul>
-                <ul>
+                <ul className="docs-list">
                   <Title id="change-password" text="Change Password:" />
                   <li>Opens a section to update the user password.</li>
                   <li>
                     <Title text="Requires entering three fields:" />
-                    <ul>
+                    <ul className="docs-list">
                       <li>
                         <Title text="Current Password:" /> the existing
                         password.
@@ -97,12 +98,12 @@ const TopBar = () => {
                         <Title text="Confirm New Password:" /> re-enter the new
                         password to confirm.
                       </li>
-                      <ImageCard src={images.adminLayoutChangePasswordModal}/>
+                      <ImageCard src={images.adminLayoutChangePasswordModal} />
                     </ul>
                   </li>
                   <li>
                     <Title text="Change Branch" />
-                    <ul>
+                    <ul className="docs-list">
                       <li>
                         Available if the user has access to multiple branches
                         within the organization.
@@ -115,7 +116,7 @@ const TopBar = () => {
                   </li>
                   <li>
                     <Title text="Employee Panel" />
-                    <ul>
+                    <ul className="docs-list">
                       <li>
                         Accessible if the user has created employees under their
                         administration.
@@ -134,6 +135,6 @@ const TopBar = () => {
       />
     </>
   );
-}
+};
 
 export default TopBar;

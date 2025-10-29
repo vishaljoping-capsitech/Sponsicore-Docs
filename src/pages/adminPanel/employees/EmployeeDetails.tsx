@@ -2,14 +2,16 @@ import Paragraph from "../../../components/Paragraph";
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Title from "../../../components/Title";
+import SubHeading from "../../../components/SubHeading";
 
 const EmployeeDetails = () => {
   return (
     <>
+      <SubHeading text="Employee Details" className="margin-top-point-5rem"/>
       <Paragraph
         text={
           <>
-            <ol>
+            <ol className="docs-list">
               On the Employee Details page, we manage all employee-related
               information, including profile, documents, tasks, travel, time and
               attendance, requests, notes, sponsorship details (for sponsored
@@ -24,7 +26,7 @@ const EmployeeDetails = () => {
               </li>
               <li>
                 In Employee Activity, there are several status types:
-                <ul>
+                <ul className="docs-list">
                   <li><Title text="Active"/>: The employee is currently active.</li>
                   <li>
                     <Title text="Suspended"/>: The employee is temporarily not allowed to
@@ -44,12 +46,12 @@ const EmployeeDetails = () => {
               <ImageCard src={images.adminEmployeeActivityStatus} />
               <li>
                 In the top right corner, there are two options:
-                <ul>
+                <ul className="docs-list">
                   <li>
                     <Title text="Onboarding"/>: This button appears if an employee has
                     registered for onboarding. It shows the onboarding status as
                     follows:
-                    <ul>
+                    <ul className="docs-list">
                       <li>Not Started.</li>
                       <li>
                         In Process (where we can view the data the employee has

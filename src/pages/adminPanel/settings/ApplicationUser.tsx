@@ -1,46 +1,54 @@
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Paragraph from "../../../components/Paragraph";
+import SubHeading from "../../../components/SubHeading";
 import Title from "../../../components/Title";
 
 const ApplicationUser = () => {
   return (
     <>
+      <SubHeading text="Application Users" />
       <Paragraph
         text={
           <>
-            If a user is linked to an employee, their corresponding employee ID
-            will be displayed within the user details. By clicking on the
-            employee ID, users are redirected to the employee's profile page,
-            allowing for quick access to detailed employee information and a
-            more seamless navigation experience between user and employee
-            records.
+            In this section, the Admin can manage all application users and
+            their access permissions.
             <ImageCard src={images.applicationUsers.overview} />
             <ul className="docs-list">
-              <li id="add-application-user">
-                <Title text="Add Users:" /> Users can add new members to the
-                system by entering their details, assigning roles, and providing
-                necessary access permissions.
+              <li>
+                <Title text="Adding a New User" /> The Admin can add a new
+                application user by providing the following details:
+                <ul>
+                  <li>Name</li>
+                  <li>Email</li>
+                  <li>Contact Number</li>
+                  <li>Role</li>
+                </ul>
                 <ImageCard src={images.applicationUsers.add} />
               </li>
               <li id="edit-application-user">
-                <Title text="Edit User Information:" /> Users can modify
-                existing user profiles, such as updating personal information,
-                changing roles, or adjusting access levels to keep records
-                current and accurate.
-                <ImageCard src={images.applicationUsers.edit} />
+                <Title text="Managing Users" /> The Admin can:
+                <ul className="docs-list">
+                  <li>Edit user details, including name, email, contact number, role, and employee panel access.</li>
+                  <ImageCard src={images.applicationUsers.edit} />
+                  <li>Update user status (Active/Inactive).</li>
+                  <li>Force logout users from the system if required.</li>
+                  <ImageCard src={images.applicationUsers.delete} />
+                  <li>Filter users based on their role or status (Active/Inactive).</li>
+                  <ImageCard src={images.applicationUsers.status} />
+                </ul>
               </li>
-              <li id="application-user-status">
-                <Title text="Update User Status:" /> Administrators can change a
-                user's status—such as activating, deactivating, or suspending
-                accounts—based on organizational needs or user activity.
-                <ImageCard src={images.applicationUsers.status} />
+              <li>
+                <Title text="Role and Access Management:" /> The Admin can
+                manage each user's role and branch access to control what they
+                can view and perform within the application.
               </li>
               <li id="delete-application-user">
-                <Title text="Force Logout Users:" /> Admins can remotely log out
-                users from the system, which is useful in cases like security
-                concerns, session management, or account updates.
-                <ImageCard src={images.applicationUsers.delete} />
+                <Title text="Employee Linkage:" /> 
+                <ul className="docs-list">
+                  <li>If a user is linked to an employee, the corresponding Employee ID is displayed.</li>
+                  <li>Clicking on the Employee ID redirects the Admin to the employee's profile page for quick access.</li>
+                </ul>
               </li>
             </ul>
           </>

@@ -1,7 +1,6 @@
 import { Col, Row } from "antd";
 import Heading from "../../../components/Heading";
 import Paragraph from "../../../components/Paragraph";
-import SubHeading from "../../../components/SubHeading";
 import Title from "../../../components/Title";
 import { generateAnchorItems } from "../../../utils/GenerateAnchorItems";
 import { employeesSections } from "./employeesSections";
@@ -16,7 +15,7 @@ const Employees = () => {
         <Paragraph
           text={
             <>
-              <ul>
+              <ul className="docs-list">
                 The Employees module in Sponsicore allows you to manage all your
                 workforce data efficiently in one place. You can view, add, and
                 manage both Regular and Sponsored employees, apply filters, and
@@ -35,20 +34,12 @@ const Employees = () => {
           }
         />
 
-        <SubHeading
-          text={
-            <>
-              <ol>
-                {employeesSections.map((item, index) => (
-                  <li key={index} id={item.id}>
-                    {item.title}
-                    {item.component ? React.createElement(item.component) : null}
-                  </li>
-                ))}
-              </ol>
-            </>
-          }
-        />
+        {employeesSections.map((item) => (
+          <Row id={item.id}>
+            {item.component ? React.createElement(item.component) : null}
+          </Row>
+        ))}
+
       </Col>
     </Row>
   );

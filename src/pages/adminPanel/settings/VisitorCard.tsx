@@ -1,22 +1,19 @@
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Paragraph from "../../../components/Paragraph";
+import SubHeading from "../../../components/SubHeading";
 import Title from "../../../components/Title";
 
 const VisitorCard = () => {
   return (
     <>
+      <SubHeading text="Visitor Card" />
       <Paragraph
         text={
           <>
-            A temporary ID is issued to guests for identification and access
-            control within the premises. This ensures that guest movement is
-            monitored and secure. Access can be restricted based on biometric
-            device settings—meaning guests can be granted entry only to specific
-            areas they are authorized for. For example, if a guest is permitted
-            to access only certain sections of the office, biometric controls
-            will automatically deny them entry to restricted zones, enhancing
-            both security and operational control.
+            A temporary ID is issued to guests for secure identification and
+            controlled access. Biometric settings restrict entry to authorized
+            areas only, ensuring guest movements remain monitored and secure.
             <ImageCard src={images.visitorCard.overview} />
             <ul className="docs-list">
               <li id="add-visitor-card">

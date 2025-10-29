@@ -1,47 +1,57 @@
 import { images } from "../../../assets";
 import ImageCard from "../../../components/ImageCard";
 import Paragraph from "../../../components/Paragraph";
+import SubHeading from "../../../components/SubHeading";
 import Title from "../../../components/Title";
 
 const RolesPermissions = () => {
   return (
     <>
+    <SubHeading text="Roles and Permissions" className="margin-top-point-5rem" />
       <Paragraph
         text={
           <>
+            This section allows the Admin to control user access and actions
+            based on their responsibilities within the system. It is accessible
+            only to the Admin.
             <ul className="docs-list">
-              <li id="add-role">
-                <Title text="Add Roles:" /> Admins can create new roles within
-                the system, defining specific sets of permissions and
-                responsibilities tailored to various job functions or
-                departments.
+              <li>
+                <Title text="Predefined Roles:" /> The system includes two
+                predefined roles:
+                <ul className="docs-list">
+                  <li>Admin</li>
+                  <li>Branch Admin</li>
+                  <li>
+                    These roles are fixed and locked — they cannot be edited or
+                    deleted.
+                  </li>
+                  <li>
+                    The Admin can view their details but cannot modify their
+                    permissions.
+                  </li>
+                </ul>
+                <ImageCard src={images.rolesAndPermissions.overview} />
+              </li>
+              <li>
+                <Title text="Creating a New Role: " />The Admin can create new roles by providing:
+                <ul className="docs-list">
+                  <li>Role Name</li>
+                  <li>Role Description</li>
+                  <li>Permissions for each module or section (e.g., Dashboard, Employees, Attendance, Tasks, Calendar, Email, etc.)</li>
+                </ul>
                 <ImageCard src={images.rolesAndPermissions.add} />
               </li>
-              <li id="edit-role">
-                <Title text="Edit Roles:" /> Admins can modify existing roles to
-                update their name, description, or permissions, ensuring the
-                role remains aligned with organizational needs and structure.
-                <ImageCard src={images.rolesAndPermissions.edit} />
-              </li>
               <li id="role-status">
-                <Title text="Activate/Deactivate Roles:" /> Admins can toggle
-                the status of roles between active and inactive. This is useful
-                for temporarily disabling roles without permanently deleting
-                them.
-                <ImageCard src={images.rolesAndPermissions.status} />
-              </li>
-              <li id="remove-role">
-                <Title text="Remove Roles:" /> Admins can delete roles that are
-                no longer relevant or in use, helping to keep the system clean,
-                organized, and up to date.
-                <ImageCard src={images.rolesAndPermissions.delete} />
-              </li>
-              <li id="locked-role">
-                <Title text="Fixed System Roles" />: The Admin and Branch Admin
-                roles are system-defined and locked. These roles cannot be
-                edited, modified, or deleted to ensure the integrity and
-                security of core administrative functions.
-                <ImageCard src={images.rolesAndPermissions.overview} />
+                <Title text="Managing Roles:" /> The Admin can:
+                <ul className="docs-list">
+                  <li>Add new roles</li>
+                  <li>Edit existing roles (except predefined ones)</li>
+                  <ImageCard src={images.rolesAndPermissions.edit} />
+                  <li>Activate / Deactivate roles</li>
+                  <ImageCard src={images.rolesAndPermissions.status} />
+                  <li>Delete self-defined roles when no longer needed</li>
+                  <ImageCard src={images.rolesAndPermissions.delete} />
+                </ul>
               </li>
             </ul>
           </>

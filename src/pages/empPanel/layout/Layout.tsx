@@ -1,6 +1,5 @@
 import { Col, Row } from "antd";
 import Heading from "../../../components/Heading";
-import SubHeading from "../../../components/SubHeading";
 import { layoutSections } from "./layoutSection";
 import React from "react";
 import { generateAnchorItems } from "../../../utils/GenerateAnchorItems";
@@ -12,20 +11,11 @@ const Layout = () => {
         <Col xl={24}>
           <Heading text="Layout" />
 
-          <SubHeading
-            text={
-              <>
-                <ol>
-                  {layoutSections.map((item, index) => (
-                    <li key={index} id={item.id} className="">
-                      {item.title}
-                      {item.component ? React.createElement(item.component) : null}
-                    </li>
-                  ))}
-                </ol>
-              </>
-            }
-          />
+          {layoutSections.map((item) => (
+            <Row id={item.id}>
+              {item.component ? React.createElement(item.component) : null}
+            </Row>
+          ))}
 
         </Col>
       </Row>

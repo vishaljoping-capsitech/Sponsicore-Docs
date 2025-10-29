@@ -8,7 +8,6 @@ const DashboardIntro: React.FC = () => {
     <Paragraph
       text={
         <>
-          <ImageCard src={images.adminDashboard} />
           Sponsicore provides you the best compliance management system and here
           is a tour to it through the dashboard that provides you{" "}
           <Title text="real-time insights" /> into{" "}
@@ -17,6 +16,7 @@ const DashboardIntro: React.FC = () => {
           <Title text="informedand in control" />, the Dashboard helps you make
           quick, confident decisions and ensures your business stays fully
           compliant.
+          <ImageCard src={images.adminDashboard} />
         </>
       }
     />

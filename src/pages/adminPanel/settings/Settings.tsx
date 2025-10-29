@@ -2,7 +2,6 @@ import { Col, Row } from "antd";
 import React from "react";
 import Heading from "../../../components/Heading";
 import Paragraph from "../../../components/Paragraph";
-import SubHeading from "../../../components/SubHeading";
 import { sections } from "./SettingsSection";
 import { generateAnchorItems } from "../../../utils/GenerateAnchorItems";
 
@@ -20,7 +19,6 @@ const Settings = () => {
 
           {sections.map((item) => (
             <Row id={item.id}>
-              <SubHeading text={item.title} />
               {item.component ? React.createElement(item.component) : null}
             </Row>
           ))}
