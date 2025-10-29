@@ -1,23 +1,14 @@
 import Paragraph from "../../../components/Paragraph"
 import { images } from '../../../assets'
 import ImageCard from "../../../components/ImageCard"
+import SubHeading from "../../../components/SubHeading"
 const AutoApprovedStatus = () => {
     return (
         <>
+        <SubHeading text="Auto Approved Travel" />
             <Paragraph
-                text={
-                    <>
-                        Travel requests submitted by an authorized admin user are automatically approved upon creation. This feature allows the system to:
-                        <ul>
-                            <li>Bypass the manual approval process for admin-submitted travel requests</li>
-                            <li>Streamline the workflow, saving time and reducing administrative steps</li>
-                            <li>Ensure faster processing of travel plans initiated by admins</li>
-                            <li>Maintain proper control while allowing trusted users to expedite request handling</li>
-                            This helps in achieving a more efficient and responsive travel request process for administrative users.
-                            <ImageCard src={images.adminTravelApprovedStatus} />
-                        </ul>
-                    </>
-                } />
+                text={"Travel requests submitted by an authorized administrative user are automatically approved upon creation, eliminating the need for manual approval. This functionality streamlines the travel request workflow, expedites processing, ensures timely notification to all travelers, and maintains administrative control while allowing trusted users to manage requests efficiently."} />
+            <ImageCard src={images.adminTravelApprovedStatus} />
         </>
     )
 }

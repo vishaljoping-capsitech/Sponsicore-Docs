@@ -9,26 +9,26 @@ export const sections: Section[] = [
   {
     component: LeaveApplication,
     id: "leave-application",
-    title: "Efficient Leave Application Management"
+    title: "Leave Management"
   },
   {
     component: LeaveRequest,
     id: "leave-request",
-    title: "Leave Request Approval Process"
+    title: "Leave Request Approval"
   },
   {
     component: LeaveFilters,
     id: "leave-filters",
-    title: "Categorized Leave Applications with Interactive Filters"
+    title: "Categorized Leaves"
   },
   {
     component: PendingLeaveNotification,
     id: "pending-leave-notification",
-    title: "Pending Leave Notifications"
+    title: "Pending Notifications"
   },
   {
     component: AutomatedNotification,
     id: "automated-notification",
-    title: "Automated Employee Notifications"
+    title: "Automated Notifications"
   }
 ]

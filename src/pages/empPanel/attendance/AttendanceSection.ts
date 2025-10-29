@@ -7,16 +7,16 @@ export const sections: Section[] = [
     {
         component: AttendanceOverview,
         id: 'attendance-overview',
-        title: 'Attendance Overview'
+        title: 'Overview'
     },
     {
         component: AttendanceTransaction,
         id: 'attendance-transaction',
-        title: 'Attendance In/Out Time'
+        title: 'In/Out Time'
     },
     {
         component: AttendanceDetails,
         id: 'more-attendance-details',
-        title: 'More Attendance Details'
+        title: 'More Details'
     }
 ]

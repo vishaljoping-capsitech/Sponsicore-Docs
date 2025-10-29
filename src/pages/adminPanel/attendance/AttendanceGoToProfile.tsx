@@ -1,11 +1,13 @@
 import { images } from '../../../assets'
 import ImageCard from '../../../components/ImageCard'
 import Paragraph from '../../../components/Paragraph'
+import SubHeading from '../../../components/SubHeading'
 
 const AttendanceGoToProfile = () => {
   return (
     <>
-    <Paragraph text="To further enhance user navigation and provide quick access to more detailed information, a Go to Profile button has been added to the Attendance Details page. This button serves as a direct link to the selected employee's full profile. By clicking on it, users are seamlessly taken to the Employee Details page, where they can view comprehensive information about the individual, such as personal details, job role, contact information, department, and other HR-related records. This feature allows for a more integrated user experience by connecting attendance data with the broader context of the employee's profile, making it easier for managers or HR personnel to make informed decisions without having to navigate through multiple sections of the system." />
+    <SubHeading text="Go To Profile Button" />
+    <Paragraph text="The Attendance Details page includes a Go to Profile button that provides direct navigation to the corresponding Employee Details module. When triggered, the system retrieves the selected employee's profile data and redirects the user to the Employee Details page. This page displays comprehensive employee information, including personal details, designation, department, contact data, and other HR-related attributes" />
     <ImageCard src={images.adminAttendanceGoToProfile}/>
     </>
   )

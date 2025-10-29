@@ -1,12 +1,15 @@
 import { images } from "../../../assets"
 import ImageCard from "../../../components/ImageCard"
 import Paragraph from "../../../components/Paragraph"
+import SubHeading from "../../../components/SubHeading"
 
 
 const LeaveOverview = () => {
     return (
         <>
-            <Paragraph text="A range of filters are introduced to help users easily view and manage leave applications based on specific criteria. These filters allow sorting and searching by factors such as leave status (pending, approved, rejected), leave type (sick leave, vacation, etc.), date ranges, employee names, and departments. By applying these filters, managers and employees can quickly find relevant leave requests without having to sift through large volumes of data. This feature enhances efficiency, improves user experience, and supports better tracking and decision-making within the leave management system." />
+        <SubHeading text="Leave Status Overview" />
+            <Paragraph text="Employees can view comprehensive details of their leave applications by clicking the **Status** button. The detailed view displays key information such as the applied date, leave type, leave duration, total days, reason for leave, current status, admin notes, and any attached documents for reference.
+" />
             <ImageCard src={images.empLeaveOverview} />
         </>
     )

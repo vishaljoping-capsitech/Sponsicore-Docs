@@ -1,7 +1,12 @@
 import logo from "./images/logo.svg";
 import logoDark from "./images/logo-dark.svg";
+import logoDarkFooter from "./images/logo-dark-footer.svg";
 import darkMode from "./images/dark-mode.svg";
 import lightMode from "./images/light-mode.svg";
+import callLogoLight from "./images/call-logo-light.svg";
+import mailLogoLight from "./images/mail-logo-light.svg";
+import callLogoDark from "./images/call-logo-dark.svg";
+import mailLogoDark from "./images/mail-logo-dark.svg";
 
 /* --------------------------------- Admin Panel ------------------------------------------ */
 
@@ -304,11 +309,21 @@ import empProfileMandatoryDocuments from "./images/emp/profile/mandatory-documen
 import empProfileRegularDocuments from "./images/emp/profile/regular-documents.png";
 import empProfileSponsorshipDetails from "./images/emp/profile/sponsorship-details.png";
 
+
+/* --------------------------------- Overview ------------------------------------------ */
+import overview from './images/overview/overview.svg'
+import overviewSponsicore from './images/overview/sponsicore.svg'
+
 export const images = {
   logo,
   darkMode,
   lightMode,
   logoDark,
+  logoDarkFooter,
+  callLogoLight,
+  mailLogoLight,
+  callLogoDark,
+  mailLogoDark,
 
   /* -- Admin Panel -- */
 
@@ -625,4 +640,9 @@ export const images = {
   empProfileMandatoryDocuments,
   empProfileRegularDocuments,
   empProfileSponsorshipDetails,
+
+
+  /* --------------------------------- Overview ------------------------------------------ */
+  overview,
+  overviewSponsicore,
 };

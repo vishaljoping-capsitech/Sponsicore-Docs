@@ -1,12 +1,14 @@
 import { images } from "../../../assets"
 import ImageCard from "../../../components/ImageCard"
 import Paragraph from "../../../components/Paragraph"
+import SubHeading from "../../../components/SubHeading"
 
 
 const AttendanceOverview = () => {
     return (
         <>
-            <Paragraph text="Employees can access a detailed overview of their attendance for any specific day by clicking the Status button associated with that date. This feature provides insights such as the recorded attendance status, check-in and check-out times, and any additional remarks or actions taken. To maintain accuracy and relevance, the overview is displayed only when attendance data exists for the selected day and the date is not in the future. This helps employees track their daily attendance records effectively while ensuring that future or incomplete data is not mistakenly shown." />
+        <SubHeading text="Attendance Overview" />
+            <Paragraph text="Employees can view a detailed daily attendance overview by clicking the Status button for a specific date. This displays the recorded attendance status, check-in and check-out times, and any relevant remarks or actions. The overview is shown only for dates with existing attendance data and excludes future dates, helping employees track their daily records accurately and efficiently." />
             <ImageCard src={images.empAttendanceDetails} />
         </>
     )

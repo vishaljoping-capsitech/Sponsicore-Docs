@@ -35,6 +35,7 @@ import Settings from "./adminPanel/settings/Settings";
 import EmployeeRequest from "./empPanel/request/EmployeeRequest";
 import EmployeePolicies from "./empPanel/policies/EmployeePolicies";
 import SideAnchor from "../components/SideAnchor";
+import Footer from "../components/Footer";
 
 const componentMap: Record<ISideBarKeys, React.FC & { getAnchorItems?: () => AnchorItemProps[] }> = {
   [ISideBarKeys.Undefined]: Overview,
@@ -72,7 +73,6 @@ const MainLayout: React.FC = () => {
   const [collapsed, setCollapsed] = useState(true);
 
   const onMenuClick = () => setCollapsed(!collapsed);
-
   const CurrentComponent = componentMap[selectedKey];
 
   const anchorItems = useMemo(() => {
@@ -88,7 +88,7 @@ const MainLayout: React.FC = () => {
 
   return (
     <>
-      <MobileSidebar selectedKey={selectedKey} setSelectedKey={setSelectedKey} collapsed={collapsed} setCollapsed={setCollapsed}/>
+      <MobileSidebar selectedKey={selectedKey} setSelectedKey={setSelectedKey} collapsed={collapsed} setCollapsed={setCollapsed} />
       <Row justify={"center"}>
         <Col xs={24}>
           <Layout>
@@ -98,16 +98,17 @@ const MainLayout: React.FC = () => {
             <Layout>
               <Sider className="ant-layout-main-content scrollable docs-sidebar-menu"
                 style={{ borderRight: mode === "dark" ? "1px solid #4C3B63" : "1px solid #EBEAF1", }}>
-                <SideBar selectedKey={selectedKey} setSelectedKey={setSelectedKey}/>
+                <SideBar selectedKey={selectedKey} setSelectedKey={setSelectedKey} />
               </Sider>
               <Content className="ant-layout-main-content scrollable" >
-                <AlignLeftOutlined onClick={onMenuClick} className="text-md cursor-pointer side-bar-menu-collapse theme-color pr-4" 
-                  style={{lineHeight: "1px",backgroundColor: "#7427502b" }}/>
+                <AlignLeftOutlined onClick={onMenuClick} className="text-md cursor-pointer side-bar-menu-collapse theme-color pr-4"
+                  style={{ lineHeight: "1px", backgroundColor: "#7427502b" }} />
                 <Row justify={'center'} className="docs-components">
                   <Col lg={20} md={18} xs={24} className="px-4">
                     <Row justify={'center'}>
                       <Col lg={15} md={20} xs={24}>
                         {CurrentComponent ? <CurrentComponent /> : <>Component not found</>}
+                        <Footer />
                       </Col>
                     </Row>
                   </Col>

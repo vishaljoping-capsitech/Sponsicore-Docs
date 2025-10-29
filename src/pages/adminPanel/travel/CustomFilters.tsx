@@ -1,10 +1,12 @@
 import Paragraph from "../../../components/Paragraph"
 import { images } from '../../../assets'
 import ImageCard from "../../../components/ImageCard"
+import SubHeading from "../../../components/SubHeading"
 const CustomFilters = () => {
     return (
         <>
-            <Paragraph text="A comprehensive set of filters has been implemented to enable precise data visualization, with filters applied to key parameters including travel dates, travel title, employee trip history, trip status, trip type, and request status. This approach facilitates efficient sorting and enhanced organization of travel-related information, allowing users to customize their views to highlight the most pertinent data points. Additionally, the filtering system is designed with user-friendly functionality to ensure ease of use across all levels."/>
+        <SubHeading text="Custom Filters" />
+            <Paragraph text="A robust filtering system allows users to customize travel data views efficiently. Filters include a search filter for travel title, date filter, and options for trip type, trip status, and request type. This enables quick sorting, better organization, and easy access to relevant travel information, with a user-friendly interface designed for seamless navigation."/>
             <ImageCard src={images.adminTravelCustomFilters} />
         </>
     )

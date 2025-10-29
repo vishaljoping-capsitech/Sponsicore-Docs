@@ -1,11 +1,13 @@
 import Paragraph from "../../../components/Paragraph"
 import { images } from '../../../assets'
 import ImageCard from "../../../components/ImageCard"
+import SubHeading from "../../../components/SubHeading"
 
 const TravelNotification = () => {
     return (
         <>
-            <Paragraph text="If the travel location or travel dates are modified in an admin-added trip, all assigned travelers will receive a notification informing them that their trip details have been updated. This ensures that travelers are always aware of critical changes that could impact their travel plans, such as updated destinations, rescheduled departure or return dates, or revised itineraries. Timely notifications help travelers stay prepared, avoid confusion, and make any necessary adjustments to their arrangements. This feature promotes transparency and keeps everyone aligned throughout the trip planning and approval process." />
+        <SubHeading text="Travel Notifications" />
+            <Paragraph text="When an admin updates a trip's location or dates, all assigned travelers are notified immediately. This keeps them informed of changes to destinations, schedules, or itineraries, ensuring clarity, timely adjustments, and alignment throughout the trip planning process." />
             <ImageCard src={images.empTravelNotification} />
         </>
     )

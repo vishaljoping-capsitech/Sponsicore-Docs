@@ -13,7 +13,7 @@ export const sections: Section[] = [
     {
         component: AddTravelData,
         id: 'add-travel-data',
-        title: 'Add Travel Details'
+        title: 'Add Travel'
     },
     {
         component: EditTravelData,
@@ -28,7 +28,7 @@ export const sections: Section[] = [
     {
         component: TripOverview,
         id: 'trip-overview',
-        title: 'Accessing Travel Overviews'
+        title: 'Travel Overviews'
     },
     {
         component: EditPendingData,
@@ -38,12 +38,12 @@ export const sections: Section[] = [
     {
         component: ManageExpenses,
         id: 'manage-expenses',
-        title: 'Manage Your Expenses with Ease!'
+        title: 'Manage Expenses'
     },
     {
         component: TravelRequestUpdate,
         id: 'travel-request-uopdate',
-        title: 'Real-Time Travel Request Updates'
+        title: 'Travel Request Updates'
     },
     {
         component: LockedTravelRequest,
@@ -58,6 +58,6 @@ export const sections: Section[] = [
     {
         component: EmployeeDuplicateTravel,
         id: 'employee-duplicate-travel',
-        title: 'Restriction on Duplicate Travel Requests for the Same Date'
+        title: 'No Duplicate Travel Requests'
     }
 ]

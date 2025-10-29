@@ -49,22 +49,22 @@ export const sections: Section[] = [
   {
     component: TripHistoryinAddEdit,
     id: 'trip-history-add-edit',
-    title: 'View Trip History in Add and Edit Drawer',
+    title: 'View Trip History',
     children: [
       {
         id: 'trip-history-add',
-        title: 'View Trip History in Add Drawer',
+        title: 'In Add Drawer',
       },
       {
         id: 'trip-history-edit',
-        title: 'View Trip History in Edit Drawer',
+        title: 'In Edit Drawer',
       }
     ]
   },
   {
     component: DuplicateTravel,
     id: 'duplicate-travel',
-    title: 'Duplicate Travel Requests Not Permitted'
+    title: 'No Duplicate Travel Requests'
   },
   {
     component: CustomFilters,

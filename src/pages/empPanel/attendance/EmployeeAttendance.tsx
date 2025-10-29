@@ -2,10 +2,8 @@ import { Col, Row } from 'antd'
 import React from 'react'
 import Heading from '../../../components/Heading'
 import Paragraph from '../../../components/Paragraph'
-import Title from '../../../components/Title'
 import ImageCard from '../../../components/ImageCard'
 import { images } from '../../../assets'
-import SubHeading from '../../../components/SubHeading'
 import { sections } from './AttendanceSection'
 import { generateAnchorItems } from '../../../utils/GenerateAnchorItems'
 
@@ -15,29 +13,15 @@ const EmployeeAttendance = () => {
     <Row justify="center" gutter={64}>
         <Col xl={24}>
         <Heading text='Attendance' />
-        <Paragraph text={<>
-            <ul>
-                <li><Title text='Monthly Attendance Overview with Clickable Stats' />This page displays an employee's monthly attendance along with summarized stat bricks showing counts for each attendance status. These bricks double as filters—clicking on any stat (like “Absent” or “Leave”) instantly filters the view to show only those specific records. This makes tracking and reviewing attendance quick and user-friendly.</li>
-                <li><Title text='Multiple Attendance Status Types' />The system supports various attendance statuses such as Present, Absent, Work from Home (WFH), Work from Client (WFC), Leave, Half-Day, Weekend Off, and Holiday. These clear and categorized statuses ensure accurate tracking and help managers understand attendance patterns at a glance.
-                <ImageCard src={images.empAttendancePanel}/></li>
-            </ul>
-            </>} />
-           <SubHeading
-            text={
-              <>
-                <ol>
-                  {sections.map((item, index) => (
-                    <li key={index} id={item.id}>
-                      {item.title}
-                      {item.component ? React.createElement(item.component) : null}
-                    </li>
-                  ))}
-                </ol>
-              </>
-            }
-          />
+        <Paragraph text="The Monthly Attendance Overview provides a clear view of an employee's attendance, featuring clickable stat bricks that summarize counts for each status and act as filters to quickly display specific records. The system supports multiple attendance types including Present, Absent, WFH, WFC, Leave, Half-Day, Weekend Off, and Holiday ensuring accurate tracking and easy insight into attendance patterns." />
+            <ImageCard src={images.empAttendancePanel}/>
+           {sections.map((item) => (
+                        <Row id={item.id}>
+                            {item.component ? React.createElement(item.component) : null}
+                        </Row>
+                    ))}
         </Col>
-    </Row>
+    </Row> 
     </>
   )
 }
