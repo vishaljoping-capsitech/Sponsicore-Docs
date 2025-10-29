@@ -1,12 +1,14 @@
 import { images } from "../../../assets"
 import ImageCard from "../../../components/ImageCard"
 import Paragraph from "../../../components/Paragraph"
+import SubHeading from "../../../components/SubHeading"
 
 
 const LeaveNotification = () => {
   return (
     <>
-      <Paragraph text="When the admin takes any action on a leave application—such as approving, rejecting, editing, canceling, or deleting—an automated email notification is immediately triggered and sent to the employee. This email clearly reflects the specific action that has been taken, providing important details such as the updated status of the leave request, any changes made, and relevant dates. The notification ensures that employees are kept informed in real-time about their leave application status, promoting transparency and reducing the need for manual follow-ups. This automated communication helps streamline the leave management process and keeps both employees and management aligned." />
+    <SubHeading text="Leave Notifications" />
+      <Paragraph text="Whenever an admin approves, rejects, edits, cancels, or deletes a leave application, an automated email is sent to the employee detailing the action taken, updated status, and relevant dates. This ensures real-time communication, transparency, and a streamlined leave management process without the need for manual follow-ups." />
       <ImageCard src={images.empLeaveNotification} />
     </>
   )

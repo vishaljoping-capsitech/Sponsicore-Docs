@@ -2,13 +2,15 @@ import ImageCard from "../../../components/ImageCard"
 import Paragraph from "../../../components/Paragraph"
 import Title from "../../../components/Title"
 import { images } from '../../../assets'
+import SubHeading from "../../../components/SubHeading"
 
 
 const TripHistoryinAddEdit = () => {
     return (
         <>
+        <SubHeading text="View Trip History" />
             <Paragraph text={
-                <ul>
+                <ul className="docs-list">
                     <li id="trip-history-add"><Title text={"Trip History In Add Drawer: "} />Users can view the trip history of selected travelers directly within the Add Travel Request drawer.This allows them to review past trips before creating a new request, ensuring better planning and avoiding duplication.
                         <ImageCard src={images.adminTravelTripHistoryAdd} />
                     </li>

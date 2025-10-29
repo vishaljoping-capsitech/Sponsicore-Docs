@@ -1,23 +1,14 @@
 import Paragraph from "../../../components/Paragraph"
 import { images } from '../../../assets'
 import ImageCard from "../../../components/ImageCard"
+import SubHeading from "../../../components/SubHeading"
 const LockedTravel = () => {
     return (
         <>
+        <SubHeading text="Locked Travel" />
             <Paragraph
-                text={
-                    <>
-                        Once a travel request is locked, it becomes read-only and cannot be edited or deleted. This functionality ensures:
-                        <ul>
-                            <li>Data integrity for finalized or approved travel plans</li>
-                            <li>Prevention of unauthorized changes after approval or completion</li>
-                            <li>Clear distinction between active and finalized requests</li>
-                            <li>Reliable records for auditing, reporting, and reimbursement processes</li>
-                            This helps maintain a secure and trustworthy travel request system, especially for completed or approved entries.
-                            <ImageCard src={images.adminTravelLockedTravel} />
-                        </ul>
-                    </>
-                } />
+                text={"Once a travel request is locked, it is rendered read-only and cannot be modified or deleted. This functionality preserves data integrity for finalized or approved requests, prevents unauthorized alterations, clearly differentiates active and completed requests, and ensures reliable records"} />
+            <ImageCard src={images.adminTravelLockedTravel} />
         </>
     )
 }

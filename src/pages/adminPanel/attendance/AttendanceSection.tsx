@@ -11,7 +11,7 @@ export const sections: Section[] = [
     {
         component: AttendanceDetailsEmployeeID,
         id: 'attendance-employee-id',
-        title: 'View & Filter Attendance'
+        title: 'View & Filter'
     },
     {
         component: AttendanceFilter,
@@ -31,20 +31,20 @@ export const sections: Section[] = [
     {
         component: AttendanceTransaction,
         id: 'attendance-transaction',
-        title: 'Attendance Transaction View & Hover'
+        title: 'Transaction View & Hover'
     },
     {
         component: EditAttendanceStatus,
         id: 'attendance-edit-status',
-        title: 'Attendance Status Details'
+        title: 'Status Details'
     },
     {
         component: AttendanceStatuses,
         id: 'attendance-statuses',
-        title: 'Attendance Marking Options',
+        title: 'Marking Options',
         children: [
-            { id: 'attendance-single-day', title: 'Single Day Attendance Marking' },
-            { id: 'attendance-multiple-days', title: 'Multiple Days (Bulk) Attendance Marking' }
+            { id: 'attendance-single-day', title: 'Single Day Marking' },
+            { id: 'attendance-multiple-days', title: 'Multiple Days Marking' }
         ]
     }
 

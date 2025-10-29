@@ -24,8 +24,7 @@ const SubHeading: React.FC<SubHeadingProps> = ({
     <Typography.Title
       level={level}
       id={id}
-      className={`flex items-center gap-2 ${className || ""}`}
-      style={{ marginTop: "0.5em" }}
+      className={`flex items-center ${className || ""}`}
     >
       {icon && iconPosition === "left" && <span style={iconStyle}>{icon}</span>}
       <span>{text}</span>

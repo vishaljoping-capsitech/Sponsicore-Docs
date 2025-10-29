@@ -1,11 +1,13 @@
 import Paragraph from "../../../components/Paragraph"
 import { images } from '../../../assets'
 import ImageCard from "../../../components/ImageCard"
+import SubHeading from "../../../components/SubHeading"
 
 const ManageExpenses = () => {
     return (
         <>
-            <Paragraph text="Employees have the flexibility to add, update, or remove their own expenses at any time during the trip process, as long as the trip status is either Pending or Approved. This allows users to keep their expense records accurate and up-to-date without any hassle, ensuring smooth reimbursement and better control over their travel budget. Whether you need to log new expenses as they occur, update details or correct amounts, or remove items that were added by mistake or are no longer relevant, all these actions are easily accessible. However, these options remain available only until the trip status progresses beyond Approved, giving you full control over your expense submissions during the critical stages of trip management."/>
+        <SubHeading text="Manage Travel Expenses" />
+            <Paragraph text="Employees can add, update, or delete their expenses while a trip is in Pending or Approved status, ensuring accurate and up-to-date records for smooth reimbursement. Once the trip status moves beyond Approved, expense modifications are restricted to maintain data integrity."/>
             <ImageCard src={images.empTravelEditTravel} />
         </>
     )

@@ -20,23 +20,12 @@ const Profile = () => {
               </>
             }
           />
-
-          <SubHeading
-            text={
-              <>
-                <ol>
-                  {profileSections.map((item, index) => (
-                    <li key={index} id={item.id} className="">
-                      {item.title}
-                      {item.component
-                        ? React.createElement(item.component)
-                        : null}
-                    </li>
-                  ))}
-                </ol>
-              </>
-            }
-          />
+          {profileSections.map((item) => (
+            <Row id={item.id}>
+              <SubHeading text={item.title} />
+              {item.component ? React.createElement(item.component) : null}
+            </Row>
+          ))}
         </Col>
       </Row>
     </>

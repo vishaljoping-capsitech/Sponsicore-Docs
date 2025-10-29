@@ -1,23 +1,31 @@
 import React from "react";
-import { AnchorItemProps } from "../../types/Types";
+import Heading from "../../components/Heading";
+import { images } from "../../assets";
+import Paragraph from "../../components/Paragraph";
+import Title from "../../components/Title";
+import { sections } from "./OverviewSection";
+import { Row, Image } from "antd";
+import { generateAnchorItems } from "../../utils/GenerateAnchorItems";
 
-const Overview: React.FC & { getAnchorItems?: () => AnchorItemProps[] } = () => {
+
+
+
+const Overview = () => {
   return (
     <>
-      <div>Overview</div>
-      <ol>
-        <li id="part-1">Part-1</li>
-        <li id="part-2">Part-2</li>
-        <li id="part-3">Part-3</li>
-      </ol>
+      <Heading text="Overview" />
+      <Paragraph text={<>Sponsicore is a next-generation compliance management platform purpose built for UK sponsorship license holders. It transforms the complex task of managing sponsored employees into a seamless, automated process eliminating spreadsheets, reducing manual errors, and keeping you audit ready at all times.
+        With Sponsicore, managing your sponsorship license becomes effortless. From onboarding sponsored individuals to generating instant, audit ready reports, every compliance requirement is streamlined and aligned with Home Office regulations so you can stay focused on what matters most: <Title text="Your People and Your Business." /></>} />
+      <Image src={images.overview} className="mt-5 mb-5" />
+      {sections.map((item) => (
+        <Row key={item.id} id={item.id}>
+          {item.component ? React.createElement(item.component) : null}
+        </Row>
+      ))}
     </>
   );
 };
 
-Overview.getAnchorItems = () => [
-  { key: "part-1", href: "#part-1", title: "Part 1" },
-  { key: "part-2", href: "#part-2", title: "Part 2" },
-  { key: "part-3", href: "#part-3", title: "Part 3" },
-];
 
+Overview.getAnchorItems = () => generateAnchorItems(sections);
 export default Overview;

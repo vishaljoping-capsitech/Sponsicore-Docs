@@ -22,11 +22,11 @@ export const sections: Section[] = [
         children: [
             {
                 id: "pending-action",
-                title: "Action via Status Button:"
+                title: "Action via Status Button"
             },
             {
                 id: "irreversible-action",
-                title: "Irreversible Actions:"
+                title: "Irreversible Actions"
             }
         ]
     },
